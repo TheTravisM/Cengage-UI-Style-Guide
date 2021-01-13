@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Foundation · Components</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS STYLES -->
+    <link href="css/guidelines.css" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- VIDEO PLAYER LINKS -->     
+    <link rel="stylesheet" type="text/css" href="//cdn.cengage.com/js/vidyard/1.0/video-style.css"/>
+    
+    <script src="//cdn.cengage.com/js/jquery/jquery-2.1.4.min.js"></script>
+    <script src="//cdn.cengage.com/js/jquery-ui/jquery-ui-1.11.4.min.js"></script>
+    <script src="//cdn.cengage.com/js/vidyard/1.0/jquery.vidyard-plugin.js"></script>
+    <script src="//cdn.cengage.com/js/jwplayer/6.11/jwplayer.js"></script>
+    <script src="//cdn.cengage.com/js/contrib/jquery.jwplayer-impl.js"></script> 
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar ----------------------------------- -->
+    <div id="header" class="navbar navbar-inverse navbar-fixed-top"></div>
+
+    <!-- Subhead  -------------------------------------------------- -->
+    <header class="jumbotron subhead" id="overview">
+      <div class="container">
+        <h1>Foundation Components</h1>
+        <p class="lead"> Dozens of reusable components built to provide <br>navigation, alerts, popovers, and more.</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Docs nav -------------------------------------------------- -->
+      <div class="row">
+        <div class="span3 bs-docs-sidebar">
+          <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="210">
+            <li><a href="#html-template"><i class="icon-chevron-right"></i> HTML Template</a></li>
+            <li><a href="#header-footer"><i class="icon-chevron-right"></i> Header & Footer</a></li>
+            <li><a href="#breadcrumb"><i class="icon-chevron-right"></i> Breadcrumb</a></li>
+            <li><a href="#column-navigation"><i class="icon-chevron-right"></i> Column Navigation</a></li>
+            <li><a href="#video-players"><i class="icon-chevron-right"></i> Video Player</a></li>           
+            <li><a href="#links-buttons"><i class="icon-chevron-right"></i> Links & Buttons</a></li>
+            <li><a href="#social-media-icons"><i class="icon-chevron-right"></i> Social Media Icons</a></li>
+            <li><a href="#forms"><i class="icon-chevron-right"></i> Forms</a></li>
+            <li><a href="#custom-error-pages"><i class="icon-chevron-right"></i> Custom error pages</a></li>
+          </ul>
+        </div>
+        <div class="span9">
+          <!-- ------------- -------------------------------------------------- -->
+          <!-- HTML TEMPLATE -------------------------------------------------- -->
+          <!-- ------------- -------------------------------------------------- -->
+          <section id="html-template">
+            <div class="page-header">
+              <h1>HTML Template</h1>
+            </div>
+            <h3>Basic HTML Template</h3>
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Cengage Bootstrap 101 Template&lt;/title&gt; 
+    &lt;!-- Cengage Bootstrap --&gt;
+    &lt;link href="//cdn.cengage.com/libs/bootstrap/css/cengage-bootstrap.css" rel="stylesheet" media="screen"&gt;
+    &lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;
+    &lt;!--[if lt IE 9]&gt;&lt;script src="//html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;    
+  &lt;/head&gt;
+  &lt;body class="cengage-boostrap"&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>         
+          </section>
+          <!-- ----------------- ---------------------------------------------- -->  
+          <!-- HEADER AND FOOTER ---------------------------------------------- -->
+          <!-- ----------------- ---------------------------------------------- -->
+          <section id="header-footer">
+            <div class="page-header">
+              <h1>Header and Footer</h1>
+            </div>
+            <p class="lead">The following steps will guide you through loading the Cengage Header and Footer onto your HTML page. We have implemented versioning into our headers and footers and the following
+            instructions are based on the versioned header and footer. Replace the &lt;insert-version-here&gt; in the file path with whatever version you wish to load.</p>    
+
+            <p>
+              <span class="label label-info">Heads up!</span> You are no longer required to have a &lt;header&gt; or &lt;footer&gt; on your page, however, it is still supported. Keep in mind, if you do have those tags on the page they will overwrite the "catalog" setting in the init setup!
+            </p>  
+
+            <p>
+              <span class="label alert-danger">Warning!</span> It is recommended to load the latest version only during development. It is not recommended to load the latest version in production since latest points to the most recently added version which may contain changes that break your page.
+            </p>  
+
+            <p>The following are the current version of the headers: <br />
+              <ul>
+                <li>1.0</li>
+                <li>1.1</li>
+                <li>latest (1.1)</li>
+              </ul>
+            </p>
+
+            <h2>Change Log</h2>
+            <p>1.1 changes</p>
+            <ul>
+              <li>Header is now supported in the Search Catalog</li>
+              <li>Link changes in header and footer</li>
+              <li>Removed prepending domain specific values (d-, s-, etc) in header links</li>
+              <li>Can now choose to not load font-awesome or Open-Sanse if you are already loading them</li>
+              <li>Fixed issue with higher education sign-in not checking for empty field correctly</li>
+            </ul>
+            <p>1.2 changes</p>
+            <ul>
+              <li>Link and text changes</li>
+              <li>Added AMD support</li>
+              <li>Added support to load local assets instead of loading from the CDN</li>
+              <li>prevented "undefined" alerts from happening.</li>
+            </ul>
+            <h2>The Source Files</h2>
+            <p>There are two ways to load the style of the header and footer. The first way is to use javascript to load the styles which is a little slower and may result in a flash of unstyled content. The second is to 
+            load the css via style tags on your page.</p> 
+            <p>If you wish to load the styles via the CSS tags on the page (recommended) then copy and paste the below lines of code respectivly</p>
+            <pre class="prettyprint linenums">
+&lt;!-- use this tag if you intend to load the header on your page --&gt;
+&lt;link href="//cdn.cengage.com/static/sites/cengage/header-footer/&lt;insert-version-here&gt;/css/cengage-header.css" rel="stylesheet" /&gt;
+
+&lt;!-- use this tag if you intend to load the footer on your page --&gt;
+&lt;link href="//cdn.cengage.com/static/sites/cengage/header-footer/&lt;insert-version-here&gt;/css/cengage-footer.css" rel="stylesheet" /&gt;
+
+&lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdn.cengage.com/static/sites/cengage/header-footer/&lt;insert-version-here&gt;/js/loader.js"&gt;&lt;/script&gt;
+
+</pre>  
+            <p>If you wish to load the styles via the javascript and not a link tag above, then copy and paste these lines in between <code>&lt;head&gt;&lt;/head&gt;</code> on your HTML page.</p>
+<pre class="prettyprint linenums">
+&lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdn.cengage.com/static/sites/cengage/header-footer/&lt;insert-version-here&gt;/js/loader.js"&gt;&lt;/script&gt;
+</pre>        
+            <h2>Internet Explorer Compatibility</h2>
+            <p>The <code>&lt;[if IE 8]&gt;</code> and <code>&lt;[if IE 9]&gt;</code> statments help to make the Cengage Header and Footer function in Internet Explorer browsers.</p>
+            <p>Copy and past these lines in between the <code>&lt;head&gt;&lt;/head&gt;</code> after the source files.</p>
+<pre class="prettyprint linenums">
+&lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;
+&lt;!--[if lt IE 9]&gt;&lt;script src="//html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;
+</pre>
+            
+            <h2>The Script</h2>
+            <p>The header and footer loaded individually. Before loading the header and footer you must first initialize the loader, this loads the prerequisites shared by both the header and footer.
+            The following are the key components to setting up the script. The values listed below are the defaults for each attribute</p>
+
+<pre class="prettyprint linenums">
+loader.init({
+  css:{ //use only if you did not load the css yourself
+    header:false,        //set true to load header CSS
+    footer:false,        //set true to load footer CSS
+    fontAwesome: true,   //set to false if you are loading this yourself
+    openSans: true       //set to false if you are loading this yourself
+  },
+  environment: "domain", //load resources via specific environment: "development", "staging" or "production".
+  catalog: "pan-cl",     //load content: "pan-cl", "higher-ed", "professional", "gale", or "thorndike". 
+  callback:function(){   //callback when the initialization is complete
+    //load the header and footer here
+  }
+});
+</pre> 
+
+            <p>After initializing the loader, then you are able to load the header or footer or both. Loading the header or footer should be done in the initialize callback function. The following examples assume
+            you are using the default values listed above.</p>
+            <h3>Header and Footer Script</h3>
+            <p>If you want to load both the Header and Footer, copy and paste the script below before <code>&lt;/body&gt;</code> tag in the HTML document.</p>
+<pre class="prettyprint linenums">
+loader.init({
+  callback:function(){
+    loader.header().footer();
+  }
+});
+</pre> 
+
+<h3>Header Only Script</h3>
+<p>If you want to load only the header copy and paste the script before <code>&lt;/body&gt;</code> tag in the HTML document. By default the pan-cl header and pan-cl footer are loaded unless otehrwise specified (explained later in the documentation)</p>
+<div class="bs-docs-example cengage-bootstrap">
+  <img src="./images/example-corporate-header.png">
+</div>
+<pre class="prettyprint linenums">
+loader.init({
+  callback:function(){
+    loader.header();
+  }
+});
+</pre> 
+
+<h3>Header Utililty Scripts</h3>
+
+<h4>Header title or subtitle</h4>
+<p>If you want to a title or subtitle next to the Cengage logo then use this.</p>
+<div class="bs-docs-example cengage-bootstrap">
+  <img src="./images/example-corporate-header-title.png">
+</div>
+<pre class="prettyprint linenums">
+loader.init({
+  callback:function(){
+    loader.header(function(){
+      loader.utils.catalogTitle("Title");
+      loader.utils.catalogSubtitle("Subtitle");
+    }); 
+  }
+});
+</pre> 
+<h4>Replace Navigation</h4>
+<p>If you want to replace the navigation section of the header with your own content then you are able to provide a class name and file to load into the nav.
+The class name will be appended to the nav tag and the content at the URL will be loaded into the nav tag.</p>
+<p>
+  <span class="label label-info">Heads up!</span> This method is not supported on the Gale or Thorndike header due to HTML constraints.
+</p>  
+<div class="bs-docs-example cengage-bootstrap">
+  <img src="./images/example-corporate-header-replace-nav.png">
+</div>
+<pre class="prettyprint linenums">
+loader.init({
+  callback:function(){
+    loader.header(function(){
+      loader.utils.catalogTitle("Careers");
+      loader.utils.nav("class name", "URL to file");
+    }); 
+  }
+});
+</pre> 
+<h4>Remove Navigation</h4>
+<p>If you want to remove the navigation from the header then use this.</p>
+<div class="bs-docs-example cengage-bootstrap">
+  <img src="./images/example-corporate-header-remove-nav.png">
+</div>
+<pre class="prettyprint linenums">
+loader.init({
+  callback:function(){
+    loader.header(function(){
+      loader.utils.removeNav();
+    }); 
+  }
+});
+</pre> 
+
+<h3>Footer Only Script</h3>
+<p>If you want to load only the footer copy and paste the script before <code>&lt;/body&gt;</code> tag in the HTML document.</p>
+<div class="bs-docs-example cengage-bootstrap">
+  <img src="./images/sign-in-only.png">
+</div>
+<pre class="prettyprint linenums">
+loader.init({
+  callback:function(){
+    loader.footer(); 
+  }
+});
+</pre>
+
+<h3>Footer Utility Script</h3>
+<p>Pan-CL footer shown in examples below, however, all utility scripts work on all footers.</p>
+<h4>Custom Footer Logo</h4>
+<p>Use this script if you want to load custom image into the footer.</p>
+<p>Replace the <code>//cengage.com/images/example-image.png</code> with your unique image link.</p>
+<div class="cengage-bootstrap bs-docs-example">
+  <img src="./images/example-branded-base-footer.png">
+</div>
+<pre class="prettyprint linenums">
+loader.init({
+  callback:function(){
+    loader.footer(function(){
+      loader.utils.logo("//www.cengage.com/images/example-image.png");
+    }); 
+  }
+});
+</pre>
+
+<h4>Hide Country in Footer</h4>
+<p>Use this script if you want to hide the country in the Cengage footer.</p>
+<div class="cengage-bootstrap bs-docs-example">
+  <img src="./images/corporate-footer.png">
+</div>
+<pre class="prettyprint linenums">
+loader.init({
+  callback:function(){
+    loader.footer(function(){
+      loader.utils.hideCountry(); 
+    }); 
+  }
+});
+</pre>
+
+<h4>Show the Sign-In Band</h4>
+<p>Use this script if you want to show the sign-in band. The footer Sign-In Band requires the footer tag to be present
+but does not require the footer to be loaded before it can be loaded. This is why the call to the utils is not placed in the footer callback.
+there to be a footer tag present but does not need</p>
+<div class="cengage-bootstrap bs-docs-example">
+  <img src="./images/sign-in-footer.png">
+</div> 
+<pre class="prettyprint linenums">
+loader.init({
+  callback:function(){
+    loader.footer(); 
+    loader.utils.signIn(); 
+  }
+});
+</pre>
+
+<h2>Putting it all togther</h2>
+<pre class="prettyprint linenums">&lt;!DOCTYPE html&gt;
+&lt;html lang="en" id="html"&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=latest"&gt;
+
+    &lt;link href="//d-cdn.cengage.com/static/sites/cengage/header-footer/&lt;insert-version-here&gt;/css/cengage-header.css" rel="stylesheet" /&gt;
+    &lt;link href="//d-cdn.cengage.com/static/sites/cengage/header-footer/&lt;insert-version-here&gt;/css/cengage-footer.css" rel="stylesheet" /&gt;
+
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+    &lt;script src="//d-cdn.cengage.com/static/sites/cengage/header-footer/&lt;insert-version-here&gt;/js/loader.js"&gt;&lt;/script&gt;
+  
+    &lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;  
+    &lt;!--[if lt IE 9]&gt;&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;
+  
+    &lt;title&gt;Test Page with Header/Footer&lt;/title&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+
+      &lt;p&gt;Page content here. &lt;/p&gt;
+
+    &lt;/div&gt;
+
+    &lt;script&gt;
+      loader.init({
+        callback:function(){
+          loader.header().footer();
+        }
+      });       
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+          </section>
+          <!-- ---------- ----------------------------------------------------- -->          
+          <!-- BREADCRUMB ----------------------------------------------------- -->
+          <!-- ---------- ----------------------------------------------------- -->
+          <section id="breadcrumb">
+            <div class="page-header"><h1>Breadcrumb</h1></div>
+            <h2>Examples</h2>
+            <p>A single example shown as it might be displayed across multiple pages.</p>
+            <div class="cengage-bootstrap bs-docs-example">
+              <div class="breadcrumb">
+                <ul>
+                  <li class="active">Company Name</li>
+                </ul>
+                <ul>
+                  <li><a href="#">Company Name</a> <i class="icon-angle-right"></i></li>
+                  <li class="active">Site Name</li>
+                </ul>
+                <ul>
+                  <li><a href="#">Company Name</a> <i class="icon-angle-right"></i></li>
+                  <li><a href="#">Site Name</a> <i class="icon-angle-right"></i></li>
+                  <li class="active">Section</li>
+                </ul>
+                <ul style="margin-bottom: 5px;">
+                  <li><a href="#">Company Name</a> <i class="icon-angle-right"></i></li>
+                  <li><a href="#">Site Name</a> <i class="icon-angle-right"></i></li>
+                  <li><a href="#">Section</a> <i class="icon-angle-right"></i></li>
+                  <li class="active">Page Name/Description</li>
+                </ul>
+              </div>            
+            </div>
+<pre class="prettyprint linenums">&lt;aside class="breadcrumb"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Company Name&lt;/a&gt; &lt;i class="icon-angle-right"&gt;&lt;/i&gt;&lt;/li&gt; 
+    &lt;li&gt;&lt;a href="#"&gt;Site Name&lt;/a&gt; &lt;i class="icon-angle-right"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Section&lt;/a&gt; &lt;i class="icon-angle-right"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li class="active"&gt;Page Name/Description&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/aside&gt;
+</pre>
+            <p><span class="label label-info">Heads up!</span> You can have any number of intermediate <code>&lt;li&gt;</code>’s but the final <code>&lt;li&gt;</code> should be <code>class=”active”</code>.</p>          
+            <h3>Optional Page Title</h3>
+            <p>Adding an optional Page Title</p>
+            <div class="cengage-bootstrap bs-docs-example">
+              <div class="breadcrumb">
+                <ul>
+                  <li><a href="#">Company Name</a> <i class="icon-angle-right"></i></li>
+                  <li><a href="#">Site Name</a> <i class="icon-angle-right"></i></li>
+                  <li><a href="#">Section</a> <i class="icon-angle-right"></i></li>
+                  <li class="active">Page Name/Description</li>
+                </ul>
+                <h1>Page Title Place Holder <small>(16504 results)</small></h1>
+              </div>
+            </div>
+<pre class="prettyprint linenums">&lt;aside class="breadcrumb"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Company Name &lt;/a&gt; &lt;i class="icon-angle-right"&gt;&lt;/i&gt;&lt;/li&gt; 
+    &lt;li&gt;&lt;a href="#"&gt;Site Name &lt;/a&gt; &lt;i class="icon-angle-right"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Section &lt;/a&gt; &lt;i class="icon-angle-right"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li class="active"&gt;Page Name/Description&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h1&gt;Page Title Place Holder &lt;small&gt;(16504 results)&lt;/small&gt;&lt;/h1&gt;
+&lt;/aside&gt;
+</pre>                         
+          </section>
+          <!-- ----------------- ---------------------------------------------- -->
+          <!-- COLUMN NAVIGATION ---------------------------------------------- -->
+          <!-- ----------------- ---------------------------------------------- -->
+          <section id="column-navigation">
+            <div class="page-header"><h1>Column Navigation</h1></div>
+            <h2>Left Column Example</h2>
+            <div class="bs-docs-example">
+              <div class="cengage-bootstrap clearfix">
+                <aside class="clearfix" style="float:left; width: 230px;">
+                  <nav class="column-nav left">
+                    <h1>Headline:</h1>
+                    <h2>Subheadline</h2>
+                    <ul role="menu">
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <ul>
+                        <li><a href="#">Subnavigation Link</a></li>
+                        <li><a href="#">Subnavigation Link</a></li>
+                      </ul>
+                      <li><a ref="#">Navigation Text Link</a></li>
+                    </ul>
+                    <h2>Subheadline</h2>
+                    <ul>
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <li><a href="#">Navigation Text Link</a></li>
+                    </ul>
+                    <h2>Subheadline</h2>
+                    <ul>
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <li><a href="#">Navigation Text Link</a></li>
+                    </ul>
+                  </nav>
+                </aside>
+              </div>
+            </div>
+<pre class="prettyprint linenums">
+&lt;aside class="span3"&gt;
+  &lt;nav class="column-nav left" role="complementary"&gt;   
+    &lt;h1&gt;Headline:&lt;/h1&gt;
+    &lt;h2&gt;Subheadline&lt;/h2&gt;
+    &lt;ul role="menu"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Subnavigation Link&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Subnavigation Link&lt;/a&gt;&lt;/li&gt;                         
+        &lt;/ul&gt; 
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2&gt;Subheadline&lt;/h2&gt;
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;h2&gt;Subheadline&lt;/h2&gt;
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/aside&gt;  
+</pre>
+            <h2>Right Column Example</h2>
+            <div class="bs-docs-example">                          
+              <div class="cengage-bootstrap clearfix"> 
+                 <aside class="clearfix" style="float:left; width: 230px;">               
+                  <nav class="column-nav right">   
+                    <h1>Headline:</h1>
+                    <h2>Subheadline</h2>
+                    <ul role="menu">
+                      <li><a href="#">Navigation Text Link</a></li>
+                        <ul>
+                          <li><a href="#"><i class="icon-double-angle-right"></i> Subnavigation Link</a></li>
+                          <li><a href="#"><i class="icon-double-angle-right"></i> Subnavigation Link</a></li>                         
+                        </ul> 
+                      <li><a ref="#">Navigation Text Link</a></li>
+                    </ul>
+                    <h2>Subheadline</h2>
+                    <ul> 
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <li class="divider"></li>
+                    </ul>
+                    <span class="divider"></span>
+                  <h2>Subheadline</h2>
+                    <ul> 
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <li><a href="#">Navigation Text Link</a></li>
+                      <li><a href="#">Navigation Text Link</a></li>
+                    </ul>
+                  </nav>
+                </aside>      
+              </div>
+            </div>
+<pre class="prettyprint linenums">
+&lt;aside class="span3"&gt;
+  &lt;nav class="column-nav right" role="complementary"&gt;     
+    &lt;h1&gt;Headline:&lt;/h1&gt;
+    &lt;h2&gt;Subheadline&lt;/h2&gt;
+    &lt;ul role="menu"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-double-angle-right"&gt;&lt;/i&gt; Subnavigation Link&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-double-angle-right"&gt;&lt;/i&gt; Subnavigation Link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt; 
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2&gt;Subheadline&lt;/h2&gt;
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;h2&gt;Subheadline&lt;/h2&gt;
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Navigation Text Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/aside&gt;  
+</pre>           
+          </section>
+          <!-- ----- ---------------------------------------------------------- -->
+          <!-- VIDEO ---------------------------------------------------------- -->
+          <!-- ----- ---------------------------------------------------------- -->
+          <br />
+          <br />
+          <section id="video-players">
+            <div class="page-header"><h1>Video Player</h1></div>
+            <h2>Vidyard</h2>
+            <p>This plugin makes the process of using vidyard easier. The plugin will accept a JSON or XML file. The plugin also adds the ability to add thumbnails for multiple videos to be used. We have implemented versioning for the vidyard plugin. Replace the &lt;insert-version-here&gt; in the file path with whatever version you wish to load.</p> 
+
+            <p>
+              <span class="label alert-danger">Warning!</span> It is recommended to load the latest version only during development. It is not recommended to load the latest version in production since latest points to the most recently added version which may contain changes that break your page.
+            </p>  
+
+            <p>The following are the current version of the vidyard plugin: <br />
+              <ul>
+                <li>1.0</li>
+                <li>1.1</li>
+                <li>latest (1.1)</li>
+              </ul>
+            </p>
+
+            <h3>Change Log</h3>
+            <p>1.1 changes</p>
+            <ul>
+              <li>Videos are now dynamically resized removing black borders and maintaining 16:9 aspect ratio</li>
+              <li>Loading overlay removed on mobile devices to fix issue with the overlay covering videos after initialization.</li>
+            </ul>
+
+            <h3>Getting Started</h3>
+            <p>The prerequisites for the plugin are:</p>            
+            <p><strong>jQuery (at least version 2.0)</strong></p>
+            <pre class="prettyprint linenums">&lt;script src="//cdn.cengage.com/js/jquery/jquery-2.1.4.min.js"&gt;&lt;/script&gt;</pre>           
+          
+            <p><strong>If multiple tabs then jQuery UI is required:</strong></p>
+<pre class="prettyprint linenums">
+&lt;script src="//cdn.cengage.com/js/jquery-ui/jquery-ui-1.11.4.min.js"&gt;&lt;/script&gt;
+</pre>            
+            <p><strong>The Plugin:</strong></p>
+<pre class="prettyprint linenums">
+&lt;script src="//cdn.cengage.com/js/vidyard/&lt;insert-version-here&gt;/jquery.vidyard-plugin.js"&gt;&lt;/script&gt;
+</pre>           
+            <p><strong>The CSS to style the Video:</strong></p>           
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" type="text/css" href="//cdn.cengage.com/js/vidyard/&lt;insert-version-here&gt;/video-style.css"/&gt;
+</pre>       
+
+          <h3>Example</h3>     
+          <p>Once you have the prerequisites in place it should look like this:</p>
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" type="text/css" href="//cdn.cengage.com/js/vidyard/&lt;insert-version-here&gt;/video-style.css"/&gt;
+&lt;script src="//cdn.cengage.com/js/jquery/jquery-2.1.4.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdn.cengage.com/js/jquery-ui/jquery-ui-1.11.4.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdn.cengage.com/js/vidyard/&lt;insert-version-here&gt;/jquery.vidyard-plugin.js"&gt;&lt;/script&gt;
+</pre>           
+
+          <h2>Implementation</h2>
+            <p>There must be a container in the body of the document with a couple of attributes to instantiate the player:</p>
+<pre class="prettyprint linenums">
+&lt;div class="video-container vidyard-video" id="video" player="vidyard1"&gt;&lt;/div&gt;
+</pre>  
+            <p>The “class” attribute is required if you wish to keep the pre-styled player and tabs. However, it can be removed if you wish to style the player yourself.</p>
+            <p>The “id” attribute is not required but I am using it to select the element to initilize the plugin on.</p>
+            <p>To initiate the plugin a couple lines of JavaScript are required. The player accepts JSON for single videos and XML for multiple or single videos.</p>
+            
+            <h3>To Remove H Tags</h3>
+            <p>Use the description field insted of title if you do not want the h tags to appear<p>
+
+            <h2>Example</h2>
+            <p>Here is an example of all the parameters the single player plugin accepts:</p>
+<pre class="prettyprint linenums">
+$("#video").player({
+    json: {
+        uuid: "uuid of video on vidyard",
+        description: "description of video",
+        headline: "Title of video",
+    },
+    details: true or false (defaults to true), // displays captions
+    callback: "function to be called when the player is fully setup" 
+});
+</pre>
+
+
+          <h3>Multi video player</h3> 
+          <p>If you wish to use a multi video player then an XML file is required. Here is an example of a multi video player:</p>
+<pre class="prettyprint linenums">
+$("#video").player({
+    xml: "http://mydomain.com/path/to/xml",
+    details: true, // displays captions (defaults to true)
+    single: false, //true will display first video if multiple are present (defualts to false)
+    columns: 4, //number of thumbnail columns (defaults to 4)
+    callback: function(){} //function to be called when the player is fully setup
+});
+</pre>
+
+          <p>JavaScript does not allow cross domain loading, if you are trying to load an xml from a different domain that does not allow CORS the video player will not work.</p>
+          <p>If an XML only has one video then it will default to a single video player</p>
+          <p><strong>Multiple tabs:</strong></p>
+          <p><a href="//internal.cengage.com/documentation/guidelines/media/vidyard/example-multi-tab.xml">http://internal.cengage.com/documentation/guidelines/media/exampleTabVideos.xml</a></p>            
+          <p><strong>No tabs multiple videos:</strong></p>
+          <p><a href="//internal.cengage.com/documentation/guidelines/media/vidyard/example-multi.xml">http://internal.cengage.com/documentation/guidelines/media/exampleMultipleVideos.xml</a></p>
+          <h1>Example</h1>
+          <!-- SINGLE VIDEO PLAYER EXAMPLE -->
+          <h2><a href="./examples/vidyard/single-video-player.html">Single-video player</a></h2>
+          <div class="bs-docs-example cengage-bootstrap"> 
+            <h1>Single Player</h1>
+            <div class="video-container vidyard-video" id="vidyard-vid" style="clear:both;"></div>
+            <script>
+              $("#vidyard-vid").vidyard({
+                json:{
+                  uuid: "LOk7byjUAXqgq8AvtfXm0Q",
+                  headline: "Cengage Learning: Engage with Online Learning Solutions",
+                  description: "Like you, our passion is to improve critical thinking skills. We want to support you in focusing on what really matters: engaging your students, elevating their thinking, empowering you to set your own course, and taking students beyond simple memorization to true understanding."
+                }
+              });
+            </script>
+          </div>
+<pre class="prettyprint linenums">
+&lt;!doctype html lang="en"&gt; 
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;Multi Player&lt;/title&gt;
+
+    &lt;link rel="stylesheet" type="text/css" href="//cdn.cengage.com/js/vidyard/&lt;insert-version-here&gt;/video-style.css"/&gt;
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-2.1.4.min.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/vidyard/&lt;insert-version-here&gt;/jquery.vidyard-plugin.js"&gt;&lt;/script&gt;
+    
+    &lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;
+    &lt;!--[if lt IE 9]&gt;&lt;script src="//html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;![endif]--&gt;
+  &lt;/head&gt;
+&lt;body&gt;
+    
+    &lt;h1&gt;Single Player&lt;/h1&gt;
+    &lt;div class="video-container vidyard-video" id="vidyard-vid" style="clear:both;"&gt;&lt;/div&gt;
+      &lt;script&gt;
+        $("#vidyard-vid).vidyard({
+          json:{
+            uuid: "LOk7byjUAXqgq8AvtfXm0Q",
+            headline: "Cengage Learning: Engage with Online Learning Solutions",
+            description: "Like you, our passion is to improve critical thinking skills. We want to support you in focusing on what really matters: engaging your students, elevating their thinking, empowering you to set your own course, and taking students beyond simple memorization to true understanding."
+          }
+        });
+      &lt;/script&gt;
+    
+  &lt;/div&gt;   
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>  
+
+            <!-- MULTI VIDEO PLAYER -->
+            <h2><a href="./examples/vidyard/multi-video-player.html">Mutli-video player</a></h2>
+            <div class="bs-docs-example cengage-bootstrap" style="overflow: auto;">    
+              <h1>Multi Player</h1>
+              <div class="video-container vidyard-video" id="vidyard-multi"></div>
+              <script>
+                  $("#vidyard-multi").vidyard({
+                  xml:"./media/vidyard/example-multi.xml"
+                });
+              </script>
+            </div>
+<pre class="prettyprint linenums">
+&lt;!doctype html lang="en"&gt; 
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;Multi Player&lt;/title&gt;
+
+    &lt;link rel="stylesheet" type="text/css" href="//cdn.cengage.com/js/vidyard/&lt;insert-version-here&gt;/video-style.css"/&gt;
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-2.1.4.min.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/vidyard/&lt;insert-version-here&gt;/jquery.vidyard-plugin.js"&gt;&lt;/script&gt;
+
+    &lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;
+    &lt;!--[if lt IE 9]&gt;&lt;script src="//html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;![endif]--&gt;
+  &lt;/head&gt;
+&lt;body&gt;
+   
+    &lt;h1&gt;Multi Player&lt;/h1&gt;
+    &lt;div class="video-container vidyard-video" id="vidyard-multi" &gt;&lt;/div&gt;
+    &lt;script&gt;
+      $("#vidyard-multi").vidyard({
+        xml:"./media/vidyard/example-multi.xml"
+      });
+    &lt;/script&gt;
+    
+  &lt;/div&gt;   
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+           <!-- MULTI TAB VIDEO PLAYER EXAMPLE -->
+            <h2><a href="./examples/vidyard/multi-tab-video-player.html">Mutli-tab video player</a></h2>            
+            <div class="bs-docs-example cengage-bootstrap" style="overflow: auto;">
+              <h1>Multi-Tab Player</h1>
+              <div class="video-container vidyard-video" id="vidyard-multi-tab"></div>
+              <script>
+                $("#vidyard-multi-tab").vidyard({
+                  xml:"./media/vidyard/example-multi-tab.xml"
+                });
+              </script>
+            </div>
+<pre class="prettyprint linenums">
+&lt;!doctype html lang="en"&gt;
+ &lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;Multi-Tab Player&lt;/title&gt;
+
+    &lt;link rel="stylesheet" type="text/css" href="//cdn.cengage.com/js/vidyard/&lt;insert-version-here&gt;/video-style.css"/&gt;
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-2.1.4.min.js"&gt;&lt;/script&gt;
+    &lt;script src="//d-cdn.cengage.com/js/jquery-ui/jquery-ui-1.11.4.min.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/vidyard/&lt;insert-version-here&gt;/jquery.vidyard-plugin.js"&gt;&lt;/script&gt;
+
+    &lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;
+    &lt;!--[if lt IE 9]&gt;&lt;script src="//html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;![endif]--&gt;
+ &lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Multi-Tab Player&lt;/h1&gt;
+    &lt;div class="video-container vidyard-video" id="vidyard-multi-tab"&gt;&lt;/div&gt;
+    &lt;script&gt;
+      $("#vidyard-multi-tab").vidyard({
+        xml:"./media/vidyard/example-multi-tab.xml"
+      });
+    &lt;/script&gt;     
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>           
+
+
+
+            <h2>Jwplayer (no longer supported)</h2>
+            <p>This plugin makes the process of using jwplayer easier. The plugin will accept a JSON or XML file. The plugin will always instantiate the player with flash as the primary player. If flash has not been installed in the user’s browser then HTML 5 video player will be used. If the browser does not support flash or HTML 5, a download fallback will be used.</p>
+            <h2>Getting Started</h2>
+            <p>The prerequisites for the plugin are:</p>            
+            <p><strong>jQuery</strong></p>
+            <pre class="prettyprint linenums">&lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;</pre>           
+            <p><strong>jwplayer</strong></p>
+            <pre class="prettyprint linenums">&lt;script src="//cdn.cengage.com/js/jwplayer/6.11/jwplayer.js"&gt;&lt;/script&gt;</pre>            
+            <p><strong>If using JQuery tabs is required:</strong></p>
+<pre class="prettyprint linenums">
+&lt;script src="//cdn.cengage.com/js/contrib/jquery.a11y.ui/ui/jquery.ui.widget.js"&gt;&lt;/script&gt;
+&lt;script src="//cdn.cengage.com/js/contrib/jquery.a11y.ui/ui/jquery.ui.tabs.js"&gt;&lt;/script&gt;
+</pre>            
+            <p><strong>The Plugin:</strong></p>
+<pre class="prettyprint linenums">
+&lt;script src="//cdn.cengage.com/js/contrib/jquery.jwplayer-impl.js"&gt;&lt;/script&gt;
+</pre>           
+            <p><strong>The CSS to style the Video:</strong></p>           
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" type="text/css" href="//cdn.cengage.com/css/cl/video-style.css"/&gt;
+</pre>       
+            <h3>Example</h3>     
+            <p>Once you have the prerequisites in place it should look like this:</p>
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" type="text/css" href="//cdn.cengage.com/css/cl/video-style.css"/&gt;
+&lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdn.cengage.com/js/jwplayer/6.11/jwplayer.js"&gt;&lt;/script&gt;
+&lt;script src="//cdn.cengage.com/js/contrib/jquery.a11y.ui/ui/jquery.ui.widget.js "&gt;&lt;/script&gt;
+&lt;script src="//cdn.cengage.com/js/contrib/jquery.a11y.ui/ui/jquery.ui.tabs.js "&gt;&lt;/script&gt;
+&lt;script src="//cdn.cengage.com/js/contrib/jquery.jwplayer-impl.js "&gt;&lt;/script&gt;
+</pre>           
+            <h2>Implementation</h2>
+            <p>There must be a container in the body of the document with a couple of attributes to instantiate the player:</p>
+<pre class="prettyprint linenums">
+&lt;div class="video-container" id="video" player="jwplayer1"&gt;&lt;/div&gt;
+</pre>  
+            <p>The “class” attribute is required if you wish to keep the pre-styled player and tabs. However, it can be removed if you wish to style the player yourself.</p>
+            <p>The “id” attribute can be whatever you want.</p>
+            <p>The “player” attribute is required to give the jwplayer an id. You can give this attribute any value but it must start with “jwplayer” (jwplayer, jwplayer1, jwplayer2, jwplayerContainer, etc.)</p>
+            <p>To initiate the plugin a couple lines of JavaScript are required. The player accepts JSON for single videos and XML for multiple videos.</p>
+            
+            <h3>To Remove H Tags</h3>
+            <p>Use the description field insted of title if you do not want the h tags to appear<p>
+
+            <h2>Example</h2>
+            <p>Here is an example of all the parameters the single player plugin accepts:</p>
+<pre class="prettyprint linenums">
+$("#video").player({
+    json: {
+        mp4: "http://myDomain.com/path/to/mp4",
+        webm: "http://myDomain.com/path/to/webm",
+        srt: "http://myDomain.com/path/to/srt",
+        desc: "description of video",
+        title: "Title of video",
+        youtube: "youtube video",
+        img: "path to image file",
+        txt: "transcript file to download",
+        callback: "function to be called when the player is fully setup" 
+    },
+    key: "jwplayer license key",
+    stream: true or false (defaults to false),
+    height: "height of the player",
+    width: "width of the player",
+    details: true or false (defaults to true), // displays captions
+    loop: true or false (defaults to false) // makes video will loop
+});
+</pre>
+            <h3>Multi video player</h3> 
+            <p>If you wish to use a multi video player then an XML file is required. Here is an example of a multi video player:</p>
+<pre class="prettyprint linenums">
+$("#video").player({
+    xml: "http://mydomain.com/path/to/xml",
+    key: "jwplayer license key",
+    stream: "true or false (defaults to false)",
+    height: "height of the player",
+    width: "width of the player",
+    callback: "function to be called when the player is fully setup",
+    details: true or false (defaults to true), // displays captions
+    single: true or false (defaults to false), //true will display first video if multiple are present.
+    loop: true or false (defaults to false), // makes video will loop
+    columns: number of columns (defaults to 4)
+});
+</pre>
+            <p>The XML file can have these attributes and any of them can be omitted if you choose. However, there must be at least one video URL (mp4, webm or youtube). Also, JavaScript does not allow cross domain loading, if you are trying to load an xml from a different domain that does not allow CORS the video player will not work.</p>
+            <p>If an XML only has one video then it will default to a single video player</p>
+            <p><strong>Multiple tabs:</strong></p>
+            <p><a href="//internal.cengage.com/documentation/guidelines/media/exampleTabVideos.xml">http://internal.cengage.com/documentation/guidelines/media/exampleTabVideos.xml</a></p>            
+            <p><strong>No tabs multiple videos:</strong></p>
+            <p><a href="//internal.cengage.com/documentation/guidelines/media/exampleMultipleVideos.xml">http://internal.cengage.com/documentation/guidelines/media/exampleMultipleVideos.xml</a></p>
+            <h1>Example</h1>
+            <!-- SINGLE VIDEO PLAYER EXAMPLE -->
+            <h2><a href="./examples/single-video-player.html">Single-video player</a></h2>
+            <div class="bs-docs-example cengage-bootstrap"> 
+              <h1>Single Player</h1>
+              <div class="video-container" id="vid" player="jwplayer1" style="clear:both;"></div>
+              <script>
+                $("#vid").player({
+                  json:{
+                    youtube: "http://www.youtube.com/watch?v=YE7VzlLtp-4",
+                    title: "Bunny",
+                    desc: "The Big Bunny runs in circles."
+                  }, 
+                  key:"yi3O3eWtkupFILhRcDNc/TZS2WnJg6o3kRjUMIQlEDQ="
+                });
+              </script>
+            </div>
+<pre class="prettyprint linenums">
+&lt;!doctype html lang="en"&gt; 
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;Multi Player&lt;/title&gt;
+
+    &lt;link rel="stylesheet" type="text/css" href="http://cdn.cengage.com/css/cl/video-style.css"/&gt;
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/yepnope/yepnope.latest-min.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/jwplayer/6.11/jwplayer.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/contrib/jquery.jwplayer-impl.js"&gt;&lt;/script&gt;
+    
+    &lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;
+    &lt;!--[if lt IE 9]&gt;&lt;script src="//html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;![endif]--&gt;
+  &lt;/head&gt;
+&lt;body&gt;
+    
+    &lt;h1&gt;Single Player&lt;/h1&gt;
+    &lt;div class="video-container" id="vid" player="jwplayer1" style="clear:both;"&gt;&lt;/div&gt;
+      &lt;script&gt;
+        $("#vid").player({
+        json:{
+          youtube: "http://www.youtube.com/watch?v=YE7VzlLtp-4",
+          title: "Bunny",
+          desc: "The Big Bunny runs in circles."
+        }, 
+        key:"yi3O3eWtkupFILhRcDNc/TZS2WnJg6o3kRjUMIQlEDQ="
+      });
+      &lt;/script&gt;
+    
+  &lt;/div&gt;   
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>  
+            <!-- MULTI VIDEO PLAYER -->
+            <h2><a href="./examples/multi-video-player.html">Mutli-video player</a></h2>
+            <div class="bs-docs-example cengage-bootstrap" style="overflow: auto;">    
+              <h1>Multi Player</h1>
+              <div class="video-container" id="videoMulti" player="jwplayer3"></div>
+              <script>
+                  $("#videoMulti").player({
+                  xml:"./media/exampleMultipleVideos.xml", 
+                  key:"yi3O3eWtkupFILhRcDNc/TZS2WnJg6o3kRjUMIQlEDQ=",
+                  stream: true
+                });
+              </script>
+            </div>
+<pre class="prettyprint linenums">
+&lt;!doctype html lang="en"&gt; 
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;Multi Player&lt;/title&gt;
+
+    &lt;link rel="stylesheet" type="text/css" href="http://cdn.cengage.com/css/cl/video-style.css"/&gt;
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/yepnope/yepnope.latest-min.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/jwplayer/6.11/jwplayer.js"&gt;&lt;/script&gt;
+
+    &lt;script src="//cdn.cengage.com/js/contrib/jquery.jwplayer-impl.js"&gt;&lt;/script&gt;
+    &lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;
+    &lt;!--[if lt IE 9]&gt;&lt;script src="//html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;![endif]--&gt;
+  &lt;/head&gt;
+&lt;body&gt;
+   
+    &lt;h1&gt;Multi Player&lt;/h1&gt;
+    &lt;div class="video-container" id="videoMulti" player="jwplayer3"&gt;&lt;/div&gt;
+    &lt;script&gt;
+      $("#videoMulti").player({
+      xml:"http://internal.cengage.com/documentation/guidelines/media/exampleMultipleVideos.xml", 
+      key:"yi3O3eWtkupFILhRcDNc/TZS2WnJg6o3kRjUMIQlEDQ=",
+      stream: true,
+      columns: 4, //(defaults to 4)
+      callback: "function to be called when the player is fully setup" 
+    });
+    &lt;/script&gt;
+    
+  &lt;/div&gt;   
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+           <!-- MULTI TAB VIDEO PLAYER EXAMPLE -->
+            <h2><a href="./examples/multi-tab-video-player.html">Mutli-tab video player</a></h2>            
+            <div class="bs-docs-example cengage-bootstrap" style="overflow: auto;">
+              <h1>Multi-Tab Player</h1>
+              <div class="video-container" id="videoTab" player="jwplayer2"></div>
+              <script>
+                $("#videoTab").player({
+                  xml:"./media/exampleTabVideos.xml", 
+                  key:"yi3O3eWtkupFILhRcDNc/TZS2WnJg6o3kRjUMIQlEDQ=",
+                  stream: true,
+                  columns: 4 //(defaults to 4)
+                });
+              </script>
+            </div>
+<pre class="prettyprint linenums">
+&lt;!doctype html lang="en"&gt;
+ &lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;Multi-Tab Player&lt;/title&gt;
+
+    &lt;link rel="stylesheet" type="text/css" href="//cdn.cengage.com/css/cl/video-style.css"/&gt;
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/yepnope/yepnope.latest-min.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/jwplayer/6.11/jwplayer.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/contrib/jquery.a11y.ui/ui/jquery.ui.widget.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/contrib/jquery.a11y.ui/ui/jquery.ui.tabs.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdn.cengage.com/js/contrib/jquery.jwplayer-impl.js"&gt;&lt;/script&gt;
+    &lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;
+    &lt;!--[if lt IE 9]&gt;&lt;script src="//html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;![endif]--&gt;
+ &lt;/head&gt;
+&lt;body&gt;
+  
+    &lt;h1&gt;Multi-Tab Player&lt;/h1&gt;
+    &lt;div class="video-container" id="videoTab" player="jwplayer2"&gt;&lt;/div&gt;
+      &lt;script&gt;
+        $("#videoTab").player({
+      xml:"http://internal.cengage.com/documentation/guidelines/media/exampleTabVideos.xml", 
+      key:"yi3O3eWtkupFILhRcDNc/TZS2WnJg6o3kRjUMIQlEDQ=",
+      stream: true,
+      columns: 4 //(defaults to 4)
+    });
+      &lt;/script&gt;     
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>           
+          </section>    
+          <!-- ----------------- ---------------------------------------------- -->          
+          <!-- LINKS AND BUTTONS ---------------------------------------------- -->
+          <!-- ----------------- ---------------------------------------------- -->
+          <section id="links-buttons">
+            <div class="page-header">
+              <h1>Links And Buttons Types</h1>
+            </div>
+            <p>Links to other Cengage Learning property pages, regardless of domain, should open in the same window. 
+              <br>Links to external websites should open in a new window.</p>
+            <p>With all non-HTML files, such as Adobe PDF and MS Word (DOC), identify file format and include size information.
+              <br>PDFs should be optimized for web delivery and accessibility, and include metadata with copyright and keyword information.</p>
+            <h3>Banner for Acrobat Reader</h3>
+            <div class="bs-docs-example cengage-bootstrap">
+              <img src="./images/banner-acrobat-reader.png"/>
+            </div><!-- End Example-->
+            <h3>Large and small icons for a PDF file</h3>
+            <div class="bs-docs-example cengage-bootstrap">
+              <img src="./images/adobe-icon.png"/>
+              <img src="./images/adobe-icon-small.png"/>
+            </div><!-- End Example-->
+            <h3>File format and size information appended to links</h3>
+            <div class="bs-docs-example cengage-bootstrap">
+              <img src="./images/example-file-format.png"/>
+            </div><!-- End Example-->
+            <h4>Requirements</h4>
+            <ul>
+              <li>Link the actual name of a web page or file rather than linking secondary text: Cengage Learning » rather than </li>
+              <li>Replace generic link text such with results oriented verbiage. For example, replace “Click Here” with “Register Today” </li>
+              <li>Use language appropriate for the audience with clear headings and link descriptions </li>
+              <li> ppend file format and size information to links that are non-HTML content such as PDF or DOC files </li>
+              <li>Provide links to download necessary plug-ins for non-HTML content, such as Acrobat Reader or Microsoft Word Viewer (see Quick Links appendix) </li>
+            </ul>
+            <h2>Links and Button Types</h2>
+            <p>Differentiate links in body text with weight and color. Use an underscore as a focus indicator. </p>
+            <p>The symbol » may be used before a text link to call attention to it or after a text link to represent a “go” call to action, but should never be used alone. </p>
+            <p>Buttons should be CSS-based with HTML text for accessibility. </p>
+            <h4>Requirements</h4>
+            <ul>
+              <li>Reserve #0071A2 for link text </li>
+              <li>Use an underscore for hover state </li>
+              <li>When it is necessary to include on-states for links on a white background, use #CE3C23 </li>
+              <li>The symbol » is used to accentuate a link &RAQUO on Mac: opt+shift+\ Win: alt+0187 </li>
+              <li>Do not use alternate link symbols such as ellipses . . . double greater symbol >> or triangles ▶▶ </li>
+            </ul>
+            <div class="bs-docs-example cengage-bootstrap">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Static State</th>
+                    <th>Rollover State</th>
+                    <th>Optional On State</th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>Body copy link</td>
+                      <td>This is a Bold Link</td>
+                      <td>This is a Bold Link</td>
+                      <td>This is a Bold Link</td>
+                    </tr>
+                    <tr>
+                      <td>Accentuated link</td>
+                      <td>» RaQUO Sample</td>
+                      <td>» RaQUO Sample</td>
+                      <td>» RaQUO Sample</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>Call to Action Link »</td>
+                      <td>Call to Action Link »</td>
+                      <td>Call to Action Link »</td>
+                    </tr>
+                    <tr>
+                      <td>Search button</td>
+                      <td>Search</td>
+                      <td>This is a Bold Link</td>
+                      <td>Buttons should be created
+                      <br>
+                      with CSS and text.</td>
+                    </tr>
+                  </tbody>
+                </thead>
+              </table>
+            </div>
+          </section>
+          <!-- ------------------ --------------------------------------------- -->
+          <!-- Social Media Icons --------------------------------------------- -->
+          <!-- ------------------ --------------------------------------------- -->
+          <section id="social-media-icons">
+            <div class="page-header"><h1>Social Media Icons</h1></div>
+            <h2>Social media links fall into two groups:</h2>
+            <h3>Join Us</h3>
+            <p>links placed in the footer on a website link to our content on a social media platform. These links are to Like, Follow or View our social content. </p>
+            <h4>Join Us Social Media Icons</h4>
+            <div class="bs-docs-example cengage-bootstrap"><img src="./images/join-us-social-media-icons.png"/></div>
+            <h4>Requirements</h4>
+            <p> Social media icons for “Join Us” links are checked for compliance on a quarterly basis and updated when necessary </p>
+            <h3>Share This</h3>
+            <p> links use the social sharing tool to allow visitors to share our website or page content on their social media account. These links allow easy access to Post, Tweet or E-mail. Use at the content level to allow sharing of content on a page-by-page basis. Set up a ShareThis.com account to use this tool. </p>
+            <h4>ShareThis Social Media Sharing Tool</h4>
+            <div class="bs-docs-example cengage-bootstrap"><img src="./images/share-this-icons.png"/></div>
+            <h3>Graphic link icons</h3>
+            <p> Consistent icon use makes information easier to find and calls attention to links. </p>
+            <h4>Graphic Link Icons Examples</h4>
+            <div class="bs-docs-example cengage-bootstrap"><img src="./images/grapic-link-icons.png"/></div>
+            <h3>Icon Resources</h3>
+            <p>(see Quick Links appendix)</p>
+          </section>
+          <!-- ----------------- ---------------------------------------------- -->
+          <!-- Forms ---------------------------------------------------------- -->
+          <!-- ----------------- ---------------------------------------------- -->
+          <section id="forms">
+            <div class="page-header"><h1>Forms</h1></div>
+            <h4>Requirements</h4>
+            <ul>
+              <li> Most forms should be Eloqua-based </li>
+              <li> If the primary purpose of the web page is the form, auto-focus on the first form field on the page when the page loads </li>
+              <li> Forms should always be one column with labels placed to the left of form fields </li>
+              <li> All form fields must have labels that clearly convey what information the field is collecting </li>
+              <li> Forms must have tabbing order set for screen readers and users who do not use a mouse to sequentially navigate through a form </li>
+              <li> Auto-suggest text fields for long pick lists rather than offering drop-downs is preferred </li>
+              <li> Use placeholder text to provide additional content hints </li>
+              <li> Placeholder text must have its own label for accessibility </li>
+              <li> Error messages appear inline in #CE3C23 </li>
+              <li> Use an action verb describing the purpose of the form for the button label rather than “Submit.”
+                <br> For example, on an event registration form, the button should say “Register”; on an e-mail subscription form, “Subscribe.” </li> </ul>
+            <h4>Form Sample</h4>
+            <div class="bs-docs-example cengage-bootstrap">
+              <img src="./images/form-sample.png"/>
+            </div>
+            <h4>Form Error Messages</h4>
+            <div class="bs-docs-example cengage-bootstrap">
+              <img src="./images/form-error-message.png"/>
+            </div>
+            <p> Forms with required fields must have the following notation at the top of the form: </p>
+            <p><strong>Required fields are indicated with *.</strong></p>
+            <p> Labels for required fields must include a red asterisk, that does not interfere with screen readers.
+              <br> A font glyph, such as Font Awesome, is suggested (see Quick Links appendix). </p>
+<pre class="prettyprint linenums">
+&lt;div&gt;
+  &lt;label for="firstName"&gt;
+    &lt;i class="iconasterisk"&gt;&lt;/i&gt;
+  &lt;/label&gt;
+  &lt;input type="text" name="firstName" id="firstName" aria-required="true"&gt;
+&lt;/div&gt;
+</pre>
+            <p>When tabbing through the form, a screen reader will announce “First name, edit field, required.”</p>
+            <p>A fieldset is required for radio buttons. The fieldset legend clearly describes what the user will be selecting.
+              <br>For example:</p>
+<pre class="prettyprint linenums">
+&lt;fieldset&gt;
+  &lt;legend&gt;Email Frequency&lt;/legend&gt;
+  &lt;label for=“d”&gt;Daily&lt;/label&gt; 
+  &lt;input type=“radio” name=“freq” id=“d”&gt;
+  &lt;label for=“w”&gt;Weekly&lt;/label&gt; 
+  &lt;input type=“radio” name=“freq” id=“w”&gt;
+  &lt;label for=“m”&gt;Monthly&lt;/label&gt; 
+  &lt;input type=“radio” name=“freq” id=“m”&gt;
+&lt;/fieldset&gt;
+</pre>
+            <p>Screen readers will announce this as “e-mail frequency, daily, radio button unchecked;
+              <br>e-mail frequency, weekly, radio button unchecked;
+              <br>e-mail frequency, monthly, radio button unchecked.”
+            </p>
+          </section>
+          <!-- ------------------- --------------------------------------------- -->
+          <!-- CUSTOME ERROR PAGES --------------------------------------------- -->
+          <!-- ------------------- --------------------------------------------- -->
+          <section id="custom-error-pages">
+            <div class="page-header"><h1>Custom Error Pages</h1></div>
+            <p>For a consistent brand experience on large websites, include custom maintenance and 404 pages. </p>
+            <h4>Best Practices</h4>
+            <ul>
+              <li>Error pages become more useful with custom messaging </li>
+              <li>Custom error pages add polish and professionalism </li>
+            </ul>
+            <h3>Standard default 404 error page</h3>
+            <div class="bs-docs-example cengage-bootstrap">
+              <img src="./images/standard-404-error.png"/>
+            </div>
+            <h3>Sample: custom 404 page</h3>
+            <div class="bs-docs-example cengage-bootstrap">
+              <img src="./images/custome-404-error.png"/>
+            </div>          
+          </section>
+<!-- ----------------- --------------------------------------------------------- -->         
+        </div><!-- End Span -->
+      </div><!-- End Row -->
+    </div><!-- End Container -->
+<!-- Footer ----------------------------------- -->
+     <footer id="footer" class="footer">
+    <!-- JAVASCRIPT ----------------------------------------------- -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      })
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/google-code-prettify/prettify.js"></script>
+  </body>
+</html>

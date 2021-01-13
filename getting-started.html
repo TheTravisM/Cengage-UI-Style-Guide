@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Getting · Started</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS STYLES -->
+    <link href="http://d-internal.cengage.com/documentation/guidelines/css/guidelines.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- ICONS -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="//d-internal.cengage.com/documentation/guidelines/img/favicon.png">
+
+    <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!-- Navbar ----------------------------------- -->
+    <div id="header" class="navbar navbar-inverse navbar-fixed-top"></div>
+
+<!-- Subhead -------------------------------------------------- -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Getting started</h1>
+    <p class="lead">Overview of the project and how to get started with a simple template.</p>
+  </div>
+</header>
+
+  <div class="container">
+
+<!-- Docs nav -------------------------------------------------- -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="210">
+          <li><a href="#download-bootstrap"><i class="icon-chevron-right"></i> The Source</a></li>
+          <li><a href="#file-structure"><i class="icon-chevron-right"></i> File structure</a></li>
+          <li><a href="#contents"><i class="icon-chevron-right"></i> What's included</a></li>
+          <li><a href="#html-template"><i class="icon-chevron-right"></i> HTML template</a></li>
+          <li><a href="#examples"><i class="icon-chevron-right"></i> Examples</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+<!-- Download -------------------------------------------------- -->
+        <section id="download-bootstrap">
+          <div class="page-header">
+            <h1>1. The Source</h1>
+          </div>
+          <p class="lead">Before linking, be sure to have a code editor (we recommend <a href="http://sublimetext.com/2">Sublime Text 2</a>) and some working knowledge of HTML and CSS. We won't walk through the source files here, but they are available to link to and get started.</p>
+
+          <h2>Connecting to the source</h2>
+          <p><strong>Fastest way to get started:</strong> get the compiled versions of our CSS, JS, and images. No docs or original source files.</p>
+          <p>All of the CSS and JS files are located on the CDN. Simply link to them in your HTML page and get started!</p>                      
+          <pre class="prettyprint linenums">
+&lt;link href="//cdn.cengage.com/libs/bootstrap/css/cengage-bootstrap.css" rel="stylesheet" media="screen"&gt;
+&lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+</pre>
+        </section>
+
+<!-- File structure -------------------------------------------------- -->
+        <section id="file-structure">
+          <div class="page-header">
+            <h1>2. File structure</h1>
+          </div>
+          <p class="lead">Within the CDN you'll find the following file structure and contents, logically grouping common assets and providing both compiled and minified variations.</p>
+          <p>If you look at the CDN file structure you'll see something like this:</p>
+<pre class="prettyprint linenums">
+  boostrap/
+  ├── css/
+      ├── cengage-bootstrap.css
+</pre>
+          <p>This is the most basic form of Cengage Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled and minified all the CSS (<code>cengage-bootstrap.*</code>).</p>
+          <p><strong>Please note that all JavaScript plugins require jQuery to be included.</strong></p>
+        </section>
+
+<!-- Contents -------------------------------------------------- -->
+        <section id="contents">
+          <div class="page-header">
+            <h1>3. What's included</h1>
+          </div>
+          <p class="lead">Cengage Bootstrap comes equipped with HTML, and CSS for all sorts of things, but they can be summarized with a handful of categories</p>
+
+          <h2>Docs sections</h2>
+          <h4><a href="./scaffolding.html">Scaffolding</a></h4>
+          <p>Global styles for the body to reset type and background, link styles, grid system, and two simple layouts.</p>
+          <h4><a href="./base-css.html">Base CSS</a></h4>
+          <p>Styles for common HTML elements like typography, code, tables, forms, and buttons. Also includes <a href="//fortawesome.github.io/Font-Awesome/">Font Awesome</a>, a great icon set.</p>
+          <h4><a href="./foundation-components.html">Foundation Components</a></h4>
+          <p>Basic styles for common interface components like tabs and pills, navbar, alerts, page headers, and more.</p>
+        </section>
+
+<!-- HTML template -------------------------------------------------- -->
+        <section id="html-template">
+          <div class="page-header">
+            <h1>4. Basic HTML template</h1>
+          </div>
+          <p class="lead">With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the <a href="./getting-started.html#file-structure">File structure</a>.</p>
+          <p>Now, here's a look at a <strong>typical HTML file</strong>:</p>
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Cengage Bootstrap 101 Template&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+          <p>To make this <strong>a Cengage Bootstrapped template</strong>, just include the appropriate CSS files:</p>
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Cengage Bootstrap 101 Template&lt;/title&gt;
+    &lt;!-- Cengage Bootstrap --&gt;
+    &lt;link href="//cdn.cengage.com/libs/bootstrap/css/cengage-bootstrap.css" rel="stylesheet" media="screen"&gt;
+  &lt;/head&gt;
+  &lt;body class="cengage-boostrap"&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+          <h3>IE7 to IE9 Compatibility</h3>
+          <p>If you would like to make compatable with later browsers.</p>
+          <p>This has the additional <code>&lt;[if IE 8]&gt;</code> and <code>&lt;[if lt IE 9]&gt;</code> statements</p>
+<pre class="prettyprint linenums">
+&lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;
+&lt;!--[if lt IE 9]&gt;&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;
+</pre>
+          <h2>Standard HTML Template</h2>
+          <p><strong>Just copy and paste this template to get started</strong></p>
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Cengage Bootstrap 101 Template&lt;/title&gt;
+    &lt;!-- Cengage Bootstrap --&gt;
+    &lt;link href="//cdn.cengage.com/libs/bootstrap/css/cengage-bootstrap.css" rel="stylesheet" media="screen"&gt;
+    &lt;!--[if IE 8]&gt;&lt;html lang="en-us" class="ie8"&gt;&lt;![endif]--&gt;
+    &lt;!--[if lt IE 9]&gt;&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;
+    &lt;link rel="shortcut icon" href="//cdn.cengage.com/libs/bootstrap/img/favicon.png"&gt;
+  &lt;/head&gt;
+  &lt;body class="cengage-boostrap"&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>          
+          <p><strong>And you're set!</strong> With those files added, you can begin to develop any site or application with Cengage Bootstrap.</p>                      
+        </section>
+
+<!-- Examples -------------------------------------------------- -->
+        <section id="examples">
+          <div class="page-header"><h1>5. Examples</h1></div>
+          <p class="lead">Move beyond the base template with a few example layouts. We encourage folks to iterate on these examples and not simply use them as an end result.</p>
+          <ul class="thumbnails bootstrap-examples">
+            <!--[COLUMNS]-->
+            <li class="span3">
+              <a class="thumbnail" href="./examples/3-column.html" target="_blank">
+                <img src="./images/3-column-layout.png" alt="">
+              </a>
+              <h4>3 Column Layout</h4>
+              <p>Example HTML document with all the CSS and JavaScript.</p>
+            </li>
+            <li class="span3">
+              <a class="thumbnail" href="./examples/left-column.html" target="_blank">
+                <img src="./images/left-column.png" alt="">
+              </a>
+              <h4>2 Column Left Navigation</h4>
+              <p>Example HTML document with left navigation bar and all the CSS and JavaScript.</p>
+            </li>
+            <li class="span3">
+              <a class="thumbnail" href="./examples/right-column.html" target="_blank">
+                <img src="./images/right-column-layout.png" alt="">
+              </a>
+              <h4>2 Column Right Navigation</h4>
+              <p>Example HTML document with right navigation bar and all the CSS and JavaScript.</p>
+            </li>
+            <!--[VIDEOS]-->
+            <li class="span3">
+              <a class="thumbnail" href="./examples/single-video-player.html" target="_blank">
+                <img src="./images/single-video-player.png" alt="">
+              </a>
+              <h4>Single Video Player</h4>
+              <p>Marketing page with equal-width navigation links in a modified navbar.</p>
+            </li>
+            <li class="span3">
+              <a class="thumbnail" href="./examples/multi-video-player.html" target="_blank">
+                <img src="./images/multi-video-player.png" alt="">
+              </a>
+              <h4>Multi Video Player</h4>
+              <p>Marketing page with equal-width navigation links in a modified navbar.</p>
+            </li>
+            <li class="span3">
+              <a class="thumbnail" href="./examples/multi-tab-video-player.html" target="_blank">
+                <img src="./images/multi-tab-video-player.png" alt="">
+              </a>
+              <h4>Tabbed Video Player</h4>
+              <p>Marketing page with equal-width navigation links in a modified navbar.</p>
+            </li>
+            <!--[EXTRA]-->
+            <li class="span3">
+              <a class="thumbnail" href="./examples/1-column.html" target="_blank">
+                <img src="./images/1-column.png" alt="">
+              </a>
+              <h4>1 Column No Navigation</h4>
+              <p>Example HTML document with no navigation bars, but all the CSS and JavaScript.</p>
+            </li>
+          </ul>
+        </section>
+
+<!-- CLOSING THE CONTENT -------------------------------------------------- -->
+      </div><!--[END SPAN9]-->
+    </div><!--[END ROW]-->
+  </div><!--[END CONTAINER]-->
+<!-- Footer ----------------------------------- -->
+     <footer id="footer" class="footer">
+    <!-- JAVA SCRIPT ---------------------------------------------- -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      })
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/google-code-prettify/prettify.js"></script>
+  </body>
+</html>

@@ -1,0 +1,430 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Up and Running with Bootstrap</title>
+<link href="//d-www.cengage.com/sandbox/travis/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="//d-www.cengage.com/sandbox/travis/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="//d-www.cengage.com/sandbox/travis/bootstrap/css/cengage-bootstrap.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim for IE backwards compatibility -->
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+  
+<div class="container-fluid">
+  
+  <!-- IMAGE CAROUSEL -->
+  <h4>Image Carousel</h4>
+  
+  <div class="carousel slide" id="artists">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="//d-www.cengage.com/sandbox/travis/bootstrap/images/larue.jpg">
+        <div class="carousel-caption">
+          <h4>Tile 1</h4>
+          <p>Content for The First Image</p>
+        </div>
+      </div>
+     
+      <div class="item">
+        <img src="//d-www.cengage.com/sandbox/travis/bootstrap/images/smith.jpg">
+        <div class="carousel-caption">
+          <h4>Tile 2</h4>
+          <p>Content for The Second Image</p>
+        </div>
+      </div>
+      <div class="item">       
+        <img src="//d-www.cengage.com/sandbox/travis/bootstrap/images/ta.jpg">
+        <div class="carousel-caption">
+          <h4>Tile 3</h4>
+          <p>Content for The Fourth Image</p>
+        </div>  
+      </div>
+    </div>
+    <a href="#artists" class="left carousel-control" data-slide="prev">&lsaquo;</a> 
+    <a href="#artists" class="right carousel-control" data-slide="next">&rsaquo;</a>
+  </div>
+  
+  <!-- Modal Windows -->
+  <h4>Modal Windows</h4>
+  <p><a href="#launch" class="btn btn-warning btn-large" data-toggle="modal">click me!</a></p>
+  <section id="launch" class="modal hide fade">
+    <header class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h3>Roux Academy Conference</h3>
+    </header>
+    <div class="modal-body">
+    <h4>About The Event</h4>
+    <p>Information here about the event thatis poped upo in he Modal Windows</p>
+    </div>
+    <footer class="modal-footer">
+      <button class="btn btn-primary" data-dismiss="modal">Closed</button>
+    </footer>
+  </section>
+  
+   
+  
+  
+  <!--- TAB --->  
+  <h4>Tabs</h4>
+ 
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="#tab1" data-toggle="tab">Tab 1 Active Tab</a>
+    </li>
+    <li>
+      <a href="#tab2" data-toggle="tab">Tab 2</a>
+    </li>
+    <li>
+      <a href="#tab3" data-toggle="tab">Tab 3</a>
+    </li>
+    <li>
+      <a href="#tab4" data-toggle="tab">Tab 4</a></li>
+  </ul>
+
+  <section class="tab-content">
+    <article class="tab-pane active" id="tab1">
+      <h3>Tab 1 Heading</h3>
+      <p>Tab 1 Content</p>
+    </article>
+    <article class="tab-pane" id="tab2">
+      <h3>Tab 2 Heading</h3>
+      <p>Tab 2 Content</p>
+    </article>
+    <article class="tab-pane" id="tab3">
+      <h3>Tab 3 Heading</h3>
+      <p>Tab 3 Content</p>
+    </article>
+    <article class="tab-pane" id="tab4">
+      <h3>Tab 4 Heading</h3>
+      <p>Tab 4 Content</p>
+    </article>
+  </section>
+  
+  
+  <!--- Pill Based Dropdown Menu Navigation --->  
+  <h4>Pill Based Dropdown Menu Navigation</h4>
+  <nav>         
+    <ul class="nav nav-pills">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">The Artist</a></li>
+      <li class="active"><a href="#">Active</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Travis<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Sub Link 1</a></li>
+          <li><a href="#">Sub Link 1</a></li>
+          <li><a href="#">Sub Link 1</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Awesome</a></li>
+      <li><a href="#">Page</a></li>
+    </ul> 
+  </nav> 
+    
+  <!--- Dropdown Menu Navigation --->
+  <h4>Dropdown Menu Navigation</h4>
+  <nav class="navbar navbar-inverse">    
+    <div class="navbar-inner">    
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>     
+      <a class="brand" href="#">Travis Mikolay</a>       
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Travis<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sub Link 1</a></li>
+              <li><a href="#">Sub Link 1</a></li>
+              <li><a href="#">Sub Link 1</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="#">Active</a></li>
+          <li><a href="#">Awesome</a></li>
+          <li><a href="#">Page</a></li>
+        </ul>
+      </div>           
+    </div>  
+  </nav> 
+  
+    <!--- Responsive Navigation Bar --->
+  <h4>Responsive Navigation Bar</h4>
+  <nav class="navbar navbar-inverse">    
+    <div class="navbar-inner">    
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>     
+      <a class="brand" href="#">Travis Mikolay</a>       
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="#">Travis</a></li>
+          <li class="active"><a href="#">Active</a></li>
+          <li><a href="#">Awesome</a></li>
+          <li><a href="#">Page</a></li>
+        </ul>
+      </div>           
+    </div>  
+  </nav> 
+  
+  
+  <!--- Nav Tabs Pills --->
+  <h4>Inverse Brand Navigation Bar</h4>
+  <nav class="navbar navbar-inverse"> 
+    <div class="navbar-inner">
+      <a class="brand" href="#">Brand</a> 
+      <ul class="nav">
+        <li><a href="#">Travis</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li><a href="#">Awesome</a></li>
+        <li><a href="#">Page</a></li>
+      </ul>  
+    </div>  
+  </nav> 
+
+  <!--- Nav Tabs Pills --->
+  <h4>Brand within Navigation Bar</h4>
+  <nav class="navbar"> 
+    <div class="navbar-inner">
+      <a class="brand" href="#">Brand</a> 
+      <ul class="nav">
+        <li><a href="#">Travis</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li><a href="#">Awesome</a></li>
+        <li><a href="#">Page</a></li>
+      </ul>  
+    </div>  
+  </nav>   
+  
+  <!--- Nav Tabs Pills --->
+  <h4>Navigation Bar</h4>
+  <nav class="navbar"> 
+    <div class="navbar-inner"> 
+      <ul class="nav">
+        <li><a href="#">Travis</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li><a href="#">Awesome</a></li>
+        <li><a href="#">Page</a></li>
+      </ul>  
+    </div>  
+  </nav> 
+  
+<!--- Nav Tabs Pills --->
+  <h4>Navigation Pills Stacked</h4>
+  <nav>    
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#">Travis</a></li>
+      <li class="active"><a href="#">Mikolay</a></li>
+      <li><a href="#">Awesome</a></li>
+      <li><a href="#">Page</a></li>
+    </ul>  
+  </nav>   
+<!--- Nav Tabs Pills --->
+  <h4>Navigation Pills</h4>
+  <nav>    
+    <ul class="nav nav-pills">
+      <li><a href="#">Travis</a></li>
+      <li class="active"><a href="#">Mikolay</a></li>
+      <li><a href="#">Awesome</a></li>
+      <li><a href="#">Page</a></li>
+    </ul>  
+  </nav>  
+  
+<!--- Nav Tabs Stacked --->
+  <h4>Navigation Tabs Stacked</h4>
+  <nav>    
+    <ul class="nav nav-tabs nav-stacked">
+      <li><a href="#">Travis</a></li>
+      <li class="active"><a href="#">Mikolay</a></li>
+      <li><a href="#">Awesome</a></li>
+      <li><a href="#">Page</a></li>
+    </ul>  
+  </nav>
+  
+<!--- Nav Tabs --->
+  <h4>Navigation Tabs</h4>
+  <nav>    
+    <ul class="nav nav-tabs">
+      <li><a href="#">Travis</a></li>
+      <li class="active"><a href="#">Mikolay</a></li>
+      <li><a href="#">Awesome</a></li>
+      <li><a href="#">Page</a></li>
+    </ul>  
+  </nav>
+  
+<!--- Pager Next and Previous Links --->
+  <h4>Pager Next and Pervious</h4>
+  <ul class="pager">
+    <li class="previous disabled"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul> 
+
+<!--- PAGINATION --->
+  <h4>Pagination</h4>
+  <nav class="pagination pagination-right">
+    <ul>
+      <li class="disabled"><a href="#">&lt;&lt;</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&gt;&gt;</a></li>
+    </ul>
+  </nav>
+
+<!--- BREADCRUMB --->  
+  <div class="row-fluid">
+      <nav class="span12">
+        <ul class="breadcrumb">
+          <li><a href="#">Travis</a> <span class="divider">&raquo</span></li>
+          <li><a href="#">Mikoaly</a> <span class="divider">&raquo</span></li>
+          <li class="active">Awesome!</li>
+        </ul>
+      </nav>
+    </div>
+
+<!--- Buttons ---> 
+  <h2>Buttons</h2>
+  
+  <a href="#" class="btn">Class btn</a>
+  <a href="#" class="btn">Class btn btn-primary</a>
+
+  <div class="row-fluid">
+    <div class="offset2">
+      <h3>Button Colors</h3>
+      <a href="#" class="btn btn-large">default</a>
+      <a href="#" class="btn btn-primary btn-large">btn-primary</a>
+      <a href="#" class="btn btn-info btn-large">btn-info</a>
+      <a href="#" class="btn btn-success btn-large">btn-success</a>
+      <a href="#" class="btn btn-warning btn-large">btn-warning</a>
+      <a href="#" class="btn btn-danger btn-large">btn-danger</a>
+      <a href="#" class="btn btn-inverse btn-large">btn-inverse</a>
+    </div>
+  </div>  
+  <br>
+  <br>
+  <div class="row-fluid">
+    <div class="span2">
+      <a href="#" class="btn btn-primary btn-large">btn-primary</a>
+      <br> <a href="#" class="btn btn-primary ">btn-primary</a>
+      <br> <a href="#" class="btn btn-primary btn-small">btn-primary</a>
+      <br> <a href="#" class="btn btn-primary btn-mini">btn-primary</a>
+    </div>
+    <div class="span2">
+      <a href="#" class="btn btn-info btn-large">btn-info</a>
+      <br> <a href="#" class="btn btn-info">btn-info</a>
+      <br> <a href="#" class="btn btn-info btn-small">btn-info</a>
+      <br> <a href="#" class="btn btn-info btn-mini">btn-info</a>
+    </div>
+    <div class="span2">
+      <a href="#" class="btn btn-success btn-large">btn-success</a>
+      <br> <a href="#" class="btn btn-success">btn-success</a>
+      <br> <a href="#" class="btn btn-success btn-small">btn-success</a>
+      <br> <a href="#" class="btn btn-success btn-mini">btn-success</a> 
+    </div>
+    <div class="span2">
+      <a href="#" class="btn btn-warning btn-large">btn-warning</a>
+      <br> <a href="#" class="btn btn-warning">btn-warning</a>
+      <br> <a href="#" class="btn btn-warning btn-small">btn-warning</a>
+      <br> <a href="#" class="btn btn-warning btn-mini">btn-warning</a>
+    </div> 
+    <div class="span2">
+      <a href="#" class="btn btn-danger btn-large">btn-success</a>
+      <br> <a href="#" class="btn btn-danger">btn-success</a>
+      <br> <a href="#" class="btn btn-danger btn-small">btn-success</a>
+      <br> <a href="#" class="btn btn-danger btn-mini">btn-success</a> 
+    </div>
+    <div class="span2">
+      <a href="#" class="btn btn-inverse btn-large">btn-success</a>
+      <br> <a href="#" class="btn btn-inverse">btn-success</a>
+      <br> <a href="#" class="btn btn-inverse btn-small">btn-success</a>
+      <br> <a href="#" class="btn btn-inverse btn-mini">btn-success</a> 
+    </div>
+  </div>
+  
+  <h3>Button Size</h3>
+  <a href="#" class="btn btn-large">btn-large</a>
+  <a href="#" class="btn">default</a>
+  <a href="#" class="btn btn-small">btn-small</a>
+  <a href="#" class="btn btn-mini">btn-mini</a>
+   
+  
+  <h3>Images</h3>
+  
+  <h3>Icons</h3>
+
+    
+  <div class="row-fluid">
+    <article class="span12">
+      <h1>Schedule</h1>
+      <p class="lead">With over 35 seminars and 60 exhibits at this year&rsquo;s Roux Academy CAC, there is truly something for every art student. Learn about color, light, and texture; see spray paint tagging in a new light, as a breath-taking 20 foot high graffiti wall is built before your very eyes over the course of the week; and rub paint brushes with some of the most talented artists in the world.</p>
+      <h2>Monday, March 5, 2013: Art in Full Color</h2>
+      <p><img class="img-circle img-polaroid pull-right" src="//d-www.cengage.com/sandbox/travis/bootstrap/images/flower.jpg"/>The first day of CAC events and exhibits is kicked off under the theme of <strong>Art in Full Color</strong>. From a demonstration in graffiti art on a wall of the Rousseau Room, to the exhibit of colorful glazed modern glassware in the Dover Hall, Art in Full Color will get CAC started in full swing!</p>
+      <hgroup>
+        <h3>Art in Unexpected Places <a href="#" class="btn btn-primary btn-large">learn more</a></h3>
+        <h4><span class="icon-calendar"></span> 09:30-10:30am: Elizabeth Hall</h4>
+      </hgroup>
+      <p>Watch <em>LaVonne L. LaRue</em>, a Chicago graffiti artist share her love and skill of mural art on Monday&rsquo;s schedule, as she starts the painting of a 20-foot high wall in the Rousseau Room of Hotel Contempo, which will be finished at the end of the conference. Make sure to show up a bit early, as this session will be standing-room only.</p>
+      <hgroup>
+        <h3>Art in Full Bloom <a href="#" class="btn btn-info btn-small">learn more</a></h3>
+        <h4>11:00am-1pm: Victoria Hall</h4>
+      </hgroup>
+      <p>Drawing and painting flowers may seem like a first-year art student&rsquo;s assignment, but Lorenzo Garcias brings depth, shadows, light, and color to new heights with his unique technique of painting on canvas with ceramic glaze. This session is sure to be a hit with mixed media buffs.</p>
+      <hgroup>
+        <h3>Still Life <a href="#" class="btn btn-success btn-mini">learn more</a></h3>
+        <h4><span class="icon-calendar"></span> 2:30-4:00pm: Dennison Hall</h4>
+      </hgroup>
+      <p>Grab your pencils, charcoal, acrylics, watercolors, or whatever painting tools suit your fancy, and participate in the capturing of various still life settings that are staged all around Dennison Hall. You won&rsquo;t believe the wealth and depth of choices.</p>
+      <blockquote>
+        <p>&quot;This is simply an amazing conference. I am inspired by it every year I attend.&quot;</p>
+        <p><small>Katie Cross</small></p>
+      </blockquote>
+      <h2>Tuesday, March 6, 2013: Water in Art</h2>
+      <p><img class="img-rounded img-polaroid pull-right" src="//d-www.cengage.com/sandbox/travis/bootstrap/images/artist.jpg"/><strong>Water in Art</strong> is the theme for the second day, as art students from around the world gather at the Fountain of Intrigue in the gardens of Hotel Contempo to create ice sculptures, and art lecturers discuss the use of water as an art material, and water as an art subject.</p>
+      <hgroup>
+        <h3>Water in Art Kickoff Session <a href="#" class="btn btn-warning">learn more</a></h3>
+        <h4><span class="icon-calendar"></span> 09:30-10:30am: Elizabeth Hall</h4>
+      </hgroup>
+      <p>Jennifer Jerome, a native of New Orleans, whose work has centered around abstract images that depict flooding and rebuilding, will talk about how the floods inspired her artistically, and how, despite the sadness of devastation and lives lost, her work also depicts the hope and togetherness of a community that has persevered.</p>
+      <hgroup>
+        <h3>Ice Sculptures <a href="#" class="btn btn-danger">learn more</a></h3>
+        <h4><span class="icon-calendar"></span> 10:30am-1pm: Fountain of Intrigue</h4>
+      </hgroup>
+      <p>Get on your mittens and earmuffs, and join your fellow artists at the Fountain of Intrigue, in the Hotel Contempo gardens, where the ambient temperature has been turned down to allow the sculpting of ice into the most mysterious and beautiful of shapes. Richard Reed will share his secrets for chiseling ice into a shape that your imagination has envisioned. </p>
+      <p>There is an extra fee of $25 for the rental of the tools needed to sculpt ice, if you plan to participate. </p>
+      <hgroup>
+        <h3>Deep Sea Wonders <a href="#" class="btn btn-inverse">learn more</a></h3>
+        <h4><span class="icon-calendar"></span> 2:30-4:00pm: Dennison Hall</h4>
+      </hgroup>
+      <p>Gerard Kent Donahue has been inspiring deep sea divers to paint what they experience under water for nearly two decades. Not only does he explain texture, color, and tools, be he also explains methods for capturing your under sea explorations in your mind for future expulsion onto canvas.</p>
+      <h3>Exhibit Halls A &amp; B</h3>
+      <p><img class="img-polaroid pull-right" src="//d-www.cengage.com/sandbox/travis/bootstrap/images/road.jpg"/>Look for these art displays in Exhibit Halls A and B throughout the week.</p>
+      <ul>
+        <li>Area high school students will feature their best paintings and prints.</li>
+        <li>Roux Academy students will display sculpture, painting, and prints.</li>
+        <li>Conference participants are welcome to bring their current work for feedback and suggestions.</li>
+      </ul>
+      <p>Be sure to visit three local photographers, who also teach at RA, who will be displaying their works.</p>
+      <dl class="dl-horizontal">
+        <dt>Sam Gilmore</dt>
+        <dd>Ocean photography</dd>
+        <dt>Ralph Samson</dt>
+        <dd>Wildlife closeups</dd>
+        <dt>Mary Smith</dt>
+        <dd>Photography through the microscope</dd>
+      </dl>
+    </article>
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

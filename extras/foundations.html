@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Foundation · Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS STYLES -->
+    <link href="./css/production/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/production/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="./css/docs.css" rel="stylesheet">
+    <link href="./css/production/cengage-bootstrap-skin.css" rel="stylesheet">
+    <link href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <!-- ICONS -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://twitter.github.io/bootstrap/assets/ico/favicon.png">
+
+    <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!-- Navbar ----------------------------------- -->
+    <div id="header" class="navbar navbar-inverse navbar-fixed-top"></div>
+
+<!-- Subhead  -------------------------------------------------- -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Foundations</h1>
+    <p class="lead">Overview of the web standards for <br>Cengage Learning corporate web pages and sites</p>
+  </div>
+</header>
+
+  <div class="container">    
+<!-- Docs nav -------------------------------------------------- -->
+    <div class="row-fluid">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="210">
+          <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
+          <li><a href="#technical-standards"><i class="icon-chevron-right"></i> Technical Standards</a></li>
+          <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
+          <li><a href="#color-palette"><i class="icon-chevron-right"></i> Color Palette</a></li>
+          <li><a href="#secondary-color-palette"><i class="icon-chevron-right"></i> Secondary Color Palette</a></li>
+          <li><a href="#photography-and-imagery"><i class="icon-chevron-right"></i> Photography and imagery</a></li>
+          <li><a href="#basic-structure"><i class="icon-chevron-right"></i> Basic Structure</a></li>
+          <li><a href="#content-grid"><i class="icon-chevron-right"></i> Content Grid</a></li>
+          <li><a href="#header-options"><i class="icon-chevron-right"></i> Header Options</a></li>
+          <li><a href="#footer-options"><i class="icon-chevron-right"></i> Footer Options</a></li>
+          <li><a href="#template-files"><i class="icon-chevron-right"></i> Template Files</a></li>
+          <li><a href="#local-navigation"><i class="icon-chevron-right"></i> Local Navigation</a></li>
+          <li><a href="#breadcrumb"><i class="icon-chevron-right"></i> Breadcrumb</a></li></a>
+          <li><a href="#search-navigation"><i class="icon-chevron-right"></i> Search Navigation</a></li></a>
+          <li><a href="#column-navigation"><i class="icon-chevron-right"></i> Column Navigation</a></li></a>
+        </ul>
+      </div>
+      <div class="span9">
+    <!-- Universal Grid -------------------------------------------------- --> 
+        <section id="overview">
+          <div class="page-header">
+            <h1>Overview <small>About this document</small></h1>
+          </div>
+          <div class="row-fluid">
+          <div class="span9">
+            <p>This document describes web standards for Cengage Learning corporate web pages and sites. The guidelines also address usage of global elements — such as footers — for all Cengage Learning websites.</p>
+            <p>This document contains guidelines for overall page templates, specifications for individual design elements, and best practices. These guidelines ensure a consistent presentation of Cengage Learning and compliance with our accessibility standards.</p>
+            <p>The Quick Links appendix is a list of resources, links, templates and information to support specifications or requirements mentioned throughout this document.</p>
+          </div>
+          <div class="span3">
+            <h4>Contact</h4>
+            <ul class="unstyled">
+              <li>Kate Pultz</li>
+              <li>Web Designer, Stragitic Creative Services</li>
+              <li>248-699-8135(o)</li>
+              <li>kate.pultz@cengage.com</li>
+            </ul>
+          </div>
+          </div>
+        </section>
+    <!-- Columns -------------------------------------------------- -->
+        <section id="technical-standards">
+          <div class="page-header">
+            <h1>Technical Standards <small> Supported Technology</small></h1>
+          </div>
+          <h3>Screen Resolution</h3>
+          <p>1024 X 768</p>
+          <p>Safe content area (no margins)</p>
+          <p>975 x 620 pixels</p>
+          <p>(Height includes header and footer)</p>
+          <h3>Supported Browsers and Platforms</h3>
+          <p>Browser usage on Cengage Learning properties are assessed each quarter to determine an appropriate support level (see Quick Links appendix).</p>         
+          <p>Supported browsers and devices vary based on the specific website objectives.</p>
+          <h4>Requirements</h4>
+          <ul>
+            <li>Web pages must display and function correctly in all browsers and platforms, including mobile devices, identified as “supported” per current guidelines (see Quick Links appendix)</li>
+            <li>Web pages must meet the Cengage Learning target compliance level of WCAG 2.0 Level AA for accessibility (see Accessibility appendix)</li>
+            <li>Elements using CSS or JavaScript must gracefully degrade for the older or less capable browsers in our supported list to still allow access to the basic content although the appearance may change. For example, CSS curved buttons may appear square cornered in older versions of IE</li>
+            <li>Use CSS3 or JavaScript for transitions and animations. When possible, CSS3 is preferred for better performance and simplicity</li>
+            <li>Flash is not supported and should not be used as a page element</li>
+            <li>To ensure accessibility, animations or multimedia must include viewer controls, a pause and/or stop button and must follow Cengage Learning Marketing Video Guidelines (see Quick Links appendix)</li>
+          </ul>
+        </section>
+    <!-- Elements Of Style -------------------------------------------------- -->
+        <section id="typography">
+          <div class="page-header">
+            <h1>Typography</h1>
+          </div>
+          <div class="row-fluid">
+            <div class="span7">
+              <h2>Color</h2>
+              <dl class="dl-horizontal">
+                <dt>All body type:</dt>
+                <dd>#333</dd>
+                <dt>All page titles:</dt>
+                <dd>#333</dd>
+                <dt>Navigation headings:</dt>
+                <dd>#AF57700</dd>
+                <dt>Navigation links:</dt> 
+                <dd>#0071A2</dd>
+                <dt>Captions:</dt> 
+                <dd>#000</dd>
+              </dl>
+              <h3>Font (HTML)</h3>
+              <p>CSS Cascades as follows:</p>
+              <p>font-family: Arial, Helvetica, sans-serif</p>
+            </div>
+            <div class="span5">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Use the Cengage Learning Marketing CSS to ensure that fonts and sizes display consistent with the brand standards</li>
+                <li>Use auto-hyphenation only if needed</li>
+                <li>The term “Cengage Learning” should use a non-breaking space character to keep the two words together</li>
+                <li>Avoid blinking or moving (marquee) text</li>
+                <li>Maximum line length should be 100–120 characters for on-screen readability, ideally slightly shorter at 55-75 characters per line</li>
+             </ul>
+            </div>
+          </div>
+          <h2>Text Within Graphics</h2>
+          <p>Limit text in banner graphics to approximately 200 characters for brand identification, a value statement and the call to action. This character count will fit comfortably in the area and allow sufficient reading time in a rotating banner.</p>
+          <p>Use Kievit, which is our corporate font, or Arial.</p>
+          <p>In Photoshop, use “crisp” anti-alias setting with a tracking value of 20.</p>
+          <p><small>Sample banner graphic with text</small></p>
+          <h4>Requirements</h4>
+          <ul>
+            <li>For accessibility, use text rendered as graphics sparingly since it will appear blurry to lowvision users employing magnification tools</li>
+            <li>All graphic text must have the appropriate ALT and title attributes for accessibility</li>
+            <li>Graphics are not to be used for navigation</li>
+            <li>Ensure that text and graphics when viewed without color are accessible, meeting WCAG 2.0 Level AA standards (see Accessibility appendix)</li>
+          </ul>
+          <div class="bs-docs-example">
+            <img class="img-polaroid" src="./images/banner-graphic-text.png"/>
+          </div>
+          </section> 
+    <!--- COLOR PALETTE -------------------------------------------------- -->
+        <section id="color-palette">
+          <div class="page-header">                    
+          <h1>Color Palette</h1>
+          </div>
+          <h2>Primary Color Palette</h2>
+          <p class="lead">The base color palette for Cengage Learning has three options for the header and footer color and specifications for text and link colors.</p>
+          <h4>Requirements</h4>
+          <ul>
+            <li>The corporate tab color palette is reserved for corporate level pages;<br> other websites should not use these colors for tabs in the header</li>
+            <li>#99CC33 is reserved for CengageBrain.com</li>
+            <li>#0071A2 is reserved for linked text</li>
+          </ul>         
+          <div class="row-fluid">
+            <div class="span12">
+            <h2>Header and footer</h2>
+          <div class="row-fluid">           
+            <div class="span4">
+              <h3>Blue palette</h3>
+              <div class="row-fluid">
+                <div class="span6">
+                  <div class="well" style="height:40px; background:#003D6C;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #003D6C</li>
+                     <li>RGB 0 - 61 - 108</li>
+                     <li>HEX #002846</li>
+                     <li>RGB 0 - 40 - 70</li>
+                   </ul> 
+                </div>
+                <div class="span6">
+                  <div class="well" style="height:40px; background:#003D6C;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #003D6C</li>
+                     <li>RGB 0 - 61 - 108</li>
+                     <li>HEX #002846</li>
+                     <li>RGB 0 - 40 - 70</li>
+                   </ul> 
+                </div>
+              </div>
+            </div>
+            <div class="span4">
+              <h3>Black palette</h3> 
+               <div class="row-fluid">
+                <div class="span6">
+                  <div class="well" style="height:40px; background:#666;"></div>
+                     <ul class="unstyled">
+                       <li>HEX #666</li>
+                       <li>RGB 51 51 51</li>
+                       <li>HEX #000000</li>
+                       <li>RGB 0 - 0 - 0</li>
+                     </ul> 
+                </div>
+                <div class="span6">
+                  <div class="well" style="height:40px; background:#000;"></div>
+                   <ul class="unstyled">
+                     <li>(Footer)</li>
+                     <li>HEX #000</li>
+                     <li>RGB 0 - 0 - 0</li>
+                   </ul> 
+                </div>
+              </div>
+            </div>
+            <div class="span4">
+              <h3>White palette</h3> 
+               <div class="row-fluid">
+                <div class="span6">
+                   <div class="well" style="height:40px; background:#fff;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #FFF</li>
+                     <li>RGB 255-255-255</li>
+                     <li>HEX #666</li>
+                     <li>RGB 102 - 102 - 102</li>
+                   </ul> 
+                </div>
+                <div class="span6">
+                  <div class="well" style="height:40px; background:#000;"></div>
+                   <ul class="unstyled">
+                     <li>(Footer)</li>
+                     <li>HEX #000</li>
+                     <li>RGB 0 - 0 - 0</li>
+                   </ul>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Span 12 -->
+      </div><!-- END ROW -->
+
+<!-- Headline and Text Colors -->
+
+          <div class="row-fluid">
+            <div class="span12">
+            <h2>Headline and text colors</h2>
+          <div class="row-fluid">           
+            <div class="span6">
+              <h3>Blue palette</h3>
+              <div class="row-fluid">
+                <div class="span4">
+                  <div class="well" style="height:40px; background:#003D6C;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #003D6C</li>
+                     <li>RGB 0 - 61 - 108</li>
+                     <li>HEX #002846</li>
+                     <li>RGB 0 - 40 - 70</li>
+                   </ul> 
+                </div>
+                <div class="span4">
+                  <div class="well" style="height:40px; background:#003D6C;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #003D6C</li>
+                     <li>RGB 0 - 61 - 108</li>
+                     <li>HEX #002846</li>
+                     <li>RGB 0 - 40 - 70</li>
+                   </ul> 
+                </div>
+              </div>
+            </div>
+            <div class="span6">
+              <h3>Link colors</h3> 
+               <div class="row-fluid">
+                <div class="span4">
+                  <div class="well" style="height:40px; background:#AF5700;"></div>
+                     <ul class="unstyled">
+                       <li>(Nav Headings)</li>
+                       <li>HEX #AF5700</li>
+                       <li>RGB 175 - 87 - 0</li>
+                     </ul> 
+                </div>
+                <div class="span4">
+                  <div class="well" style="height:40px; background:#0071A2;"></div>
+                   <ul class="unstyled">
+                     <li>(Base)</li>
+                     <li>HEX #0071A2</li>
+                     <li>RGB 0 - 113 - 162</li>
+                   </ul> 
+                </div>
+                <div class="span4">
+                  <div class="well" style="height:40px; background:#CE3C23;"></div>
+                   <ul class="unstyled">
+                     <li>(Optional Active)</li>
+                     <li>HEX #CE3C23</li>
+                     <li>RGB 206 - 60 - 35</li>
+                   </ul> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Span 12 -->
+      </div><!-- END ROW -->  
+              
+<!-- Coroporate Tab Colors -->
+
+          <div class="row-fluid">
+            <div class="span12">
+            <h2>Corporate tab colors</h2>
+          <div class="row-fluid">           
+            <div class="span6">
+              <h3>Blue palette</h3>
+              <div class="row-fluid">
+                <div class="span4">
+                  <div class="well" style="height:40px; background:#AF5700;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #AF5700</li>
+                       <li>RGB 175 - 87 - 0</li>
+                   </ul> 
+                </div>
+                <div class="span4">
+                  <div class="well" style="height:40px; background:#5F8BA2;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #5F8BA2</li>
+                      <li>RGB 95 139 162</li>
+                   </ul> 
+                </div>
+              </div>
+            </div>
+            <div class="span2">
+              <h3>CengageBrain</h3> 
+                  <div class="well" style="height:40px; background:#99CC33;"></div>
+                     <ul class="unstyled">
+                       <li>HEX #99CC33</li>
+                       <li>RGB 153 - 204 - 51</li>
+                     </ul> 
+              </div>  
+                <div class="span4">
+                  <h3>&nbsp;</h3>
+                  <h4 class="text-error" ><strong>UPDATE</strong></h4>
+                  <p>Color #CC6600 has been replaced with #AF5700. The color has been adjusted to meet WCAG 2.0 Level AA accessibility for both large and small text.</p> 
+            </div>
+          </div>
+        </div><!-- End Span 12 -->
+      </div><!-- END ROW -->          
+
+        <div class="span12">
+          <p><strong>Please Note:</strong> Color chips may appear different in PDF or print than the actual color when viewed on-screen in a website.</p>
+        </div>
+        </section>    
+    <!--- SECONDARY COLOR PALETTE -------------------------------------------------- -->
+        <section id="secondary-color-palette">
+          <div class="page-header">                    
+            <h1>Secondary Color Palette</h1>
+          </div>
+          <p>A secondary color may be used for the tab(s) on the header on non-corporate sites, such as decision sites or digital product sites.</p>
+          <h4>Web Color Chip Chart</h4>
+          <ul>
+            <li>For best color representation, view the HTML color palette in your web browser (see Quick Links appendix)</li>
+          </ul>
+          <!--- color options with #FFF text --->
+          <div class="row-fluid">
+            <div class="span12">
+              <h3>Secondary tab color options with #FFF text</h3>              
+              <div class="row-fluid">
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#7C7666;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #7C7666</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#666633;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #666633</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#990033;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #990033</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#9B3C0C;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #9B3C0C</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#660066;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #660066</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+              </div><!-- ROW-FULID -->
+            </div><!-- End Span 12 -->            
+          </div><!-- END ROW -->
+         <div class="row-fluid">
+            <div class="span12">
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#333;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #333333</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#000;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #000</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#003D6C;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #002846</li>
+                     <li>RGB 0 40 70</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#005A8C;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #005A8C</li>
+                     <li>RGB 0 90 140</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#007CB8;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #007CB8</li>
+                     <li>RGB 0 124 184</li>
+                   </ul> 
+                </div>              
+              </div><!-- ROW-FULID -->
+            </div><!-- End Span 12 -->            
+         <!--- color options with #333 text --->
+          <div class="row-fluid">
+            <div class="span12">
+              <h3>Secondary tab color options with #333 text</h3>            
+              <div class="row-fluid">
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#5DBBDF;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #5DBBDF</li>
+                     <li>RGB 93 187 223</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#91CFE7;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #91CFE7</li>
+                     <li>RGB 145 207 231</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#BFE2F2;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #BFE2F2</li>
+                     <li>RGB 191 226 242</li>
+                   </ul> 
+                </div>                
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#E0DCCD;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #E0DCCD</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#FFFFFF;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #FFFFFF</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+              </div>
+            </div>     
+          </div><!-- END ROW -->
+          <div class="row-fluid">
+            <div class="span12">
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#CCCC99;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #CCCC99</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#8DA44B;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #8DA44B</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#FCB31C;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #FCB31C</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#B85B23;"></div>
+                  <ul class="unstyled">
+                     <li>HEX #B85B23</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>
+                <div class="span2">
+                  <div class="well" style="height:40px; background:#B0A4B0;"></div>
+                   <ul class="unstyled">
+                     <li>HEX #B0A4B0</li>
+                     <li>RGB 0 - 61 - 108</li>
+                   </ul> 
+                </div>              
+              </div><!-- ROW-FULID -->
+          </div><!-- End Span 12 -->            
+        </section><!-- END SECOND COLOR PALETTE -->
+    <!--- SECONDARY COLOR PALETTE -------------------------------------------------- -->  
+        <section id="photography-and-imagery">
+          <div class="page-header">
+            <h1>Photography and imagery</h1>
+          </div>
+          <p class="lead">Images and photography help Cengage.com maintain a cohesive look.</p>
+          <h3>Images should be unique and impactful:</h3>
+          <ul>
+            <li>Select simple, bold images with a single focus</li>
+            <li>Choose metaphorical rather than literal images whenever possible</li>
+            <li>Use easy-to-comprehend images that fit the message</li>
+            <li>Use clean backgrounds that don’t distract from the main image</li>
+          </ul>
+          <h3>Guidelines for stock photography:</h3>
+          <ul>
+            <li>Don’t use stock photos of people. Instead, obtain original images of customers, authors, etc. People photos should convey the scope and diversity of the Cengage Learning universe.</li>
+            <li>When using non-people stock photos, avoid clichés. Look for unique or unusual photos.</li>
+          </ul>
+          <h2>Home page promotions</h2>
+          <p>The home page may feature one or more large background images. One “hero” with a single focus and message is displayed per visit or screen refresh. The option for a background image is reserved for the home page. HTML text is preferred for accessibility when using a single static image.</p>
+          <h3>Specifications</h3>
+          <ul>
+            <li>Home page hero images fit 975 px x 470 px, with copy and critical image content in the top 280 px to clear the secondary message overlay band (126 px tall). Images may extend beneath the overlay bar to 2000 px x 1000 px for visual impact on larger screens</li>
+            <li>JavaScript code is used to display one image randomly from a set each time the page reloads or refreshes (see Quick Links appendix)</li>
+          </ul>
+          <h4>Hero sample:</h4> 
+          <p>Inner magenta border shows default visual area between header and footer (975 px x 470) on a typical screen size. Outer magenta line is full available area for expanded image background to fill larger screens. The tinted band area is the optional secondary message overlay area.</p>
+          <div class="bs-docs-example">
+            <img class="img-polaroid" src="./images/hero-sample-1.png"/>
+          </div>
+          <h2>Secondary pages</h2>
+          <p>A banner graphic conveys a single message; a slideshow script displays multiple messages or images. Page banners should support the page content and don't necessarily have a call to action.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Secondary pages may have a static image or slideshow that fits the page grid. Full width is 975 px with a suggested depth of 224 px, or with left column navigation, 724 px x 224 px</li>
+            <li>Limit slideshows to a maximum of five slides</li>
+            <li>Headshots, like an author photo, should be 120 px x 150 px</li>
+          </ul>
+          <p>Page banner area template: 975 px x 224 px page top banner with slideshow control bar</p>
+          <div class="bs-docs-example">
+            <img class="img-polaroid" src="./images/top-banner-slideshow.png"/>
+          </div>
+          <p>Page banner sample: 975 px wide page top single image banner</p>
+          <div class="bs-docs-example">
+            <img class="img-polaroid" src="./images/top-image-banner.png"/>
+          </div>
+          <h2>Secondary pages</h2>
+          <p>Banners are also used to link to additional pages or content within the website.</p>
+          <h3>Requirements</h3>
+          <ul>
+            <li>For accessibility, graphic text should be used sparingly since it will appear blurry to lowvision users employing magnification tools</li>
+            <li>Graphic text must have the appropriate ALT and title attributes for accessibility</li>
+            <li>Graphics are not to be used for navigation</li>
+          </ul>
+          <p>Page banner template: 724 x 224 JavaScript slideshow. Maximum of 5 slides.</p>
+          <div class="bs-docs-example">
+            <img class="img-polaroid" src="./images/banner-slideshow.png"/>
+          </div>
+          <p>Sample graphic banner: 724 px x 224 px graphic with text</p>
+          <div class="bs-docs-example">
+            <img class="img-polaroid" src="./images/sample-banner-text.png"/>
+          </div>          
+        </section> 
+                <section id="basic-structure">
+          <div class="page-header">
+            <h1>Basic Structure</h1>
+          </div>
+          <div class="row-fluid">
+            <div class="span12">
+              <p>The page structure includes the header and footer with an underlying grid for the content area.</p>
+              <p>A corporate home page has a large hero background image and message, with an optional secondary message 126 px tall overlay band at the bottom. This overlay as well as the page footer are anchored to the bottom of the browser window.</p>
+              <p><small>Page structure shown with corporate header/footer and home page hero image with overlay band</small></p>
+              <div class="bs-docs-example">
+                <img src="./images/page-structure-example-2.png"/>
+              </div><!-- End Example-->
+            </div>
+            <div class="span12">
+              <h4>Note</h4>
+              <ul>
+                <li>The corporate header and footer are shown. Available header and footer combinations are shown later in this section</li>
+              </ul>
+             <h4>Specifications</h4>
+              <ul>
+                <li>The header and footer background colors extend to the browser window edge, while content is fixed and centered at 975 px wide</li>
+                <li>With the footer anchored to the browser window, deeper page content will scroll while the footer remains stationary and always visible and accessible</li>
+                <li>The optional home page with hero image may also have an overlay band for additional copy with links or thumbnail images of screen captures, videos or book covers</li>
+                <li>If not using the hero image option, the page structure of the home page should follow the same grid as the secondary pages</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    <!-- Content Grid -->
+        <section id="content-grid">
+          <div class="page-header">
+            <h1>Content Grid</h1>
+          </div>
+          <p class="lead">Grid options for non-corporate pages and any Cengage Learning Marketing websites</p>
+          <p>The header and footer fill the visible width of the browser window. All other content except for a home page background is limited to the fixed 975 px width. This page grid may also be used for a home page as well as the secondary pages.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Grid option of 230 px left column for pagelevel navigation, 480 px wide center content column and 230 px wide right column for banners or additional content</li>
+            <li>Grid option of 230 px left column and 724 px wide content (2-column span)</li>
+            <li>Grid option of left 731 px wide content area (2-column span) with 230 px right column for navigation or additional content</li>
+          </ul>
+          <p>Page structure shown with corporate</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-content-grid.png"/>
+          </div>
+          <h3>Left column</h3>
+          <p>Use for secondary or local, page-level navigation.</p>
+          <h3>Main content</h3>
+          <p>The main content may be in the center column, span the left and center columns or the center and right.s</p>
+          <h3>Right column</h3>
+          <p>Use for persistent information like a contact list or a banner ad. A banner ad should expand or support the main page content, not distract from it.</p>
+          <p>In a layout with content spanning the left and center columns, use the right column for secondary or local, page-level navigation or leave blank.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Copy can span 2 columns of the grid but should not span all 3 to keep it at a readable maximum line length of 100–120 characters per line, with a preferred count of 55–75 characters per line</li>
+            <li>When content is only in 2 columns with no page-level navigation, use the left and center columns, and leave the right column blank for readable line lengths.</li>
+            <li>Images may run the full 975 px, fit in a single column or span 2 columns</li>
+            <li>If content spans 2 columns, use only left and center or center and right on a single page. Do not mix left spanning and right spanning together on a single page</li>
+            <li>Limit right column banner ads to a maximum of three</li>
+            <li>Right column content should never exceed the depth of the main page content</li>
+          </ul>
+        </section>
+    <!-- Header Options -------------------------------------------------- -->
+        <section id="header-options">
+          <div class="page-header">
+            <h1>Header Options</h1>
+          </div>
+          <p>The corporate header is reserved for pages in the corporate site or catalogs. All other websites and pages have three header options.</p>
+          <p>All headers may use the optional Descriptor text and the optional text area above the tab space, shown below on Option 2.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li><strong>Tabbed Header</strong> supports a single drop-down menu panel, indicated with the » symbol</li>
+            <li><strong>Tab Bank Header</strong> is for navigation without a drop-down menu panel</li>
+            <li>Use the <strong>Text Links Header</strong> when primary navigation will be in the left content column on the page</li>
+          </ul>
+          <p>Corporate Header</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-corporate-header.png"/>
+          </div>
+          <p>All samples are shown below in the blue palette.</p>
+          <p>Option 1: Tabbed Header with single drop-down menu option</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-tabbed-header-single-dropdown.png"/>
+          </div>
+          <p>Option 2: Tab Bank Header with optional Descriptor and optional text area used for Account Sign In information</p>
+          <div class="bs-docs-example">
+            <img src="./images/Example2-tab-bank.png"/>
+          </div>
+          <p>Option 3: Text Links Header with optional Descriptor</p>
+          <div class="bs-docs-example">
+            <img src="./images/example3-header.png"/>
+          </div>
+          <h3>All headers consist of:</h3>
+          <ul>
+            <li>Cengage Learning or other logo</li>
+            <li>Primary navigation</li>
+            <li>Optional text area above tab bank</li>
+          </ul>
+          <p>The Cengage Learning logo in the header or branded footer should always link to www.cengage.com.</p>
+          <p>Link to the home page for a website using the Descriptor link text and a website-specific label, such as MindTap or Engage 2013.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Tabs may be white, a color from the secondary palette or match the footer color</li>
+            <li>Descriptors are optional text that can be used to label the tab bank or as a navigational</li>
+            <li>An optional text area above the tabs is available on any of the three options for content such as account information</li>
+          </ul>                      
+        </section>
+    <!-- Footer Options -------------------------------------------------- -->
+        <section id="footer-options">
+          <div class="page-header">
+            <h1>Footer Options</h1>
+          </div>
+          <p>The corporate footer includes the country selector. Other websites should use the base footer or a full footer. The footer stays anchored to the bottom of the browser window, regardless of the height of the page content. Even if the page content needs to scroll, the footer always remains visible on screen.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li><strong>Corporate footer</strong> includes the country selector</li>
+            <li><strong>Full, base</strong> and <strong>branded footers</strong> have the option to include social media links</li>
+            <li><strong>The base footer</strong> is the minimum recommended links to be included on all websites and pages</li>
+            <li><strong>Branded footer</strong> is used if the logo in the header is anything other than Cengage Learning or an imprint logo. The Cengage Learning logo in the branded footer should link to www.cengage.com</li>
+            <li>Use the white level of the footer for secondary, persistent navigation links specific to a website</li>
+          </ul>
+          <p>Corporate Footer</p>
+          <div class="bs-docs-example">
+            <img src="./images/corporate-footer.png"/>
+          </div>
+          <p><strong>All samples are shown below in the blue palette.</strong></p>
+          <p>Full footer with social menu option, additional website-specific secondary links in white level</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-footer-2.png"/>
+          </div>
+          <p>Base footer option</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-base-footer-option.png"/>
+          </div>
+          <p>Branded base footer with social menu option</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-branded-base-footer.png"/>
+          </div>
+        </section>
+    <!-- Template Files -------------------------------------------------- -->
+        <section id="template-files">
+          <div class="page-header">
+            <h1>Template Files</h1>
+          </div>
+          <h3>Design templates</h3>
+          <p>Layered Photoshop files are available for design and mock-up purposes to work within the page grid. Develop and create content graphic assets to fit in the provided framework. The header and footer are built in the HTML template — the only final graphic asset that may be needed for them is when a logo other than the Cengage Learning logo is used.</p>
+          <h3>Development Templates</h3>
+          <p>The variations of the header and footer are built into the available HTML templates and CSS. Select appropriate colors and navigation labels.</p>
+          <h3>Additional resource files:</h3>
+          <ul>
+            <li>A library of common graphic assets, such as icons</li>
+            <li>JavaScript — to create slideshows, random load of home page hero images, or drop-down menus</li>
+          </ul>
+          <h3>Template Information</h3>
+          <ul>
+            <li>The HTML and CSS files are accompanied by a user guide
+            <li>Find Photoshop and other asset files along with this document on Inside (see Quick Links appendix)</li>
+            <li>See the CDN for working html samples and to view page source for JavaScript library links (see Quick Links appendix)</li>
+          </ul>
+          <h2>Template Samples</h2>
+          <h3>Shown below:</h3>
+          <p>a non-corporate wireframe (for decision sites and digital product sites) with a white palette, tab bank header, breadcrumb, full-page banner, left navigation, center content, right column banner, and full footer with social menu.</p>
+          <div class="bs-docs-example">
+            <img src="./images/page-structure-sample-1.png">
+          </div>
+          <h3>Shown below:</h3>
+          <p>a non-corporate wireframe (for decision sites and digital product sites) with a blue palette, tabbed header with menu option, full-page banner, 2-column content (left and center span), right column banner, and full footer with social menu.</p>
+          <div class="bs-docs-example">
+            <img src="./images/page-structure-sample-2.png">
+          </div>
+          <h3>Shown below:</h3>
+          <p>a non-corporate wireframe (for decision sites and digital product sites) with a black palette, text link header, breadcrumb, left column navigation, 2-column content with banner and text (center and right span), and branded full footer with social menu.</p>
+          <div class="bs-docs-example">
+            <img src="./images/page-structure-sample-3.png">
+          </div>
+        </section>
+    <!-- Local Navigation ---------------------------------------------- -->
+        <section id="local-navigation">
+          <div class="page-header">
+            <h1>Local Navigation</h1>
+          </div>
+          <p>The header should contain the primary navigation for a website. A header option that includes a single drop-down menu is available. Space above the tab bank area may display user information, such as signed in account information. The Descriptor text link should link to the home page for the website.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Use a header with a single drop-down menu for a navigation list to be accessible from anywhere in the website</li>
+            <li>JavaScript for the drop-down menu is available in our code library (see Quick Links appendix)</li>
+            <li>Other header options are a single tab bank or text links directly on the background color</li>
+            <li>Navigation links on a light background are #0071A2 with an underscore for the hover state</li>
+          </ul>
+          <h3>Header drop-down menu, available in Tabbed Header with menu option</h3>
+          <div class="bs-docs-example">
+            <img src="./images/tabbed-header-sample.png">
+          </div>
+        </section>
+    <!-- Breadcrumb ---------------------------------------------- -->
+        <section id="breadcrumb">
+          <div class="page-header">
+            <h1>Breadcrumb</h1>
+          </div>
+          <p>A breadcrumb trail offers users a hierarchical way to navigate or trace back the path they have taken in coming to a web page. Use locationbased breadcrumbs, with text links separated by the “greater than” (>) symbol, and in reverse order of the page title. Company Name > Site Name > Section > Page Name/Description.</p>
+          <h3>Example:</h3>
+          <p>Cengage Learning > K-12 > Trades > Construction</p>
+          <h3>Specifications</h3>
+          <ul>
+            <li>Breadcrumbs fall below the header and above the page headline</li>
+            <li>Breadcrumbs are a user convenience feature and should be used for multi-level sites to provide additional, alternative navigation</li>
+          </ul>
+          <h4>Breadcrumb navigation sample</h4>
+          <div class="bs-docs-example">
+            <img src="./images/example-breadcrumb-nav.png"/>
+          </div>
+        </section>
+        <section id="search-navigation">
+          <div class="page-header">
+            <h1>Search navigation</h1>
+          </div>
+          <p>A search input field offers quick access to deep website content, such as in a knowledgebase.</p>
+          <h4>Search navigation sample</h4>
+          <div class="bs-docs-example">
+            <img src="./images/example-search-nav.png"/>
+          </div>
+        </section>
+        <section id="column-navigation">
+          <div class="page-header">
+            <h1>Column Navigation</h1>
+          </div>
+          <h3>Left column navigation</h3>
+          <p>If primary navigation in the header links to a page that has subsections or subpages, use the left column to house the page-level navigation.</p>
+          <h4>Left column navigation sample</h4>
+          <div class="bs-docs-example">
+            <img src="./images/left-column-nav.png"/>
+          </div>         
+          <h3>Right column navigation</h3>
+          <p>Use a navigation list in the right column to link to other Cengage Learning and third-party websites or to list downloads related to the page content.</p>
+          <h4>Right column navigation sample</h4>
+          <div class="bs-docs-example">
+            <img src="./images/right-column-nav.png"/>
+          </div>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Left column navigation or right column content should have a 1 px #CCCCCC border, and may include #AF5700 (updated) or #333333 non-linked navigation headers</li>
+            <li>Navigation links are #0071A2 with an underscore for the hover state</li>
+            <li>Indenting navigation lists in right column improves the visual gutter between the center and right columns</li>
+          </ul>         
+        </section>          
+      </div><!-- End Span -->        
+<!-- END OF THE PAGE -->
+
+      </div><!-- End Span9 -->
+    </div><!-- End Row -->     
+  </div><!-- End Container -->  
+<!-- Footer ----------------------------------- -->
+     <footer id="footer" class="footer"></footer>
+    <!-- JAVA SCRIPT ---------------------------------------------- -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://platform.twitter.com/widgets.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      })
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/application.js"></script>
+  </body>
+</html>

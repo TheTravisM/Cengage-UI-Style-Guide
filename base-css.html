@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Base · CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS STYLES -->
+    <link href="css/guidelines.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- ICONS -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!-- Navbar ----------------------------------- -->
+    <div id="header" class="navbar navbar-inverse navbar-fixed-top"></div>
+
+<!-- Subhead  -------------------------------------------------- -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Base CSS</h1>
+    <p class="lead">Fundamental HTML elements styled and enhanced with extensible classes.</p>
+  </div>
+</header>
+
+  <div class="container">
+<!-- Docs nav -------------------------------------------------- -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="210">
+          <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
+          <li><a href="#code"><i class="icon-chevron-right"></i> Code</a></li>
+          <li><a href="#tables"><i class="icon-chevron-right"></i> Tables</a></li>
+          <li><a href="#forms"><i class="icon-chevron-right"></i> Forms</a></li>
+          <li><a href="#buttons"><i class="icon-chevron-right"></i> Buttons</a></li>
+          <li><a href="#images"><i class="icon-chevron-right"></i> Images</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+        <!-- Typography ================================================== -->
+        <section id="typography">
+          <div class="page-header"><h1>Typography</h1></div>
+          <h2 id="headings">Headings</h2>
+          <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <h1>h1. Heading 1</h1>
+            <h2>h2. Heading 2</h2>
+            <h3>h3. Heading 3</h3>
+            <h4>h4. Heading 4</h4>
+            <h5>h5. Heading 5</h5>
+            <h6>h6. Heading 6</h6>
+          </div>
+          <h2 id="body-copy">Body copy</h2>
+          <p>Bootstrap's global default <code>font-size</code> is <strong>12px</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <p>Powder liquorice apple pie marzipan lemon drops wypas. Powder gummies sweet. Icing cupcake marzipan.</p>
+            <p>Cotton candy tart faworki danish. Gingerbread cookie sweet liquorice pastry dragée biscuit jelly beans. Croissant ice cream lemon drops pastry gingerbread. </p>
+            <p>Gummi bears lemon drops fruitcake cotton candy. Halvah halvah caramels fruitcake marshmallow ice cream sweet fruitcake. Cookie candy canes sugar plum. </p>
+          </div>
+          <pre class="prettyprint">&lt;p&gt;...&lt;/p&gt;</pre>
+          <h3>Lead body copy</h3>
+          <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+          </div>
+          <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
+          <hr class="bs-docs-separator">
+          <h2 id="emphasis">Emphasis</h2>
+          <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
+          <h3><code>&lt;small&gt;</code></h3>
+          <p>For de-emphasizing inline or blocks of text, <small>use the small tag.</small></p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <p><small>This line of text is meant to be treated as fine print.</small></p>
+          </div>
+<pre class="prettyprint">
+&lt;p&gt;
+  &lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;
+&lt;/p&gt;
+</pre>
+          <h3>Bold</h3>
+          <p>For emphasizing a snippet of text with a heavier font-weight.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+          </div>
+          <pre class="prettyprint">&lt;strong&gt;rendered as bold text&lt;/strong&gt;</pre>
+          <h3>Italics</h3>
+          <p>For emphasizing a snippet of text with italics.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+          </div>
+          <pre class="prettyprint">&lt;em&gt;rendered as italicized text&lt;/em&gt;</pre>
+          <p><span class="label label-info">Heads up!</span> Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
+          <h3>Alignment classes</h3>
+          <p>Easily realign text to components with text alignment classes.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <p class="text-left">Left aligned text.</p>
+            <p class="text-center">Center aligned text.</p>
+            <p class="text-right">Right aligned text.</p>
+          </div>
+<pre class="prettyprint linenums">
+&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
+&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
+&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;
+</pre>
+          <h3>Emphasis classes</h3>
+          <p>Convey meaning through color with a handful of emphasis utility classes.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+          </div>
+<pre class="prettyprint linenums">
+&lt;p class="muted"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
+&lt;p class="text-warning"&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
+&lt;p class="text-error"&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
+&lt;p class="text-info"&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.&lt;/p&gt;
+&lt;p class="text-success"&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
+</pre>
+          <hr class="bs-docs-separator">
+          <h2 id="abbreviations">Abbreviations</h2>
+          <p>Stylized implementation of HTML's <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a <code>title</code> attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.</p>
+          <h3><code>&lt;abbr&gt;</code></h3>
+          <p>For expanded text on long hover of an abbreviation, include the <code>title</code> attribute.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+          </div>
+          <pre class="prettyprint">&lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;</pre>
+          <h3><code>&lt;abbr class="initialism"&gt;</code></h3>
+          <p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+          </div>
+          <pre class="prettyprint">&lt;abbr title="HyperText Markup Language" class="initialism"&gt;HTML&lt;/abbr&gt;</pre>
+          <hr class="bs-docs-separator">
+          <h2 id="addresses">Addresses</h2>
+          <p>Present contact information for the nearest ancestor or the entire body of work.</p>
+          <h3><code>&lt;address&gt;</code></h3>
+          <p>Preserve formatting by ending all lines with <code>&lt;br&gt;</code>.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <address>
+              <strong>Cengage Learning, Inc.</strong>
+              <br>5191 Natorp Blvd
+              <br>Mason, OH 45040
+              <br><abbr title="Phone">P:</abbr> (513) 229-1000
+            </address>
+            <address>
+              <strong>Candy Lollipop</strong><br>
+              <a href="mailto:#">Candy.Lollipop@cengage.com</a>
+            </address>
+          </div>
+<pre class="prettyprint linenums">
+&lt;address&gt;
+  &lt;strong&gt;Cengage Learning, Inc.&lt;/strong&gt;
+  &lt;br&gt;5191 Natorp Blvd
+  &lt;br&gt;Mason, OH 45040
+  &lt;br&gt;&lt;abbr title="Phone"&gt;P:&lt;/abbr&gt; (513) 229-1000
+&lt;/address&gt;
+
+&lt;address&gt;
+  &lt;strong&gt;Candy Lollipop&lt;/strong&gt;
+  &lt;br&gt;&lt;a href="mailto:#"&gt;Candy.Lollipop@cengage.com&lt;/a&gt;
+&lt;/address&gt;
+</pre>
+          <hr class="bs-docs-separator">
+          <h2 id="blockquotes">Blockquotes</h2>
+          <p>For quoting blocks of content from another source within your document.</p>
+          <h3>Default blockquote</h3>
+          <p>Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote. For straight quotes we recommend a <code>&lt;p&gt;</code>.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <blockquote>
+              <p>Just work harder than everyone around you.</p>
+            </blockquote>
+          </div>
+<pre class="prettyprint linenums">
+&lt;blockquote&gt;
+  &lt;p&gt;Just work harder than everyone around you.&lt;/p&gt;
+&lt;/blockquote&gt;
+</pre>
+          <h3>Blockquote options</h3>
+          <p>Style and content changes for simple variations on a standard blockquote.</p>
+          <h4>Naming a source</h4>
+          <p>Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <blockquote>
+              <p>The most powerful weapon on earth is the human soul on fire.</p>
+              <small>Ferdinand Foch <cite title="The 32d Infantry Division in World War II (1956)">The 32d Infantry Division in World War II (1956)</cite></small>
+            </blockquote>
+          </div>
+<pre class="prettyprint linenums">
+&lt;blockquote&gt;
+  &lt;p&gt;The most powerful weapon on earth is the human soul on fire.&lt;/p&gt;
+  &lt;small&gt;Ferdinand Foch &lt;cite title="source title"&gt;The 32d Infantry Division in World War II (1956)&lt;/cite&gt;&lt;/small&gt;
+&lt;/blockquote&gt;
+</pre>
+          <h4>Alternate displays</h4>
+          <p>Use <code>.pull-right</code> for a floated, right-aligned blockquote.</p>
+          <div class="bs-docs-example cengage-bootstrap" style="overflow: hidden;">
+            <blockquote class="pull-right">
+              <p>When I get sad, I stop being sad, and be AWESOME instead.</p>
+              <small>Barney Stinson <cite title="Source Title">True Story</cite></small>
+            </blockquote>
+          </div>
+<pre class="prettyprint linenums">
+&lt;blockquote class="pull-right"&gt;
+  &lt;p&gt;When I get sad, I stop being sad, and be AWESOME instead.&lt;/p&gt;
+  &lt;small&gt;Barney Stinson &lt;cite title="Source Title"&gt;True Story&lt;/cite&gt;&lt;/small&gt;
+&lt;/blockquote&gt;
+</pre>
+          <hr class="bs-docs-separator">
+          <!-- Lists -->
+          <h2 id="lists">Lists</h2>
+          <h3>Unordered</h3>
+          <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <ul>
+              <li>Homer J Simpson</li>
+              <li>I hope I didn't brain my damage.</li>
+              <li>Donuts. Is there anything they can't do?</li>
+              <li>Who's been screwing with this thing?</li>
+              <li>I'll keep it short and sweet</li>
+              <li>Oh, loneliness and cheeseburgers
+                <ul>
+                  <li>Ahoy hoy?</li>
+                  <li>Fire can be our friend.</li>
+                  <li>Everything looks bad if you remember it.</li>
+                  <li>Please save me, Superman.</li>
+                </ul>
+              </li>
+              <li> There's a *New* Mexico?</li>
+              <li>Itchy and Scratchy Show</li>
+              <li>Wait a minute.</li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul&gt;
+  &lt;li&gt;Homer J Simpson&lt;/li&gt;
+  &lt;li&gt;I hope I didn't brain my damage.&lt;/li&gt;
+  &lt;li&gt;Donuts. Is there anything they can't do?&lt;/li&gt;
+  &lt;li&gt;Who's been screwing with this thing?&lt;/li&gt;
+  &lt;li&gt;I'll keep it short and sweet&lt;/li&gt;
+  &lt;li&gt;Oh, loneliness and cheeseburgers
+    &lt;ul&gt;
+      &lt;li&gt;Ahoy hoy?&lt;/li&gt;
+      &lt;li&gt;Fire can be our friend.&lt;/li&gt;
+      &lt;li&gt;Everything looks bad if you remember it.&lt;/li&gt;
+      &lt;li&gt;Please save me, Superman.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt; There's a *New* Mexico?&lt;/li&gt;
+  &lt;li&gt;Itchy and Scratchy Show&lt;/li&gt;
+  &lt;li&gt;Wait a minute.&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+          <h3>Ordered</h3>
+          <p>A list of items in which the order <em>does</em> explicitly matter.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <ol>
+              <li>Homer J Simpson</li>
+              <li>I hope I didn't brain my damage.</li>
+              <li>Donuts. Is there anything they can't do?</li>
+              <li>Who's been screwing with this thing?</li>
+              <li>I'll keep it short and sweet</li>
+            </ol>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ol&gt;
+  &lt;li&gt;Homer J Simpson&lt;/li&gt;
+  &lt;li&gt;I hope I didn't brain my damage.&lt;/li&gt;
+  &lt;li&gt;Donuts. Is there anything they can't do?&lt;/li&gt;
+  &lt;li&gt;Who's been screwing with this thing?&lt;/li&gt;
+  &lt;li&gt;I'll keep it short and sweet&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+        <h3>Unstyled</h3>
+        <p>Remove the default <code>list-style</code> and left padding on list items (immediate children only).</p>
+        <div class="bs-docs-example cengage-bootstrap">
+          <ul class="unstyled">
+              <li>Knights of Ni</li>
+              <li>Silly English K-n-n-n-n-n-n-n-nigits!</li>
+              <li>We want a shrubbery!!</li>
+              <li>I am your king.</li>
+              <li>Shut up!</li>
+              <li>…Are you suggesting that coconuts migrate?
+                <ul>
+                  <li>Look, my liege!</li>
+                  <li>We shall say 'Ni' again to you.</li>
+                  <li>I don't want to talk to you no more.</li>
+                  <li>I am forced to taunt you</li>
+                </ul>
+              </li>
+              <li>What a strange person.</li>
+              <li>Who Say Ni demand a sacrifice!</li>
+              <li>We are but simple travelers.</li>
+          </ul>
+        </div>
+<pre class="prettyprint linenums">
+&lt;ul class="unstyled"&gt;
+  &lt;li&gt;Knights of Ni&lt;/li&gt;
+  &lt;li&gt;Silly English K-n-n-n-n-n-n-n-niggits!&lt;/li&gt;
+  &lt;li&gt;We want a shrubbery!!&lt;/li&gt;
+  &lt;li&gt;I am your king.&lt;/li&gt;
+  &lt;li&gt;Shut up!&lt;/li&gt;
+  &lt;li&gt;…Are you suggesting that coconuts migrate?
+    &lt;ul&gt;
+      &lt;li&gt;Look, my liege!&lt;/li&gt;
+      &lt;li&gt;We shall say 'Ni' again to you.&lt;/li&gt;
+      &lt;li&gt;I don't want to talk to you no more.&lt;/li&gt;
+      &lt;li&gt;I am forced to taunt you&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What a strange person.&lt;/li&gt;
+  &lt;li&gt;Who Say Ni demand a sacrifice!&lt;/li&gt;
+  &lt;li&gt;We are but simple travelers.&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+        <h3>Inline</h3>
+        <p>Place all list items on a single line with <code>inline-block</code> and some light padding.</p>
+        <div class="bs-docs-example cengage-bootstrap">
+          <ul class="inline">
+            <li>Lorem ipsum</li>
+            <li>Phasellus iaculis</li>
+            <li>Nulla volutpat</li>
+          </ul>
+        </div>
+<pre class="prettyprint linenums">
+&lt;ul class="inline"&gt;
+  &lt;li&gt;Lorem ipsum&lt;/li&gt;
+  &lt;li&gt;Phasellus iaculis&lt;/li&gt;
+  &lt;li&gt;Nulla volutpat&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+        <h3>Description</h3>
+        <p>A list of terms with their associated descriptions.</p>
+        <div class="bs-docs-example cengage-bootstrap">
+          <dl>
+            <dt>Marshmallow</dt>
+            <dd>Carrot cake sweet roll cotton candy pastry liquorice lollipop.</dd>
+            <dt>Tootsie Roll</dt>
+            <dd>Lollipop caramels candy canes gingerbread brownie jelly beans cookie.</dd>
+            <dd>Biscuit sugar plum apple pie pudding ice cream.</dd>
+            <dt>Carrot cake</dt>
+            <dd>Cheesecake cupcake candy chocolate bar toffee caramels.</dd>
+          </dl>
+        </div>
+<pre class="prettyprint linenums">
+&lt;dl&gt;
+  &lt;dt&gt;Marshmallow&lt;/dt&gt;
+  &lt;dd&gt;Carrot cake sweet roll cotton candy pastry liquorice lollipop.&lt;/dd&gt;
+  &lt;dt&gt;Tootsie Roll&lt;/dt&gt;
+  &lt;dd&gt;Lollipop caramels candy canes gingerbread brownie jelly beans cookie.&lt;/dd&gt;
+  &lt;dd&gt;Biscuit sugar plum apple pie pudding ice cream.&lt;/dd&gt;
+  &lt;dt&gt;Carrot cake&lt;/dt&gt;
+  &lt;dd&gt;Cheesecake cupcake candy chocolate bar toffee caramels.&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+        <h4>Horizontal description</h4>
+        <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.</p>
+        <div class="bs-docs-example cengage-bootstrap">
+          <dl class="dl-horizontal">
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Mr. Burns</dt>
+            <dd>Oh, “meltdown”. It’s one of those annoying buzzwords.</dd>
+            <dd>We prefer to call it an “unrequested fission surplus”.</dd>
+            <dt>Ralph Wiggum</dt>
+            <dd>Oh, boy, sleep! That’s where I’m a Viking!</dd>
+            <dt>Groundskeeper Willie</dt>
+            <dd>But don’t be readin’ my mind between 4 and 5.</dd>
+            <dd>That’s Willie’s time!</dd>
+          </dl>
+        </div>
+<pre class="prettyprint linenums">
+&lt;dl class="dl-horizontal"&gt;
+  &lt;dt&gt;Description lists&lt;/dt&gt;
+  &lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+  &lt;dt&gt;Mr. Burns&lt;/dt&gt;
+  &lt;dd&gt;Oh, “meltdown”. It’s one of those annoying buzzwords.&lt;/dd&gt;
+  &lt;dd&gt;We prefer to call it an “unrequested fission surplus”.&lt;/dd&gt;
+  &lt;dt&gt;Ralph Wiggum&lt;/dt&gt;
+  &lt;dd&gt;Oh, boy, sleep! That’s where I’m a Viking!&lt;/dd&gt;
+  &lt;dt&gt;Groundskeeper Willie&lt;/dt&gt;
+  &lt;dd&gt;But don’t be readin’ my mind between 4 and 5.&lt;/dd&gt;
+  &lt;dd&gt;That’s Willie’s time!&lt;/dd&gt;  
+&lt;/dl&gt;
+</pre>
+        <p>
+          <span class="label label-info">Heads up!</span>
+          Horizontal description lists will truncate terms that are too long to fit in the left column fix <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout.
+        </p>
+        </section>
+        <!-- Code ================================================== -->
+        <section id="code">
+          <div class="page-header">
+            <h1>Code</h1>
+          </div>
+          <h2>Inline</h2>
+          <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+<div class="bs-docs-example cengage-bootstrap">
+  For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+</div>
+<pre class="prettyprint linenums">
+For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped as inline.
+</pre>
+          <h2>Basic block</h2>
+          <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+<div class="bs-docs-example cengage-bootstrap">
+  <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+</div>
+<pre class="prettyprint linenums" style="margin-bottom: 9px;">
+&lt;pre&gt;
+  &amp;lt;p&amp;gt;Sample text here...&amp;lt;/p&amp;gt;
+&lt;/pre&gt;
+</pre>
+          <p><span class="label label-info">Heads up!</span> Be sure to keep code within <code>&lt;pre&gt;</code> tags as close to the left as possible; it will render all tabs.</p>
+          <p>You may optionally add the <code>.pre-scrollable</code> class which will set a max-height of 350px and provide a y-axis scrollbar.</p>
+        </section>
+        <!-- Tables  ================================================== -->
+        <section id="tables">
+          <div class="page-header">
+            <h1>Tables</h1>
+          </div>
+          <h2>Default styles</h2>
+          <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Bart</td>
+                  <td>Simpson</td>
+                  <td>@el_barto</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Ned</td>
+                  <td>Flanders</td>
+                  <td>@okely_dokely</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Comic Book</td>
+                  <td>Guy</td>
+                  <td>@worst_username_ever</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums">
+&lt;table class="table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;First Name&lt;/th&gt;
+      &lt;th&gt;Last Name&lt;/th&gt;
+      &lt;th&gt;Username&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Bart&lt;/td&gt;
+      &lt;td&gt;Simpson&lt;/td&gt;
+      &lt;td&gt;@el_barto&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Ned&lt;/td&gt;
+      &lt;td&gt;Flanders&lt;/td&gt;
+      &lt;td&gt;@okely_dokely&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Comic Book&lt;/td&gt;
+      &lt;td&gt;Guy&lt;/td&gt;
+      &lt;td&gt;@worst_username_ever&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+          <hr class="bs-docs-separator">
+          <h2>Optional classes</h2>
+          <p>Add any of the following classes to the <code>.table</code> base class.</p>
+          <h3><code>.table-striped</code></h3>
+          <p>Adds zebra-striping to any table row within the <code>&lt;tbody&gt;</code> via the <code>:nth-child</code> CSS selector (not available in IE7-8).</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Bart</td>
+                  <td>Simpson</td>
+                  <td>@el_barto</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Ned</td>
+                  <td>Flanders</td>
+                  <td>@okely_dokely</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Comic Book</td>
+                  <td>Guy</td>
+                  <td>@worst_username_ever</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-striped"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+          <h3><code>.table-bordered</code></h3>
+          <p>Add borders and rounded corners to the table.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Bart</td>
+                  <td>Simpson</td>
+                  <td>@el_barto</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Ned</td>
+                  <td>Flanders</td>
+                  <td>@okely_dokely</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Comic Book</td>
+                  <td>Guy</td>
+                  <td>@worst_username_ever</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums">
+&lt;table class="table table-bordered"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+          <h3><code>.table-hover</code></h3>
+          <p>Enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Bart</td>
+                  <td>Simpson</td>
+                  <td>@el_barto</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Ned</td>
+                  <td>Flanders</td>
+                  <td>@okely_dokely</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Comic Book</td>
+                  <td>Guy</td>
+                  <td>@worst_username_ever</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-hover"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+          <h3><code>.table-condensed</code></h3>
+          <p>Makes tables more compact by cutting cell padding in half.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-condensed"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+          <hr class="bs-docs-separator">
+          <h2>Optional row classes</h2>
+          <p>Use contextual classes to color table rows.</p>
+          <table class="table table-bordered table-striped cengage-bootstrap">
+            <colgroup>
+              <col class="span1">
+              <col class="span7">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>.success</code>
+                </td>
+                <td>Indicates a successful or positive action.</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>.error</code>
+                </td>
+                <td>Indicates a dangerous or potentially negative action.</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>.warning</code>
+                </td>
+                <td>Indicates a warning that might need attention.</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>.info</code>
+                </td>
+                <td>Used as an alternative to the default styles.</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="bs-docs-example cengage-bootstrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Product</th>
+                  <th>Payment Taken</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="success">
+                  <td>1</td>
+                  <td>TB - Monthly</td>
+                  <td>01/04/2012</td>
+                  <td>Approved</td>
+                </tr>
+                <tr class="error">
+                  <td>2</td>
+                  <td>TB - Monthly</td>
+                  <td>02/04/2012</td>
+                  <td>Declined</td>
+                </tr>
+                <tr class="warning">
+                  <td>3</td>
+                  <td>TB - Monthly</td>
+                  <td>03/04/2012</td>
+                  <td>Pending</td>
+                </tr>
+                <tr class="info">
+                  <td>4</td>
+                  <td>TB - Monthly</td>
+                  <td>04/04/2012</td>
+                  <td>Call in to confirm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums">  
+&lt;table class="table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;Product&lt;/th&gt;
+      &lt;th&gt;Payment Taken&lt;/th&gt;
+      &lt;th&gt;Status&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr class="success"&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;TB - Monthly&lt;/td&gt;
+      &lt;td&gt;01/04/2012&lt;/td&gt;
+      &lt;td&gt;Approved&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="error"&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;TB - Monthly&lt;/td&gt;
+      &lt;td&gt;02/04/2012&lt;/td&gt;
+      &lt;td&gt;Declined&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="warning"&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;TB - Monthly&lt;/td&gt;
+      &lt;td&gt;03/04/2012&lt;/td&gt;
+      &lt;td&gt;Pending&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="info"&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;TB - Monthly&lt;/td&gt;
+      &lt;td&gt;04/04/2012&lt;/td&gt;
+      &lt;td&gt;Call in to confirm&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+          <hr class="bs-docs-separator">
+
+          <h2>Supported table markup</h2>
+          <p>List of supported table HTML elements and how they should be used.</p>
+          <table class="table table-bordered table-striped">
+            <colgroup>
+              <col class="span1">
+              <col class="span7">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Tag</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>&lt;table&gt;</code></td>
+                <td>Wrapping element for displaying data in a tabular format</td>
+              </tr>
+              <tr>
+                <td><code>&lt;thead&gt;</code></td>
+                <td>Container element for table header rows (<code>&lt;tr&gt;</code>) to label table columns</td>
+              </tr>
+              <tr>
+                <td><code>&lt;tbody&gt;</code></td>
+                <td>Container element for table rows (<code>&lt;tr&gt;</code>) in the body of the table</td>
+              </tr>
+              <tr>
+                <td><code>&lt;tr&gt;</code></td>
+                <td>Container element for a set of table cells (<code>&lt;td&gt;</code> or <code>&lt;th&gt;</code>) that appears on a single row</td>
+              </tr>
+              <tr>
+                <td><code>&lt;td&gt;</code></td>
+                <td>Default table cell</td>
+              </tr>
+              <tr>
+                <td><code>&lt;th&gt;</code></td>
+                <td>Special table cell for column (or row, depending on scope and placement) labels</td>
+              </tr>
+              <tr>
+                <td><code>&lt;caption&gt;</code></td>
+                <td>Description or summary of what the table holds, especially useful for screen readers</td>
+              </tr>
+            </tbody>
+          </table>
+<pre class="prettyprint linenums">
+&lt;table&gt;
+  &lt;caption&gt;...&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;...&lt;/th&gt;
+      &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+        </section>
+        <!-- Forms ================================================== -->
+        <section id="forms">
+          <div class="page-header">
+            <h1>Forms</h1>
+          </div>
+          <h2>Default styles</h2>
+          <p>Individual form controls receive styling, but without any required base class on the <code>&lt;form&gt;</code> or large changes in markup. Results in stacked, left-aligned labels on top of form controls.</p>
+          <form class="bs-docs-example cengage-bootstrap">
+            <fieldset>
+              <legend>Legend</legend>
+              <label>Label name</label>
+              <input type="text" placeholder="Type something…">
+              <span class="help-block">Example block-level help text here.</span>
+              <label class="checkbox">
+                <input type="checkbox"> Check me out
+              </label>
+              <button type="submit" class="btn">Submit</button>
+            </fieldset>
+          </form>
+<pre class="prettyprint linenums">
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Legend&lt;/legend&gt;
+    &lt;label&gt;Label name&lt;/label&gt;
+    &lt;input type="text" placeholder="Type something…"&gt;
+    &lt;span class="help-block"&gt;Example block-level help text here.&lt;/span&gt;
+    &lt;label class="checkbox"&gt;
+      &lt;input type="checkbox"&gt; Check me out
+    &lt;/label&gt;
+    &lt;button type="submit" class="btn"&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</pre>
+          <hr class="bs-docs-separator">
+          <h2>Optional layouts</h2>
+          <p>Included with Bootstrap are three optional form layouts for common use cases.</p>
+
+          <h3>Search form</h3>
+          <p>Add <code>.form-search</code> to the form and <code>.search-query</code> to the <code>&lt;input&gt;</code> for an extra-rounded text input.</p>
+          <form class="bs-docs-example form-search cengage-bootstrap">
+            <div class="input-append">
+              <input type="text" class="search-query">
+              <button type="submit" class="btn"><i class="icon-search"></i></button>
+            </div>         
+          </form>
+      
+<pre class="prettyprint linenums">
+&lt;form class="form-search"&gt;
+  &lt;div class="input-append"&gt;
+    &lt;input type="text" class="search-query"&gt;
+    &lt;button type="submit" class="btn"&gt;
+      &lt;i class="icon-search"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+          <h3>Inline form</h3>
+          <p>Add <code>.form-inline</code> for left-aligned labels and inline-block controls for a compact layout.</p>
+          <form class="bs-docs-example form-inline cengage-bootstrap">
+            <input type="text" class="input-small" placeholder="Email">
+            <input type="password" class="input-small" placeholder="Password">
+            <label class="checkbox">
+              <input type="checkbox"> Remember me
+            </label>
+            <button type="submit" class="btn">Sign in</button>
+          </form>
+<pre class="prettyprint linenums">
+&lt;form class="form-inline"&gt;
+  &lt;input type="text" class="input-small" placeholder="Email"&gt;
+  &lt;input type="password" class="input-small" placeholder="Password"&gt;
+  &lt;label class="checkbox"&gt;
+    &lt;input type="checkbox"&gt; Remember me
+  &lt;/label&gt;
+  &lt;button type="submit" class="btn"&gt;Sign in&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+          <h3>Horizontal form</h3>
+          <p>Right align labels and float them to the left to make them appear on the same line as controls. Requires the most markup changes from a default form:</p>
+          <ul>
+            <li>Add <code>.form-horizontal</code> to the form</li>
+            <li>Wrap labels and controls in <code>.control-group</code></li>
+            <li>Add <code>.control-label</code> to the label</li>
+            <li>Wrap any associated controls in <code>.controls</code> for proper alignment</li>
+          </ul>
+          <form class="bs-docs-example form-horizontal cengage-bootstrap">
+            <div class="control-group">
+              <label class="control-label" for="inputEmail">Email</label>
+              <div class="controls">
+                <input type="text" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputPassword">Password</label>
+              <div class="controls">
+                <input type="password" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <label class="checkbox"><input type="checkbox"> Remember me</label>
+                <button type="submit" class="btn">Sign in</button>
+              </div>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;form class="form-horizontal"&gt;
+  &lt;div class="control-group"&gt;
+    &lt;label class="control-label" for="inputEmail"&gt;Email&lt;/label&gt;
+    &lt;div class="controls"&gt;
+      &lt;input type="text" id="inputEmail" placeholder="Email"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="control-group"&gt;
+    &lt;label class="control-label" for="inputPassword"&gt;Password&lt;/label&gt;
+    &lt;div class="controls"&gt;
+      &lt;input type="password" id="inputPassword" placeholder="Password"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="control-group"&gt;
+    &lt;div class="controls"&gt;
+      &lt;label class="checkbox"&gt;
+        &lt;input type="checkbox"&gt; Remember me
+      &lt;/label&gt;
+      &lt;button type="submit" class="btn"&gt;Sign in&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+          <hr class="bs-docs-separator">
+          <h2>Supported form controls</h2>
+          <p>Examples of standard form controls supported in an example form layout.</p>
+
+          <h3>Inputs</h3>
+          <p>Most common form control, text-based input fields. Includes support for all HTML5 types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</p>
+          <p>Requires the use of a specified <code>type</code> at all times.</p>
+          <form class="bs-docs-example form-inline cengage-bootstrap">
+            <input type="text" placeholder="Text input">
+          </form>
+<pre class="prettyprint linenums">
+&lt;input type="text" placeholder="Text input"&gt;
+</pre>
+          <h3>Textarea</h3>
+          <p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
+          <form class="bs-docs-example form-inline cengage-bootstrap">
+            <textarea rows="3"></textarea>
+          </form>
+<pre class="prettyprint linenums">
+&lt;textarea rows="3"&gt;&lt;/textarea&gt;
+</pre>
+          <h3>Checkboxes and radios</h3>
+          <p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from many.</p>
+          <h4>Default (stacked)</h4>
+          <form class="bs-docs-example cengage-bootstrap">
+            <label class="checkbox">
+              <input type="checkbox" value="">
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Option two can be something else and selecting it will deselect option one
+            </label>
+          </form>
+<pre class="prettyprint linenums">
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" value=""&gt;
+  Option one is this and that&mdash;be sure to include why it's great
+&lt;/label&gt;
+
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
+  Option one is this and that&mdash;be sure to include why it's great
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
+  Option two can be something else and selecting it will deselect option one
+&lt;/label&gt;
+</pre>
+
+          <h4>Inline checkboxes</h4>
+          <p>Add the <code>.inline</code> class to a series of checkboxes or radios for controls appear on the same line.</p>
+          <form class="bs-docs-example cengage-bootstrap">
+            <label class="checkbox inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+            </label>
+            <label class="checkbox inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+            </label>
+            <label class="checkbox inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+            </label>
+          </form>
+<pre class="prettyprint linenums">
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt; 1
+&lt;/label&gt;
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt; 2
+&lt;/label&gt;
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt; 3
+&lt;/label&gt;
+</pre>
+          <h3>Selects</h3>
+          <p>Use the default option or specify a <code>multiple="multiple"</code> to show multiple options at once.</p>
+          <form class="bs-docs-example cengage-bootstrap">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <br>
+            <select multiple="multiple">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </form>
+<pre class="prettyprint linenums">
+&lt;select&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select multiple="multiple"&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+          <hr class="bs-docs-separator">
+          <h2>Extending form controls</h2>
+          <p>Adding on top of existing browser controls, Bootstrap includes other useful form components.</p>
+          <h3>Prepended and appended inputs</h3>
+          <p>Add text or buttons before or after any text-based input. Do note that <code>select</code> elements are not supported here.</p>
+          <h4>Default options</h4>
+          <p>Wrap an <code>.add-on</code> and an <code>input</code> with one of two classes to prepend or append text to an input.</p>
+          <form class="bs-docs-example cengage-bootstrap">
+            <div class="input-prepend">
+              <span class="add-on">@</span>
+              <input class="span2" id="prependedInput" type="text" placeholder="Username">
+            </div>
+            <br>
+            <div class="input-append">
+              <input class="span2" id="appendedInput" type="text">
+              <span class="add-on">.00</span>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="input-prepend"&gt;
+  &lt;span class="add-on"&gt;@&lt;/span&gt;
+  &lt;input class="span2" id="prependedInput" type="text" placeholder="Username"&gt;
+&lt;/div&gt;
+&lt;div class="input-append"&gt;
+  &lt;input class="span2" id="appendedInput" type="text"&gt;
+  &lt;span class="add-on"&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+          <h4>Combined</h4>
+          <p>Use both classes and two instances of <code>.add-on</code> to prepend and append an input.</p>
+          <form class="bs-docs-example form-inline cengage-bootstrap">
+            <div class="input-prepend input-append">
+              <span class="add-on">$</span>
+              <input class="span2" id="appendedPrependedInput" type="text">
+              <span class="add-on">.00</span>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="input-prepend input-append"&gt;
+  &lt;span class="add-on"&gt;$&lt;/span&gt;
+  &lt;input class="span2" id="appendedPrependedInput" type="text"&gt;
+  &lt;span class="add-on"&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+          <h4>Buttons instead of text</h4>
+          <p>Instead of a <code>&lt;span&gt;</code> with text, use a <code>.btn</code> to attach a button (or two) to an input.</p>
+          <form class="bs-docs-example cengage-bootstrap">
+            <div class="input-append">
+              <input class="span2" id="appendedInputButton" type="text">
+              <button class="btn" type="button">Go!</button>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="input-append"&gt;
+  &lt;input class="span2" id="appendedInputButton" type="text"&gt;
+  &lt;button class="btn" type="button"&gt;Go!&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+          <form class="bs-docs-example cengage-bootstrap">
+            <div class="input-append">
+              <input class="span2" id="appendedInputButtons" type="text">
+              <button class="btn" type="button">Search</button>
+              <button class="btn" type="button">Options</button>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="input-append"&gt;
+  &lt;input class="span2" id="appendedInputButtons" type="text"&gt;
+  &lt;button class="btn" type="button"&gt;Search&lt;/button&gt;
+  &lt;button class="btn" type="button"&gt;Options&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+          <h4>Button dropdowns</h4>
+          <p></p>
+          <form class="bs-docs-example cengage-bootstrap">
+            <div class="input-append">
+              <input class="span2" id="appendedDropdownButton" type="text">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /input-append -->
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="input-append"&gt;
+  &lt;input class="span2" id="appendedDropdownButton" type="text"&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+      Action
+      &lt;span class="caret"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          <form class="bs-docs-example cengage-bootstrap">
+            <div class="input-prepend">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <input class="span2" id="prependedDropdownButton" type="text">
+            </div><!-- /input-prepend -->
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="input-prepend"&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+      Action
+      &lt;span class="caret"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;input class="span2" id="prependedDropdownButton" type="text"&gt;
+&lt;/div&gt;
+</pre>
+          <form class="bs-docs-example  cengage-bootstrap">
+            <div class="input-prepend input-append">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <input class="span2" id="appendedPrependedDropdownButton" type="text">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /input-prepend input-append -->
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="input-prepend input-append"&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+      Action
+      &lt;span class="caret"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;input class="span2" id="appendedPrependedDropdownButton" type="text"&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+      Action
+      &lt;span class="caret"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          <h4>Segmented dropdown groups</h4>
+          <form class="bs-docs-example cengage-bootstrap">
+            <div class="input-prepend">
+              <div class="btn-group">
+                <button class="btn" tabindex="-1">Action</button>
+                <button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <input type="text">
+            </div>
+            <div class="input-append">
+              <input type="text">
+              <div class="btn-group">
+                <button class="btn" tabindex="-1">Action</button>
+                <button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;form&gt;
+  &lt;div class="input-prepend"&gt;
+    &lt;div class="btn-group"&gt;...&lt;/div&gt;
+    &lt;input type="text"&gt;
+  &lt;/div&gt;
+  &lt;div class="input-append"&gt;
+    &lt;input type="text"&gt;
+    &lt;div class="btn-group"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+          <h3>Control sizing</h3>
+          <p>Use relative sizing classes like <code>.input-large</code> or match your inputs to the grid column sizes using <code>.span*</code> classes.</p>
+          <h4>Block level inputs</h4>
+          <p>Make any <code>&lt;input&gt;</code> or <code>&lt;textarea&gt;</code> element behave like a block level element.</p>
+          <form class="bs-docs-example cengage-bootstrap" style="padding-bottom: 15px;">
+            <div class="controls">
+              <input class="input-block-level" type="text" placeholder=".input-block-level">
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;input class="input-block-level" type="text" placeholder=".input-block-level"&gt;
+</pre>
+          <h4>Relative sizing</h4>
+          <form class="bs-docs-example cengage-bootstrap" style="padding-bottom: 15px;">
+            <div class="controls docs-input-sizes">
+              <input class="input-mini" type="text" placeholder=".input-mini">
+              <input class="input-small" type="text" placeholder=".input-small">
+              <input class="input-medium" type="text" placeholder=".input-medium">
+              <input class="input-large" type="text" placeholder=".input-large">
+              <input class="input-xlarge" type="text" placeholder=".input-xlarge">
+              <input class="input-xxlarge" type="text" placeholder=".input-xxlarge">
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;input class="input-mini" type="text" placeholder=".input-mini"&gt;
+&lt;input class="input-small" type="text" placeholder=".input-small"&gt;
+&lt;input class="input-medium" type="text" placeholder=".input-medium"&gt;
+&lt;input class="input-large" type="text" placeholder=".input-large"&gt;
+&lt;input class="input-xlarge" type="text" placeholder=".input-xlarge"&gt;
+&lt;input class="input-xxlarge" type="text" placeholder=".input-xxlarge"&gt;
+</pre>
+          <p><span class="label label-info">Heads up!</span> In future versions, we'll be altering the use of these relative input classes to match our button sizes. For example, <code>.input-large</code> will increase the padding and font-size of an input.</p>
+          <h4>Grid sizing</h4>
+          <p>Use <code>.span1</code> to <code>.span12</code> for inputs that match the same sizes of the grid columns.</p>
+          <form class="bs-docs-example cengage-bootstrap" style="padding-bottom: 15px;">
+            <div class="controls docs-input-sizes">
+              <input class="span1" type="text" placeholder=".span1">
+              <input class="span2" type="text" placeholder=".span2">
+              <input class="span3" type="text" placeholder=".span3">
+              <select class="span1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <select class="span2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <select class="span3">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;input class="span1" type="text" placeholder=".span1"&gt;
+&lt;input class="span2" type="text" placeholder=".span2"&gt;
+&lt;input class="span3" type="text" placeholder=".span3"&gt;
+&lt;select class="span1"&gt;
+  ...
+&lt;/select&gt;
+&lt;select class="span2"&gt;
+  ...
+&lt;/select&gt;
+&lt;select class="span3"&gt;
+  ...
+&lt;/select&gt;
+</pre>
+          <p>For multiple grid inputs per line, <strong>use the <code>.controls-row</code> modifier class for proper spacing</strong>. It floats the inputs to collapse white-space, sets the proper margins, and clears the float.</p>
+          <form class="bs-docs-example cengage-bootstrap" style="padding-bottom: 15px;">
+            <div class="controls">
+              <input class="span5" type="text" placeholder=".span5">
+            </div>
+            <div class="controls controls-row">
+              <input class="span4" type="text" placeholder=".span4">
+              <input class="span1" type="text" placeholder=".span1">
+            </div>
+            <div class="controls controls-row">
+              <input class="span3" type="text" placeholder=".span3">
+              <input class="span2" type="text" placeholder=".span2">
+            </div>
+            <div class="controls controls-row">
+              <input class="span2" type="text" placeholder=".span2">
+              <input class="span3" type="text" placeholder=".span3">
+            </div>
+            <div class="controls controls-row">
+              <input class="span1" type="text" placeholder=".span1">
+              <input class="span4" type="text" placeholder=".span4">
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="controls"&gt;
+  &lt;input class="span5" type="text" placeholder=".span5"&gt;
+&lt;/div&gt;
+&lt;div class="controls controls-row"&gt;
+  &lt;input class="span4" type="text" placeholder=".span4"&gt;
+  &lt;input class="span1" type="text" placeholder=".span1"&gt;
+&lt;/div&gt;
+...
+</pre>
+          <h3>Uneditable inputs</h3>
+          <p>Present data in a form that's not editable without using actual form markup.</p>
+          <form class="bs-docs-example cengage-bootstrap">
+            <span class="input-xlarge uneditable-input">Some value here</span>
+          </form>
+<pre class="prettyprint linenums">
+&lt;span class="input-xlarge uneditable-input"&gt;Some value here&lt;/span&gt;
+</pre>
+          <h3>Form actions</h3>
+          <p>End a form with a group of actions (buttons). When placed within a <code>.form-actions</code>, the buttons will automatically indent to line up with the form controls.</p>
+          <form class="bs-docs-example cengage-bootstrap">
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn">Cancel</button>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="form-actions"&gt;
+  &lt;button type="submit" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+          <h3>Help text</h3>
+          <p>Inline and block level support for help text that appears around form controls.</p>
+          <h4>Inline help</h4>
+          <form class="bs-docs-example form-inline cengage-bootstrap">
+            <input type="text"> <span class="help-inline">Inline help text</span>
+          </form>
+<pre class="prettyprint linenums">
+&lt;input type="text"&gt;&lt;span class="help-inline"&gt;Inline help text&lt;/span&gt;
+</pre>
+          <h4>Block help</h4>
+          <form class="bs-docs-example form-inline cengage-bootstrap">
+            <input type="text">
+            <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+          </form>
+<pre class="prettyprint linenums">
+&lt;input type="text"&gt;&lt;span class="help-block"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+</pre>
+          <hr class="bs-docs-separator">
+          <h2>Form control states</h2>
+          <p>Provide feedback to users or visitors with basic feedback states on form controls and labels.</p>
+          <h3>Input focus</h3>
+          <p>We remove the default <code>outline</code> styles on some form controls and apply a <code>box-shadow</code> in its place for <code>:focus</code>.</p>
+          <form class="bs-docs-example form-inline cengage-bootstrap">
+            <input class="input-xlarge focused" id="focusedInput" type="text" value="This is focused...">
+          </form>
+<pre class="prettyprint linenums">
+&lt;input class="input-xlarge" id="focusedInput" type="text" value="This is focused..."&gt;
+</pre>
+          <h3>Invalid inputs</h3>
+          <p>Style inputs via default browser functionality with <code>:invalid</code>. Specify a <code>type</code>, add the <code>required</code> attribute if the field is not optional, and (if applicable) specify a <code>pattern</code>.</p>
+          <p>This is not available in versions of Internet Explorer 7-9 due to lack of support for CSS pseudo selectors.</p>
+          <form class="bs-docs-example form-inline cengage-bootstrap">
+            <input class="span3" type="email" placeholder="test@example.com" required>
+          </form>
+<pre class="prettyprint linenums">
+&lt;input class="span3" type="email" required&gt;
+</pre>
+          <h3>Disabled inputs</h3>
+          <p>Add the <code>disabled</code> attribute on an input to prevent user input and trigger a slightly different look.</p>
+          <form class="bs-docs-example form-inline cengage-bootstrap">
+            <input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
+          </form>
+<pre class="prettyprint linenums">
+&lt;input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here..." disabled&gt;
+</pre>
+          <h3>Validation states</h3>
+          <p>Bootstrap includes validation styles for error, warning, info, and success messages. To use, add the appropriate class to the surrounding <code>.control-group</code>.</p>
+          <form class="bs-docs-example form-horizontal cengage-bootstrap">
+            <div class="control-group warning">
+              <label class="control-label" for="inputWarning">Input with warning</label>
+              <div class="controls">
+                <input type="text" id="inputWarning">
+                <span class="help-inline">Something may have gone wrong</span>
+              </div>
+            </div>
+            <div class="control-group error">
+              <label class="control-label" for="inputError">Input with error</label>
+              <div class="controls">
+                <input type="text" id="inputError">
+                <span class="help-inline">Please correct the error</span>
+              </div>
+            </div>
+            <div class="control-group info">
+              <label class="control-label" for="inputInfo">Input with info</label>
+              <div class="controls">
+                <input type="text" id="inputInfo">
+                <span class="help-inline">Username is taken</span>
+              </div>
+            </div>
+            <div class="control-group success">
+              <label class="control-label" for="inputSuccess">Input with success</label>
+              <div class="controls">
+                <input type="text" id="inputSuccess">
+                <span class="help-inline">Woohoo!</span>
+              </div>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="control-group warning"&gt;
+  &lt;label class="control-label" for="inputWarning"&gt;Input with warning&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;input type="text" id="inputWarning"&gt;
+    &lt;span class="help-inline"&gt;Something may have gone wrong&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="control-group error"&gt;
+  &lt;label class="control-label" for="inputError"&gt;Input with error&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;input type="text" id="inputError"&gt;
+    &lt;span class="help-inline"&gt;Please correct the error&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="control-group info"&gt;
+  &lt;label class="control-label" for="inputInfo"&gt;Input with info&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;input type="text" id="inputInfo"&gt;
+    &lt;span class="help-inline"&gt;Username is already taken&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="control-group success"&gt;
+  &lt;label class="control-label" for="inputSuccess"&gt;Input with success&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;input type="text" id="inputSuccess"&gt;
+    &lt;span class="help-inline"&gt;Woohoo!&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        </section>
+        <!-- Buttons  ================================================== -->
+        <section id="buttons">
+          <div class="page-header"><h1>Buttons</h1></div>
+          <h2>Default buttons</h2>
+          <p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
+          <table class="table table-bordered table-striped cengage-bootstrap">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>class=""</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button type="button" class="btn">Default Button</button></td>
+                <td><code>btn</code></td>
+                <td>Standard gray button with gradient: #FFF to #E6E6E6</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-primary">Primary Button</button></td>
+                <td><code>btn btn-primary</code></td>
+                <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+              </tr>              
+              <tr>
+                <td><button type="button" class="btn btn-green">Green Button</button></td>
+                <td><code>btn btn-green</code></td>
+                <td>Green button: #98CB32 to #699C03</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-orange">Orange Button</button></td>
+                <td><code>btn btn-orange</code></td>
+                <td>Orange button: #C60 to #AB5601</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-blue">Blue Button</button></td>
+                <td><code>btn btn-blue</code></td>
+                <td>Blue button: #0071A2 to #003D6C</td>
+              </tr>              
+              <tr>
+                <td><button type="button" class="btn btn-info">Info</button></td>
+                <td><code>btn btn-info</code></td>
+                <td>Used as an alternative to the default styles</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-success">Success</button></td>
+                <td><code>btn btn-success</code></td>
+                <td>Indicates a successful or positive action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-warning">Warning</button></td>
+                <td><code>btn btn-warning</code></td>
+                <td>Indicates caution should be taken with this action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-danger">Danger</button></td>
+                <td><code>btn btn-danger</code></td>
+                <td>Indicates a dangerous or potentially negative action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-inverse">Inverse</button></td>
+                <td><code>btn btn-inverse</code></td>
+                <td>Alternate dark gray button, not tied to a semantic action or use</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-link">Link</button></td>
+                <td><code>btn btn-link</code></td>
+                <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Cross browser compatibility</h4>
+          <p>IE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled <code>button</code> elements, rendering text gray with a nasty text-shadow that we cannot fix.</p>
+          <h2>Button sizes</h2>
+          <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <p>
+              <button type="button" class="btn btn-large btn-primary">Large button</button>
+              <button type="button" class="btn btn-large btn-brain">Large button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-primary">Default button</button>
+              <button type="button" class="btn btn-brain">Default button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-small btn-primary">Small button</button>
+              <button type="button" class="btn btn-small btn-brain">Small button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-mini btn-primary">Mini button</button>
+              <button type="button" class="btn btn-mini btn-brain">Mini button</button>
+            </p>
+          </div>
+<pre class="prettyprint linenums">
+&lt;p&gt;
+  &lt;button class="btn btn-large btn-primary" type="button"&gt;Large button&lt;/button&gt;
+  &lt;button class="btn btn-large" type="button"&gt;Large button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="btn btn-primary" type="button"&gt;Default button&lt;/button&gt;
+  &lt;button class="btn btn-brain" type="button"&gt;Default button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="btn btn-small btn-primary" type="button"&gt;Small button&lt;/button&gt;
+  &lt;button class="btn btn-small btn-brain" type="button"&gt;Small button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="btn btn-mini btn-primary" type="button"&gt;Mini button&lt;/button&gt;
+  &lt;button class="btn btn-mini btn-brain" type="button"&gt;Mini button&lt;/button&gt;
+&lt;/p&gt;
+</pre>
+          <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
+          <div class="bs-docs-example cengage-bootstrap">
+            <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+              <button type="button" class="btn btn-large btn-block btn-primary">Block level button</button>
+              <button type="button" class="btn btn-large btn-block btn-brain">Block level button</button>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;button class="btn btn-large btn-block btn-primary" type="button"&gt;Block level button&lt;/button&gt;
+&lt;button class="btn btn-large btn-block" type="button"&gt;Block level button&lt;/button&gt;
+</pre>
+          <h2>Disabled state</h2>
+          <p>Make buttons look unclickable by fading them back 50%.</p>
+          <h3>Anchor element</h3>
+          <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
+          <p class="bs-docs-example cengage-bootstrap">
+            <a href="#" class="btn btn-large btn-green disabled">Primary link</a>
+            <a href="#" class="btn btn-large disabled">Link</a>
+          </p>
+<pre class="prettyprint linenums">
+&lt;a href="#" class="btn btn-large btn-green disabled"&gt;Primary link&lt;/a&gt;
+&lt;a href="#" class="btn btn-large disabled"&gt;Link&lt;/a&gt;
+</pre>
+          <p>
+            <span class="label label-info">Heads up!</span>
+            We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
+          </p>
+          <h3>Button element</h3>
+          <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
+          <p class="bs-docs-example cengage-bootstrap">
+            <button type="button" class="btn btn-large btn-green disabled" disabled="disabled">Primary button</button>
+            <button type="button" class="btn btn-large" disabled>Button</button>
+          </p>
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-large btn-green disabled" disabled="disabled"&gt;Primary button&lt;/button&gt;
+&lt;button type="button" class="btn btn-large" disabled&gt;Button&lt;/button&gt;
+</pre>
+          <h2>One class, multiple tags</h2>
+          <p>Use the <code>.btn</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+          <form class="bs-docs-example cengage-bootstrap">
+            <a class="btn" href="">Link</a>
+            <button class="btn" type="submit">Button</button>
+            <input class="btn" type="button" value="Input">
+            <input class="btn" type="submit" value="Submit">
+          </form>
+<pre class="prettyprint linenums">
+&lt;a class="btn" href=""&gt;Link&lt;/a&gt;
+&lt;button class="btn" type="submit"&gt;Button&lt;/button&gt;
+&lt;input class="btn" type="button" value="Input"&gt;
+&lt;input class="btn" type="submit" value="Submit"&gt;
+</pre>
+          <p>As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.</p>
+        </section>
+        <!-- Images ================================================== -->
+        <section id="images">
+          <div class="page-header"><h1>Images</h1></div>
+          <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
+          <div class="bs-docs-example bs-docs-example-images cengage-bootstrap">
+            <img data-src="holder.js/140x140" class="img-rounded" alt="140x140" style="width: 140px; height: 140px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAErUlEQVR4Xu3YwStscRjG8d8QQnZEFkqyY6NE/n0rlOxkS1ZqrCiFe/udOtPcue6YJ889Gc93Vtz7eo/3eT/9zjl6/X7/V+FDAhMm0APMhElR1iQAGCBICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpgakH8/7+Xs7Ozsrz83M5OTkpi4uLfwRwd3dXbm5uyvr6etnf32/+r9/vl6urq1J/tn729vbKxsbGRMF1fb2JfqkOi6YazOvrazk9PS1vb2+l1+v9BaZd7tPT0wBM+zNLS0vl6OioXF5eNtjq13Nzc2Oj7/p6HTqY+FJTC2Z4eXXaj8BcX1+Xh4eHUmvX1taaE6Y9cba3t8vOzs7g+3rKzM/PNyfP8vJyA6j+/P39fXMCra6uDnC6rjfpqTbxNjsonGowFxcX5eDgYHBKDN+S2tvO1tZWub29/RRMC6ieOI+Pj+X4+Licn5+X9iSq6P7H9TrYsfUSUwumTeGjZ4r232ZmZsru7m5zarQnTHtqjJ4w7feT3naGn5m+cj3rNjto9iPBDN9K2tvMZ7ekFkzNvJ4y9YQaflAeB/Sr1+tgz7ZL/DgwCwsLzVtTfdAd/aysrJTNzc3mremjZ5j6TNHeyuoD8MvLy19vUKMn2levZ9tkR41+HJjR1+oWQHvCjHtLmp2dbbDVt67Dw8PmpKlfD79BffZarVzvs7eyjgxIl4kDM+7vMP96vhm+Nalgxl1P2tQ3KZ56MN8kx5hfAzAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gz6G1HzSbXtC7t7AAAAAElFTkSuQmCC">
+            <img data-src="holder.js/140x140" class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAErUlEQVR4Xu3YwStscRjG8d8QQnZEFkqyY6NE/n0rlOxkS1ZqrCiFe/udOtPcue6YJ889Gc93Vtz7eo/3eT/9zjl6/X7/V+FDAhMm0APMhElR1iQAGCBICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpgakH8/7+Xs7Ozsrz83M5OTkpi4uLfwRwd3dXbm5uyvr6etnf32/+r9/vl6urq1J/tn729vbKxsbGRMF1fb2JfqkOi6YazOvrazk9PS1vb2+l1+v9BaZd7tPT0wBM+zNLS0vl6OioXF5eNtjq13Nzc2Oj7/p6HTqY+FJTC2Z4eXXaj8BcX1+Xh4eHUmvX1taaE6Y9cba3t8vOzs7g+3rKzM/PNyfP8vJyA6j+/P39fXMCra6uDnC6rjfpqTbxNjsonGowFxcX5eDgYHBKDN+S2tvO1tZWub29/RRMC6ieOI+Pj+X4+Licn5+X9iSq6P7H9TrYsfUSUwumTeGjZ4r232ZmZsru7m5zarQnTHtqjJ4w7feT3naGn5m+cj3rNjto9iPBDN9K2tvMZ7ekFkzNvJ4y9YQaflAeB/Sr1+tgz7ZL/DgwCwsLzVtTfdAd/aysrJTNzc3mremjZ5j6TNHeyuoD8MvLy19vUKMn2levZ9tkR41+HJjR1+oWQHvCjHtLmp2dbbDVt67Dw8PmpKlfD79BffZarVzvs7eyjgxIl4kDM+7vMP96vhm+Nalgxl1P2tQ3KZ56MN8kx5hfAzAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gz6G1HzSbXtC7t7AAAAAElFTkSuQmCC">
+            <img data-src="holder.js/140x140" class="img-polaroid" alt="140x140" style="width: 140px; height: 140px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAErUlEQVR4Xu3YwStscRjG8d8QQnZEFkqyY6NE/n0rlOxkS1ZqrCiFe/udOtPcue6YJ889Gc93Vtz7eo/3eT/9zjl6/X7/V+FDAhMm0APMhElR1iQAGCBICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpgakH8/7+Xs7Ozsrz83M5OTkpi4uLfwRwd3dXbm5uyvr6etnf32/+r9/vl6urq1J/tn729vbKxsbGRMF1fb2JfqkOi6YazOvrazk9PS1vb2+l1+v9BaZd7tPT0wBM+zNLS0vl6OioXF5eNtjq13Nzc2Oj7/p6HTqY+FJTC2Z4eXXaj8BcX1+Xh4eHUmvX1taaE6Y9cba3t8vOzs7g+3rKzM/PNyfP8vJyA6j+/P39fXMCra6uDnC6rjfpqTbxNjsonGowFxcX5eDgYHBKDN+S2tvO1tZWub29/RRMC6ieOI+Pj+X4+Licn5+X9iSq6P7H9TrYsfUSUwumTeGjZ4r232ZmZsru7m5zarQnTHtqjJ4w7feT3naGn5m+cj3rNjto9iPBDN9K2tvMZ7ekFkzNvJ4y9YQaflAeB/Sr1+tgz7ZL/DgwCwsLzVtTfdAd/aysrJTNzc3mremjZ5j6TNHeyuoD8MvLy19vUKMn2levZ9tkR41+HJjR1+oWQHvCjHtLmp2dbbDVt67Dw8PmpKlfD79BffZarVzvs7eyjgxIl4kDM+7vMP96vhm+Nalgxl1P2tQ3KZ56MN8kx5hfAzAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gz6G1HzSbXtC7t7AAAAAElFTkSuQmCC">
+          </div>
+<pre class="prettyprint linenums">
+&lt;img src="..." class="img-rounded"&gt;
+&lt;img src="..." class="img-circle"&gt;
+&lt;img src="..." class="img-polaroid"&gt;
+</pre>
+          <p><span class="label label-info">Heads up!</span> <code>.img-rounded</code> and <code>.img-circle</code> do not work in IE7-8 due to lack of <code>border-radius</code> support.</p>
+        </section>
+<!--END CONTAINER-->
+        </div><!-- END SPAN9 -->
+      </div><!-- END ROW -->
+    </div><!-- Container -->
+<!-- Footer ----------------------------------- -->
+     <footer id="footer" class="footer"></footer>
+    <!-- JAVA SCRIPT ---------------------------------------------- -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      })
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+   <!-- <script src="./js/google-code-prettify/prettify.js"></script> -->
+    <script src="//getbootstrap.com/2.3.2/assets/js/google-code-prettify/prettify.js"></script>
+    </body>
+</html>

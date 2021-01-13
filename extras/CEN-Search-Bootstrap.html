@@ -1,0 +1,612 @@
+<!DOCTYPE html >
+<html lang="en" id ="html">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OLD CSS -->
+    <link href="//cdn.cengage.com/css/apps/search/reset.css" rel="stylesheet" />
+    <link href="//cdn.cengage.com/css/sites/cengage/header_footer.css" rel="stylesheet"/>
+    <!-- BOOTSTRAP -->
+    <link href="//d-www.cengage.com/sandbox/travis/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="//d-www.cengage.com/sandbox/travis/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="//d-www.cengage.com/sandbox/travis/bootstrap/css/docs.css" rel="stylesheet">
+    <link href="//d-www.cengage.com/sandbox/travis/bootstrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!--[if IE 8]><html lang="en-us" class="ie8"><link href="http://cdn.cengage.com/css/sites/cengage/ie8.css" rel="stylesheet" /><![endif]-->
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
+    <title>Cengage Product Page</title>
+  </head>
+  <body class="ngl">
+    <header id="header_include"></header>
+    <div class="container">
+    <!-- BREADCRUMB -------------------------- -->
+    <div class="row-fluid">
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li><a href="#">Library</a> <span class="divider">/</span></li>
+        <li class="active">Data</li>
+      </ul>
+      <h1><span class="sub_h1">(4 results) </span></h1>
+    </div> <!-- END ROW-FLUID BREADCRUMB -->
+    <div class="row-fluid">
+      <aside class="span3">
+    <!-- Start RefineSearch Cartridge  -->
+      <section id="refine-search">
+          <h1>Refine Search:</h1>
+          <form name="refineSearchForm" class="omnitureForm" method="post" action="" target="_parent">
+            <input type="hidden" name="globalSearchTerm" value="">
+            <input type="hidden" name="appTargetDescription" value="">
+            <input type="hidden" name="searchTerm" value="">
+            <input type="hidden" name="sortQuery" value="&amp;Ns=P_CopyRight_Year|1||P_Product_Title|0||P_Title|0">
+            <input name="maxRecordsPerPage" value="10" type="hidden">
+            <input type="hidden" name="allVal" id="ntkVal" value="&Ntk=APG||APG">
+            <input type="hidden" name="activityFlag" value="">
+            <!--<label for="searchParam" style="position:absolute; left:-10000px;">Search within results</label>-->
+            <input  type="text" ID="RefSearchTXT" class="omnitureSearch" name="refineParam" size="16" autocomplete="off" onkeydown="javascript:submitRFByType('?N=185+4294918551&Ntt=read&Ntx=mode%2Bmatchallpartial',this.form,event);" />
+            <!--<input id="RefSearchTXT" type="text" name="searchParam" maxlength="20" size="16" value='Search within results' onkeydown="javascript:submitRFByType('',this.form,event);">-->
+            <input type="button" name="Search" id="RefSearchBTN" src="" onclick="javascript:submitRefineSearchForm('?N=185+4294918551&Ntt=read&Ntx=mode%2Bmatchallpartial',this.form);" class="ref_searchBtn" />
+            <section class="refineSuggestions">
+              <div class="suggestions"></div>
+              <div class="control">
+                <a href="#"> View All <span>&raquo;</span> </a>
+                <a href="#"> [x] Close </a>
+              </div>
+            </section>
+          </form>
+        </section> 
+    <!-- Start the GuidedNavigation Cartidge-->
+        <nav>
+        <h1>Filter Results:</h1>
+        <ul class="nav_list"></ul>
+        <h2>Publisher</h2>
+        <ul class="nav_list">
+          <li><a href="#"> Heinle&nbsp; (1) </a></li>
+        </ul><h2>Category</h2>
+        <ul class="nav_list">
+          <li><a href="#"> English Language Teaching &amp; Learning (ELT)&nbsp; (1) </a></li>
+          <li><a href="#"> PreK - 12 School&nbsp; (2) </a></li>
+        </ul>
+        <h2>Product Type</h2>
+        <ul class="nav_list">
+          <form name="browseFilterForm" method="post" action="" target="_parent">
+            <input type="checkbox" id="cb1" class="checkBox" name="option" value="4294921854"  onClick="javascript:submitBrowseFilter('Ntk=NGL&Ntt=read&N=185+4294918551',this.form);"/>
+            <label for="cb1" class="checkBoxLabel">Print&nbsp; (2)</label>
+          </form>
+        </ul>
+        <h2>Author Range</h2>
+        <ul class="nav_list">
+          <li><a href="#"> A - E&nbsp; (1) </a></li>
+          <li><a href="#"> F - J&nbsp; (2) </a></li>
+          <li><a href="#"> K - O&nbsp; (2) </a></li>
+          <li><a href="#"> P - T&nbsp; (4) </a></li>
+          <li><a href="#"> U - Z&nbsp; (1) </a></li>
+        </ul>
+        <h2>Series</h2>
+        <ul class="nav_list">
+          <li><a href="#"> National Geographic Reach&nbsp; (1) </a></li>
+          <li><a href="#"> Reach for Reading&nbsp; (1) </a></li>
+        </ul>
+        <h2>Audience</h2>
+        <ul class="nav_list">
+          <li><a href="#"> Higher Education&nbsp; (1) </a></li>
+          <li><a href="#"> Private Language Schools&nbsp; (1) </a></li>
+          <li><a href="#"> Summer School&nbsp; (1) </a></li>
+        </ul>
+        <h2>GradeRange</h2>
+        <ul class="nav_list">
+          <li><a href="#"> Pre K - 5&nbsp; (2) </a></li>
+        </ul>
+        <h2>Level</h2>
+        <ul class="nav_list">
+          <li><a href="#"> Advanced&nbsp; (1) </a></li>
+          <li><a href="#"> High-intermediate&nbsp; (1) </a></li>
+        </ul>
+        <h2>Product Language</h2>
+        <ul class="nav_list">
+          <li><a href="#"> American English&nbsp; (3) </a></li>
+        </ul>
+        <h2>Supplement Type</h2>
+        <ul class="nav_list">
+          <li><a href="#"> Digital&nbsp; (1) </a></li>
+          <li><a href="#"> Print&nbsp; (2) </a></li>
+        </ul>
+        <!-- start the HTML Cartidge -->
+        <div class="HTMLButtonLeftNav">
+          <h2>Text Goes Here</h2>
+          <h2><a href="#" target="_parent">View our online catalog  &#187;</a></h2>
+          <ul>
+            <li><a href="#" target="" > or era in world history.</a></li>
+            <li>educators, librarians Now,</li>
+            <li>Opposing Viewpoints in World H</li>
+            <li>istory uses the same patented</li>
+            <li>format to cover topics</li>
+          </ul>
+          <div class="leftNavImageLink">
+            <a id="testAd" target="_new" href="#">
+              <img src="http://www.cengage.com/images/welcome/old_NGL.jpg" title="" alt="alt text goes here this is required to make the images comply with acessaability">
+            </a>
+          </div>
+          <div class="leftNavImageLink">
+            <p><a href="/" target="_parent">bottom link 1  &#187;</a></p>
+            <p><a href="/" target="_parent">bottom link 2  &#187;</a></p>
+          </div>
+        </div>
+        <!-- start the HTML Cartidge -->
+        <div class="HTMLButtonLeftNav">
+          <h2>Text Goes Here</h2>
+          <h2><a href="/" target="_parent">View our online catalog  &#187;</a></h2>
+          <ul>
+            <li><a href="" target="" > or era in world history.</a></li>
+            <li> educators, librarians Now,</li>
+            <li>Opposing Viewpoints in World H</li>
+            <li> istory uses the same patented</li>
+            <li> format to cover topics</li>
+          </ul>
+          <div class="leftNavImageLink">
+            <a id="testAd" target="_new" href="#">
+            <img src="http://www.cengage.com/images/welcome/old_NGL.jpg" title="" alt="alt text goes here this is required to make the images comply with acessaability"></a>
+          </div>
+          <div class="leftNavImageLink">
+            <p><a href="/" target="_parent">bottom link 1  &#187;</a></p>
+            <p><a href="/" target="_parent">bottom link 2  &#187;</a></p>
+          </div>
+        </div>
+      </nav>
+    </aside><!-- END SPAN 3 -->
+    <div class="span9">
+      <!-- HeroImage Cartridge -->
+      <section class="hero-image">
+        <img src="http://www.cengage.com/images/adds/k12_hero.jpg" alt="YEA hero 2" />
+      </section>
+      <!-- RotatingBanner Cartridge-->
+      <section class="rotatingBanner">
+        <ul>
+          <li>
+            <img src="http://www.cengage.com/images/adds/slide_1_heroCatridge.jpg" alt="" />
+          </li>
+          <li>
+            <img src="http://www.cengage.com/images/adds/slide_2_heroCatridge.jpg" alt="" />
+          </li>
+          <li>
+            <a href="#" target="_self">
+              <img src="http://www.cengage.com/images/adds/slide_3_heroCatridge.jpg" alt="" />
+            </a>
+          </li>
+          <li>
+            <img src="http://www.cengage.com/images/adds/slide_4_heroCatridge.jpg" alt="" />
+          </li>
+        </ul>
+      </section>
+      <!-- NonRecordLeft Cartridge -->
+      <section class="nonRecord left">
+        <img src="http://www.cengage.com/images/catalog/noRecordImage1.jpg" alt="image"/>
+        <h1>SERIES: Opposing Viewpoints</h1>
+        <h2 class="seriesPub"><b>Published by</b> Greenhaven Press</h2>
+        <p> rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat, erat ut venenatis fermentum, mauris augue convallis mauris, at ornare neque nisl sed enim. Aliquam at dui          tristique justo tincidunt facilisis. Cras non aliquet dolor. Sed convallis porttitor mi ut elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec magna metus. Donec          condimentum dolor a dolor tincidunt suscipit. Donec sagittis tempus enim et consequat. Pellentesque dignissim consequat ante non luctus. Aliquam id urna vel velit cursus fringilla in sit          amet dolor. Ut volutpat vulputate nulla et cursus. Morbi aliquam erat eu est interdum non cursus sem ia
+        </p>
+      </section>
+      <!-- NonRecordRight Cartridge -->
+      <section class="nonRecord right">
+        <img src="http://www.cengage.com/images/catalog/noRecordImage1.jpg" alt="image"/>
+        <h1>SERIES: Opposing Viewpoints</h1>
+        <h2 class="seriesPub">Published by Greenhaven Press</h2>
+        <p> rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat, erat ut venenatis fermentum, mauris augue convallis mauris, at ornare neque nisl sed enim. Aliquam at dui          tristique justo tincidunt facilisis. Cras non aliquet dolor. Sed convallis porttitor mi ut elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec magna metus. Donec          condimentum dolor a dolor tincidunt suscipit. Donec sagittis tempus enim et consequat. Pellentesque dignissim consequat ante non luctus. Aliquam id urna vel velit cursus fringilla in sit          amet dolor. Ut volutpat vulputate nulla et cursus. Morbi aliquam erat eu est interdum non cursus sem ia</p>
+      </section>
+      <!-- RecordScrollBanner Cartridge -->
+      <section class="recordScrollBanner border">
+        <h1>Top-Selling Titles</h1>
+        <ul class="mycarousel jcarousel-skin-tango">
+          <li aria-selected="true" role="option" tabindex="0" jcarouselindex="1" class="RSB_li jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal selectedItem">
+            <a href="#"> 
+              <img width="67" height="84" border="0" src="http://www.cengage.com/covers/imageServlet?productISBN13=9781285455549" alt=""> </a>
+            <h2><a href="#"> Our World 4 with CD-ROM, 1st Edition </a></h2>
+            <p>
+              Kate Cory-Wright | Dr. JoAnn (J...
+            </p>
+            <p>
+              &#169; 2014  |&#160;Available November 2013
+            </p>
+          </li>
+          <li aria-selected="true" role="option" tabindex="0" jcarouselindex="1" class="RSB_li jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal selectedItem">
+            <a href="#"> <img width="67" height="84" border="0" src="http://www.cengage.com/covers/imageServlet?productISBN13=9781285455525" alt=""> </a>
+            <h2><a href="#"> Our World 3 with CD-ROM, 1st Edition </a></h2>
+            <p>
+              Rob Sved | Dr. JoAnn (Jodi) Cra...
+            </p>
+            <p>
+              &#169; 2014  |&#160;Available November 2013
+            </p>
+          </li>
+          <li aria-selected="true" role="option" tabindex="0" jcarouselindex="1" class="RSB_li jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal selectedItem">
+
+            <a href="#"> <img width="67" height="84" border="0" src="http://www.cengage.com/covers/imageServlet?productISBN13=9781285455501" alt=""> </a>
+            <h2><a href="#"> Our World 2 with CD-ROM, 1st Edition </a></h2>
+            <p>
+              Gabrielle Pritchard | Dr. JoAnn...
+            </p>
+            <p>
+              &#169; 2014  |&#160;Available November 2013
+            </p>
+          </li>
+          <li aria-selected="true" role="option" tabindex="0" jcarouselindex="1" class="RSB_li jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal selectedItem">
+            <a href="#"> <img width="67" height="84" border="0" src="http://www.cengage.com/covers/imageServlet?productISBN13=9781285455495" alt=""> </a>
+            <h2><a href="#">Our World 1 with CD-ROM, 1st Edition </a></h2>
+            <p> Diane Pinkley | Dr. JoAnn (Jodi...</p>
+            <p> &#169; 2014 |&#160;Available November 2013</p>
+          </li>
+        </ul>
+        <div class="nav">
+          <ul>
+            <li>
+              <button>
+                &laquo;
+              </button>
+            </li>
+            <li></li>
+            <li>
+              to
+            </li>
+            <li></li>
+            <li>
+              of
+            </li>
+            <li></li>
+            <li>
+              <button>
+                &raquo;
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- RecordScrollBanner Cartridge -->
+      <section class="recordScrollBanner border">
+        <h1>RSB 3</h1>
+        <ul class="mycarousel jcarousel-skin-tango">
+          <li aria-selected="true" role="option" tabindex="0" jcarouselindex="1" class="RSB_li jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal selectedItem">
+            <a href="#"> <img width="67" height="84" border="0" src="http://www.cengage.com/covers/imageServlet?productISBN13=9781285455488" alt=""> </a><h2><a href="#"> Our World 6 with CD-ROM, 1st Edition </a></h2>
+            <p>Kate Cory-Wright | Dr. JoAnn (J...</p>
+            <p>&#169; 2014  |&#160;Available November 2013</p>
+          </li>
+          <li aria-selected="true" role="option" tabindex="0" jcarouselindex="1" class="RSB_li jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal selectedItem">
+            <a href="#"> <img width="67" height="84" border="0" src="http://www.cengage.com/covers/imageServlet?productISBN13=9781285455556" alt=""> </a>
+            <h2><a href="#"> Our World 5 with CD-ROM, 1st Edition </a></h2>
+            <p> Ronald Scro | Dr. JoAnn (Jodi) ...</p>
+            <p>&#169; 2014 |&#160;Available November 2013</p>
+          </li>
+          <li aria-selected="true" role="option" tabindex="0" jcarouselindex="1" class="RSB_li jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal selectedItem">
+            <a href="#"> <img width="67" height="84" border="0" src="http://www.cengage.com/covers/imageServlet?productISBN13=9781285455549" alt=""> </a><h2><a href="#">Our World 4 with CD-ROM, 1st Edition </a></h2>
+            <p>Kate Cory-Wright | Dr. JoAnn (J...</p>
+            <p> &#169; 2014  |&#160;Available November 2013</p>
+          </li>
+        </ul>
+        <div class="nav">
+          <ul>
+            <li><button>&laquo; </button></li>
+            <li>to</li>
+            <li>of</li>
+            <li><button>&raquo;</button></li>
+          </ul>
+        </div>
+      </section>
+      <!-- start the CFWYLF section this will be supressable need to redo for acessability reasons -->
+      <section class="resultsListHeader">
+        <h1>Showing 1 - 4 of 4 Results</h1>
+        <ul>
+          <li><a href="exportAction?N=185+4294918551&Ntk=NGL&Ntt=read" target="new" data-track="Download Results in Excel –  Cengage Learning"> Download Results in Excel</a></li>
+          <li><a href="#" onClick="printSearchResultsPage('/css/search/SearchResultsprint.css');" data-track="Print Page –  Cengage Learning"> Print Page</a></li>
+          <li><a href=" http://www.cengage.com/pubco/help.html" data-track="Help – Cengage Learning"> Help</a></li>
+        </ul>
+        <label for="SB"> Sort by:</label>
+        <select onchange="changeSortingParameter(this.value);" name="sortParam" id="SB">
+          <option selected="Relevancy" value="" name="Relevancy">Select</option>
+          <option value="P_Product_Title|0" name="pagesize">Title: A to Z </option>
+          <option value="P_Product_Title|1"name="Relevancy">Title: Z to A </option>
+          <option value="P_Author_Last|0" name="pagesize">Author: A to Z </option>
+          <option value="P_Author_Last|1"name="Relevancy">Author: Z to A </option>
+          <option value="P_CopyRight_Year|1" name="Relevancy">Newest to Oldest</option>
+          <option value="P_CopyRight_Year|0" name="Relevancy">Oldest to Newest</option>
+        </select>
+        <label for="CNS"> Results per page</label>
+        <select onchange="javascript:submitSearchByPageSize(this);" name="pageDropdown" id="CNS">
+          <option name="pagesize" value="10">10</option>
+          <option name="pagesize" value="20">20</option>
+          <option name="pagesize" value="30">30</option>
+          <option name="pagesize" value="40">40</option>
+          <option name="pagesize" value="50">50</option>
+        </select>
+      </section>
+      <!-- Start ResultsList Cartridge -->
+      <section class="resultsList">
+        <ul>
+          <li>
+            <a href="#"><img width="67" height="84" border="0" src="http://www.cengage.com/images/common/no_images.jpg" alt="No image"></a>
+            <h1><a href="#"> Reach For Reading Kindergarten Read On Your Own Books Single Copy Set, 1st  Edition </a></h1>
+            <ul class="bcon_right">
+              <li class="cat_ep">
+                See Entire Program
+              </li>
+              <li class="cat_inst">
+                <a href="#" data-track="This is my link –  National Geographic Learning">Reach for Reading </a>
+              </li>
+            </ul>
+            <p>
+              Lada  Kratky | Nancy Frey | Nonie K Lesaux | Dr. Deborah J Short | Sylvia Linan Thompson | Jennifer D Turner
+              <br/>
+              ISBN-13: 9781133900191
+              <br/>
+              &#169; 2013  |&#160;Published
+            </p>
+          </li>
+          <li>
+            <a href="#"> <img width="134" height="84" border="0" src="http://www.cengage.com/images/common/no_program.png" alt="No image"> </a>
+            <h1><a href="#"> Read to Succeed</a></h1>
+            <ul class="bcon_right"></ul>
+            <p>
+              oberto Robledo  | Dolores Howard
+              <br/>
+              ISBN-13: PRO0000000098
+              <br/>
+              &#169; 2012 |&#160;Published
+            </p>
+          </li>
+          <li>
+            <a href="#"> <img width="67" height="84" border="0" src="http://www.cengage.com/images/common/no_images.jpg" alt="No image"></a>
+            <h1><a href="#"> Reach Level A Read Together Student Books Set        , 1st  Edition </a></h1>
+            <ul class="bcon_right">
+              <li class="cat_ep">
+                See Entire Program
+              </li>
+              <li class="cat_inst">
+                <a href="#" data-track="This is my link –  National Geographic Learning">National Geographic Reach </a>
+              </li>
+            </ul>
+            <p>
+              Jennifer D Turner | Lada  Kratky | Nonie K Lesaux | Dr. Deborah J Short | Sylvia Linan Thompson | Nancy Frey
+              <br/>
+              ISBN-13: 9780736279994
+              <br/>
+              &#169; 2011  |&#160;Published
+            </p>
+          </li>
+          <li>
+            <a href="#"> <img width="67" height="84" border="0" src="http://www.cengage.com/covers/imageServlet?productISBN13=9780618144952" alt=""> </a>
+            <h1><a href="#"> Read, Write, Edit: Grammar for College Writers, 1st  Edition </a></h1>
+            <ul class="bcon_right">
+              <li class="cat_cat">
+                Companion Site
+              </li>
+              <li class="cat_inst">
+                <a href="#" target="_blank" data-track="Teacher –  National Geographic Learning" >&#187; Teacher</a>
+              </li>
+              <li class="cat_student">
+                <a href="#" target="_blank" data-track="Student –  National Geographic Learning">&#187; Student</a>
+              </li>
+            </ul>
+            <p>
+              Patricia Porter  | Deborah vanDommelen
+              <br/>
+              ISBN-13: 9780618144952
+              <br/>
+              194 Pages | &#169; 2005  |&#160;Published
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- Start RSS Cartridge -->
+      <script type="text/javascript">
+		var rssFeed_1 = ('http://news.cengage.com/feed/');
+		var rssFeed_1_limit = (1);
+		// these varables are passed into the the site from workbenach the numbers incrament up rssFeed_a
+      </script>
+      <!-- START QUICK LINKS --> 
+      <section class="quickLinks">
+        <h1>Quicklinks</h1>
+        <ul>
+        <li><a href="http://www.google.com" target="_self">  link 1</a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li><a href="http://www.google.com" target="_self">  link 2</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li><a href="http://www.google.com" target="_self">  link 3 »</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
+      </section>
+      <!-- Start RSS Cartridge -->
+      <script type="text/javascript">
+		var rssFeed_2 = ('http://news.cengage.com/feed/');
+		var rssFeed_2_limit = (4);
+		// these varables are passed into the the site from workbenach the numbers incrament up rssFeed_a
+      </script>
+      <section class="rssFeed" id="rssFeed1">
+        <h1>RSS Feed</h1>
+      </section>
+      <!-- TitleText Cartridge-->
+      <section class="titleText">
+        <h1>Title Placeholder</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis risus eget nibh semper vehicula. Mauris molestie nisi adipiscing neque dapibus id pulvinar massa tincidunt. Praesent hendrerit pharetra ultrices. Phasellus sit amet massa sit amet enim laoreet consectetur eu id ligula. Suspendisse sodales mi eget libero rhoncus porttitor. Vivamus ut urna vehicula est luctus hendrerit. Nulla facilisi. Nunc sit amet magna ut nibh rhoncus tempor. Mauris at neque elit.
+          <a href="http://www.google.com" target="_self"> Go Go » </a>
+        </p>
+      </section>
+      <!-- HERO VIDEO CARTRIDGE -->
+      <a href="http://www.google.com" title="" name="" target="_blank">
+      <section title="Video Banner" id="video" class="videoHero" style="background-image:url('http://d-www.cengage.com/sandbox/travis/images/Apple724x224.jpg')">
+        <div id="jwplayerHero" class="video-container" player="jwplayer2" title='Video'>
+          <input type="hidden" class="img" name="http://wowzahttp.cengage.com/natgeo/ngl/12_1_1/12_1_1.jpg" />
+          <input type="hidden" class="mp4" name="http://wowzahttp.cengage.com/natgeo/ngl/12_1_1/12_1_1.mp4" />
+          <input type="hidden" class="webm" name="http://wowzahttp.cengage.com/natgeo/ngl/12_1_1/12_1_1.webm" />
+          <input type="hidden" class="srt" name="http://wowzahttp.cengage.com/natgeo/ngl/12_1_1/12_1_1.srt" />
+          <input type="hidden" class="txt" name="http://wowzahttp.cengage.com/natgeo/ngl/12_1_1/12_1_1.txt" />
+          <input type="hidden" class="width" name="320" />
+          <input type="hidden" class="height" name="180" />
+        </div>
+      </section> 
+      </a>
+
+      <div class="row-fluid">
+        <div class="span9">
+        <!-- START HeroImage Cartridge -->
+        <section class="hero-image">
+          <img src="/images/catalog/heroNarrow.jpg" alt="jkljk" />
+        </section>
+        <!-- Video Narrow Cartridge -->
+        <section id="video" title="Video information" >
+          <h1 title="Title" >Teach Ag Campaign</h1>
+          <div id="jwp6Narrow" class="video-container" player="jwplayer1" title='Video'>
+            <input type="hidden" class="title" name="Let's teach some Ag" />
+            <input type="hidden" class="desc" name="" />
+            <input type="hidden" class="img" name="http://wowzahttp.cengage.com/natgeo/ngl/12_1_1/12_1_1.jpg" />
+            <input type="hidden" class="mp4" name="http://wowzahttp.cengage.com/natgeo/ngl/12_1_1/12_1_1.mp4" />
+            <input type="hidden" class="webm" name="http://wowzahttp.cengage.com/natgeo/ngl/12_1_1/12_1_1.webm" />
+            <input type="hidden" class="srt" name="http://wowzahttp.cengage.com/natgeo/ngl/12_1_1/12_1_1.srt" />
+            <input type="hidden" class="txt" name="http://wowzahttp.cengage.com/natgeo/ngl/12_1_1/12_1_1.txt" />
+            <input type="hidden" class="width" name="429" />
+            <input type="hidden" class="height" name="240" />
+          </div>
+        </section>
+        <!-- NonRecordLeft Cartridge -->
+        <section class="nonRecord left">
+          <a href="#" alt="" target="_self" id="" > <img src="http://www.cengage.com/images/catalog/noRecordImageNarrow.jpg" alt="link" /></a>
+          <h1>SERIES: Opposing Viewpoints</h1>
+          <h2 class="seriesPub"><b>Published by</b> Greenhaven Press</h2>
+          <p>est test test test tetst test test test hahahahahahahahaandnd  teas</p>
+        </section>
+        <!-- NonRecordRight Cartridge -->
+        <section class="nonRecord right">
+          <a href="#" alt="" target="_self" id="" ><img src="http://www.cengage.com/images/catalog/noRecordImageNarrow.jpg" alt="test" /></a>
+          <h1>SERIES: Opposing Viewpoints</h1>
+          <h2 class="seriesPub">Published by Greenhaven Press</h2>
+          <p>
+            est test test test tetst test test test hahahahahahahahaandnd  teas
+          </p>
+        </section>
+        <!-- QuickLinks CARTRIDGE -->
+        <section class="quickLinks">
+          <h1>Quicklinks</h1>
+          <ul>
+            <li>
+              <a href="#" target="_self" > link 1</a> link1
+            </li>
+          </ul>
+        </section>
+        <!-- RSS Cartridge -->
+        <script type="text/javascript">
+			var rssFeed_3 = ('http://news.cengage.com/feed/');
+			var rssFeed_3_limit = (4);
+			// these varables are passed into the the site from workbenach the numbers incrament up rssFeed_a
+        </script>
+        <section class="rssFeed" id="rssFeed3">
+          <h1>RSS Feed</h1>
+        </section>
+        <!-- Start TitleText Cartridge-->
+        <section class="titleText">
+          <h1>Title Placeholder</h1>
+        </section>
+        <!-- ResultsList Cartridge -->
+        <section class="resultsList">
+          <ul>
+            <li>
+              <a href="#"> <img width="67" height="84" border="0" src="http://www.cengage.com/images/common/no_images.jpg" alt="No image"> </a>
+              <h1><a href="#"> Reach For Reading Kindergarten Read On Your Own Books Single Copy Set, 1st  Edition </a></h1>
+              <ul class="bcon_right">
+                <li class="cat_ep">
+                  See Entire Program
+                </li>
+                <li class="cat_inst">
+                  <a href="#" data-track="This is my link –  National Geographic Learning">Reach for Reading </a>
+                </li>
+              </ul>
+              <p>
+                Lada  Kratky | Nancy Frey | Nonie K Lesaux | Dr. Deborah J Short | Sylvia Linan Thompson | Jennifer D Turner
+                <br/>
+                ISBN-13: 9781133900191
+                <br/>
+                &#169; 2013  |&#160;Published
+              </p>
+            </li>
+            <li>
+              <a href="#"> <img width="134" height="84" border="0" src="http://www.cengage.com/images/common/no_program.png" alt="No image"></a>
+              <h1><a href="#"> Read to Succeed</a></h1><ul class="bcon_right"></ul>
+              <p>
+                Roberto Robledo  | Dolores Howard
+                <br/>
+                ISBN-13: PRO0000000098
+                <br/>
+                &#169; 2012  |&#160;Published
+              </p>
+            </li>
+            <li>
+              <a href="#"><img width="67" height="84" border="0" src="http://www.cengage.com/images/common/no_images.jpg" alt="No image"></a>
+              <h1><a href="#">Reach Level A Read Together Student Books Set        , 1st  Edition </a></h1>
+              <ul class="bcon_right">
+                <li class="cat_ep">
+                  See Entire Program
+                </li>
+                <li class="cat_inst">
+                  <a href="/search/programOverview.do?N=4294918551&Ntk=P_EPI&Ntt=193513914518552982211040983442513155098" data-track="This is my link –  National Geographic Learning">National Geographic Reach </a>
+                </li>
+              </ul>
+              <p>
+                Jennifer D Turner | Lada  Kratky | Nonie K Lesaux | Dr. Deborah J Short | Sylvia Linan Thompson | Nancy Frey
+                <br/>
+                ISBN-13: 9780736279994
+                <br/>
+                &#169; 2011  |&#160;Published
+              </p>
+            </li>
+            <li>
+              <a href="#"> <img width="67" height="84" border="0" src="http://www.cengage.com/covers/imageServlet?productISBN13=9780618144952" alt=""> </a><h1><a href="#"> Read, Write, Edit: Grammar for College Writers, 1st  Edition </a></h1>
+              <ul class="bcon_right">
+                <li class="cat_cat">
+                  Companion Site
+                </li>
+                <li class="cat_inst">
+                  <a href="#" target="_blank" data-track="Teacher –  National Geographic Learning" >&#187; Teacher</a>
+                </li>
+                <li class="cat_student">
+                  <a href="#" target="_blank" data-track="Student –  National Geographic Learning">&#187; Student</a>
+                </li>
+              </ul>
+              <p>
+                Patricia Porter  | Deborah vanDommelen
+                <br/>
+                ISBN-13: 9780618144952
+                <br/>
+                194 Pages | &#169; 2005 |&#160;Published
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div><!-- END SPAN9 INNER -->
+
+      <aside class="span3" role="complementary">
+        <!-- SingleImage  Cartridge -->
+        <section class="singleImage">
+          <img src="http://www.cengage.com/images/welcome/old_NGL.jpg" alt="test" />
+        </section>
+        <!-- Start HTMLButton Cartridge -->
+        <section>
+          <b>HTML Text Goes here</b>
+        </section>
+        <!-- Start RotatingImage Cartridge -->
+        <section class="rotatingImage">
+          <div class="RN">
+            <img src="http://s-ngl.cengage.com/images/welcome/old_NGL.jpg" alt="" />
+          </div>
+          <div class="RN">
+            <img src="http://s-ngl.cengage.com/images/welcome/old_NGL.jpg" alt="" />
+          </div>
+          <div class="RN">
+            <img src="http://s-ngl.cengage.com/images/welcome/old_NGL.jpg" alt="" />
+          </div>
+        </section>
+        <!-- End RotatingImage Cartridge -->
+      </aside><!-- END SPAN3 -->
+     </div><!--END ROW-FLUID INNER -->
+    </div><!-- END SPAN9 MAIN CONTENT RIGHT -->
+    </div><!-- END ROW FLUID -->
+    </div><!-- END CONTAINER-->
+    <footer id="footer_include"></footer>
+        <!-- javascript -------------------------------------------------- -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://platform.twitter.com/widgets.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//d-www.cengage.com/sandbox/travis/bootstrap/js/bootstrap.min.js"></script>  
+  </body>
+</html>

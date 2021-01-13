@@ -1,0 +1,171 @@
+<h1>Cenage Web Bootstrap Style-Guide</h1>
+
+
+<h2>Chapter 2</h2>
+
+<h3>Responsive Design</h3>
+1. Fluid Grid
+2. Flexible Images
+3 Media Queries
+
+<h4>Backwards Compadability</h4>
+Cengage Bootstrap should be Backwards compadable to ie8.
+
+If you would like bootstrap to be backwards compadable to ie7 please use modernizr.
+  
+All the information regarding modernizer can be found here.
+Modernizr.com
+http://modernizer.com
+
+reference: http://www.alistapart.com/articles/responsive-web-design
+
+<h3>Adaptive Layout</h3>
+reference: http://www.alistapart.com/articles/switchymclayout
+
+<h2> Grid Layout System</h2>
+The website is layed out in a 12 column system
+
+<h2> Responsive Design Scaffolding</h2>
+http://twitter.github.io/bootstrap/scaffolding.html#responsive
+
+<h2> Visibility on Multipul devices</h2>
+    
+  <h3>Desktop Visibility <h3>
+  <p>Widths of 769px and greater</p>
+    class .visible-desktop
+    this is visible on the desktop
+    
+    Html example:
+    <div class="span4 visible-desktop"> this is visible on the desktop</div>
+  
+  <h3>Tablet Visibility</h3>
+  <p>Widths of 768px to  979px</p>  
+    class .visible-tablet 
+    this is visible on the tablet
+    Html example:
+    <div class="span4 visible-tablet"> this is visible on the tablet</div>
+    
+  <h3>Phone visibility</h3>
+  <p>Widths of 767px and below</p>   
+    class .visible-phone 
+    this is visible on the phone
+    
+    Html example:
+	<div class="span4 visible-phone"> this is visible on the phone</div>
+
+	<h2>Ch3 List Styling</h2>
+	class unstyle
+	removes the bullets from a list
+	Removes margin and padding
+
+	<h3>DL list</h3>
+	   <dl>
+        <dt>Sam Gilmore</dt>
+        <dd>Ocean photography</dd>
+        <dt>Ralph Samson</dt>
+        <dd>Wildlife closeups</dd>
+        <dt>Mary Smith</dt>
+        <dd>Photography through the microscope</dd>
+      </dl>
+      
+    <h3>DL list horizontal</h3>
+      <dl class="dl-horizontal">
+        <dt>Sam Gilmore</dt>
+        <dd>Ocean photography</dd>
+        <dt>Ralph Samson</dt>
+        <dd>Wildlife closeups</dd>
+        <dt>Mary Smith</dt>
+        <dd>Photography through the microscope</dd>
+      </dl>
+   
+   <h2> Buttons </h2>
+   Buttons
+   all buttons need a class of btn to start   
+	
+	<h3>Button Colors:</h3>
+		btn-primary
+		btn-info
+		btn-success
+		btn-warning
+		btn-danger
+		btn-inverse
+	
+	<h3>Button Size</h3>
+		btn-large
+		no size is normal
+		btn-small
+		btn-mini
+
+	<h2>Images</h2>
+		img-circle
+		img-rounded
+		img-polaroid
+	
+	<h2>Icons</h2>
+		by: Glif-Icon
+		<span class="icon-calendar"></span>
+	
+	<h3>For white Icons add</h3>
+		icon-white
+		example
+		<span class="icon-calendar icon-white"></span>
+	
+	<h2>Chapter 4</h2>
+	<h2>Breadcrumbs</h2>
+	
+	Example:
+	  <div class="row-fluid">
+      <nav class="span12">
+        <ul class="breadcrumb">
+          <li><a href="#">Travis</a> <span class="divider">&raquo</span></li>
+          <li><a href="#">Mikoaly</a> <span class="divider">&raquo</span></li>
+          <li class="active">Awesome!</li>
+        </ul>
+      </nav>
+    </div>
+    
+	<h2>Pageination</h2>
+	  <nav class="pagination">
+	    <ul>
+	      <li class="disabled"><a href="#">&lt;&lt;</a></li>
+	      <li class="active"><a href="#">1</a></li>
+	      <li><a href="#">2</a></li>
+	      <li><a href="#">3</a></li>
+	      <li><a href="#">4</a></li>
+	      <li><a href="#">5</a></li>
+	      <li><a href="#">&gt;&gt;</a></li>
+	    </ul>
+  	  </nav>
+  	  
+  	 <h3>Center Content</h3>
+  	 class pagination-center
+  	 
+  	<nav class="pagination pagination-centered">
+	    <ul>
+	      <li class="disabled"><a href="#">&lt;&lt;</a></li>
+	      <li class="active"><a href="#">1</a></li>
+	      <li><a href="#">2</a></li>
+	      <li><a href="#">3</a></li>
+	      <li><a href="#">4</a></li>
+	      <li><a href="#">5</a></li>
+	      <li><a href="#">&gt;&gt;</a></li>
+	    </ul>
+    </nav>
+	
+  	 <h3>Float Right Content</h3>
+  	 class pagination-right
+  	 
+  	<nav class="pagination pagination-centered">
+	    <ul>
+	      <li class="disabled"><a href="#">&lt;&lt;</a></li>
+	      <li class="active"><a href="#">1</a></li>
+	      <li><a href="#">2</a></li>
+	      <li><a href="#">3</a></li>
+	      <li><a href="#">4</a></li>
+	      <li><a href="#">5</a></li>
+	      <li><a href="#">&gt;&gt;</a></li>
+	    </ul>
+    </nav>
+    
+	<h2>Pager</h2>
+	

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Page Structure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS STYLES -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./css/docs.css" rel="stylesheet">
+    <link href="./css/google-code-prettify.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <!-- ICONS -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://twitter.github.io/bootstrap/assets/ico/favicon.png">
+
+    <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!-- Navbar ----------------------------------- -->
+    <div id="header" class="navbar navbar-inverse navbar-fixed-top"></div>
+
+<!-- Subhead  -------------------------------------------------- -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Page Structure</h1>
+    <p class="lead">Overview of the project and how to get started with a simple template.</p>
+  </div>
+</header>
+
+  <div class="container">    
+<!-- Docs nav -------------------------------------------------- -->
+    <div class="row-fluid">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="210">
+          <li><a href="#basic-structure"><i class="icon-chevron-right"></i> Basic Structure</a></li>
+          <li><a href="#content-grid"><i class="icon-chevron-right"></i> Content Grid</a></li>
+          <li><a href="#header-options"><i class="icon-chevron-right"></i> Header Options</a></li>
+          <li><a href="#footer-options"><i class="icon-chevron-right"></i> Footer Options</a></li>
+          <li><a href="#template-files"><i class="icon-chevron-right"></i> Template Files</a></li>
+          <li><a href="#local-navigation"><i class="icon-chevron-right"></i> Local Navigation</a></li>
+          <li><a href="#breadcrumb"><i class="icon-chevron-right"></i> Breadcrumb</a></li></a>
+          <li><a href="#search-navigation"><i class="icon-chevron-right"></i> Search Navigation</a></li></a>
+          <li><a href="#column-navigation"><i class="icon-chevron-right"></i> Column Navigation</a></li></a>
+        </ul>
+      </div>
+      <div class="span9">        
+    <!-- PAGE STRUCTURE -------------------------------------------------- -->
+        <section id="basic-structure">
+          <div class="page-header">
+            <h1>Basic Structure</h1>
+          </div>
+          <div class="row-fluid">
+            <div class="span12">
+              <p>The page structure includes the header and footer with an underlying grid for the content area.</p>
+              <p>A corporate home page has a large hero background image and message, with an optional secondary message 126 px tall overlay band at the bottom. This overlay as well as the page footer are anchored to the bottom of the browser window.</p>
+              <h4>Page structure shown with corporate header/footer and home page hero image with overlay band</h4>
+              <div class="bs-docs-example">
+                <img src="./images/page-structure-example-2.png"/>
+              </div><!-- End Example-->
+            </div>
+            <div class="span12">
+              <h4>Note</h4>
+              <ul>
+                <li>The corporate header and footer are shown. Available header and footer combinations are shown later in this section</li>
+              </ul>
+             <h4>Specifications</h4>
+              <ul>
+                <li>The header and footer background colors extend to the browser window edge, while content is fixed and centered at 975 px wide</li>
+                <li>With the footer anchored to the browser window, deeper page content will scroll while the footer remains stationary and always visible and accessible</li>
+                <li>The optional home page with hero image may also have an overlay band for additional copy with links or thumbnail images of screen captures, videos or book covers</li>
+                <li>If not using the hero image option, the page structure of the home page should follow the same grid as the secondary pages</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    <!-- Content Grid -->
+        <section id="content-grid">
+          <div class="page-header">
+            <h1>Content Grid</h1>
+          </div>
+          <p class="lead">Grid options for non-corporate pages and any Cengage Learning Marketing websites</p>
+          <p>The header and footer fill the visible width of the browser window. All other content except for a home page background is limited to the fixed 975 px width. This page grid may also be used for a home page as well as the secondary pages.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Grid option of 230 px left column for pagelevel navigation, 480 px wide center content column and 230 px wide right column for banners or additional content</li>
+            <li>Grid option of 230 px left column and 724 px wide content (2-column span)</li>
+            <li>Grid option of left 731 px wide content area (2-column span) with 230 px right column for navigation or additional content</li>
+          </ul>
+          <p>Page structure shown with corporate</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-content-grid.png"/>
+          </div>
+          <h3>Left column</h3>
+          <p>Use for secondary or local, page-level navigation.</p>
+          <h3>Main content</h3>
+          <p>The main content may be in the center column, span the left and center columns or the center and right.s</p>
+          <h3>Right column</h3>
+          <p>Use for persistent information like a contact list or a banner ad. A banner ad should expand or support the main page content, not distract from it.</p>
+          <p>In a layout with content spanning the left and center columns, use the right column for secondary or local, page-level navigation or leave blank.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Copy can span 2 columns of the grid but should not span all 3 to keep it at a readable maximum line length of 100–120 characters per line, with a preferred count of 55–75 characters per line</li>
+            <li>When content is only in 2 columns with no page-level navigation, use the left and center columns, and leave the right column blank for readable line lengths.</li>
+            <li>Images may run the full 975 px, fit in a single column or span 2 columns</li>
+            <li>If content spans 2 columns, use only left and center or center and right on a single page. Do not mix left spanning and right spanning together on a single page</li>
+            <li>Limit right column banner ads to a maximum of three</li>
+            <li>Right column content should never exceed the depth of the main page content</li>
+          </ul>
+        </section>
+    <!-- Header Options -------------------------------------------------- -->
+        <section id="header-options">
+          <div class="page-header">
+            <h1>Header Options</h1>
+          </div>
+          <p>The corporate header is reserved for pages in the corporate site or catalogs. All other websites and pages have three header options.</p>
+          <p>All headers may use the optional Descriptor text and the optional text area above the tab space, shown below on Option 2.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li><strong>Tabbed Header</strong> supports a single drop-down menu panel, indicated with the » symbol</li>
+            <li><strong>Tab Bank Header</strong> is for navigation without a drop-down menu panel</li>
+            <li>Use the <strong>Text Links Header</strong> when primary navigation will be in the left content column on the page</li>
+          </ul>
+          <p>Corporate Header</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-corporate-header.png"/>
+          </div>
+          <p>All samples are shown below in the blue palette.</p>
+          <p>Option 1: Tabbed Header with single drop-down menu option</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-tabbed-header-single-dropdown.png"/>
+          </div>
+          <p>Option 2: Tab Bank Header with optional Descriptor and optional text area used for Account Sign In information</p>
+          <div class="bs-docs-example">
+            <img src="./images/Example2-tab-bank.png"/>
+          </div>
+          <p>Option 3: Text Links Header with optional Descriptor</p>
+          <div class="bs-docs-example">
+            <img src="./images/example3-header.png"/>
+          </div>
+          <h3>All headers consist of:</h3>
+          <ul>
+            <li>Cengage Learning or other logo</li>
+            <li>Primary navigation</li>
+            <li>Optional text area above tab bank</li>
+          </ul>
+          <p>The Cengage Learning logo in the header or branded footer should always link to www.cengage.com.</p>
+          <p>Link to the home page for a website using the Descriptor link text and a website-specific label, such as MindTap or Engage 2013.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Tabs may be white, a color from the secondary palette or match the footer color</li>
+            <li>Descriptors are optional text that can be used to label the tab bank or as a navigational</li>
+            <li>An optional text area above the tabs is available on any of the three options for content such as account information</li>
+          </ul>                      
+        </section>
+    <!-- Footer Options -------------------------------------------------- -->
+        <section id="footer-options">
+          <div class="page-header">
+            <h1>Footer Options</h1>
+          </div>
+          <p>The corporate footer includes the country selector. Other websites should use the base footer or a full footer. The footer stays anchored to the bottom of the browser window, regardless of the height of the page content. Even if the page content needs to scroll, the footer always remains visible on screen.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li><strong>Corporate footer</strong> includes the country selector</li>
+            <li><strong>Full, base</strong> and <strong>branded footers</strong> have the option to include social media links</li>
+            <li><strong>The base footer</strong> is the minimum recommended links to be included on all websites and pages</li>
+            <li><strong>Branded footer</strong> is used if the logo in the header is anything other than Cengage Learning or an imprint logo. The Cengage Learning logo in the branded footer should link to www.cengage.com</li>
+            <li>Use the white level of the footer for secondary, persistent navigation links specific to a website</li>
+          </ul>
+          <p>Corporate Footer</p>
+          <div class="bs-docs-example">
+            <img src="./images/corporate-footer.png"/>
+          </div>
+          <p><strong>All samples are shown below in the blue palette.</strong></p>
+          <p>Full footer with social menu option, additional website-specific secondary links in white level</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-footer-2.png"/>
+          </div>
+          <p>Base footer option</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-base-footer-option.png"/>
+          </div>
+          <p>Branded base footer with social menu option</p>
+          <div class="bs-docs-example">
+            <img src="./images/example-branded-base-footer.png"/>
+          </div>
+        </section>
+    <!-- Template Files -------------------------------------------------- -->
+        <section id="template-files">
+          <div class="page-header">
+            <h1>Template Files</h1>
+          </div>
+          <h3>Design templates</h3>
+          <p>Layered Photoshop files are available for design and mock-up purposes to work within the page grid. Develop and create content graphic assets to fit in the provided framework. The header and footer are built in the HTML template — the only final graphic asset that may be needed for them is when a logo other than the Cengage Learning logo is used.</p>
+          <h3>Development Templates</h3>
+          <p>The variations of the header and footer are built into the available HTML templates and CSS. Select appropriate colors and navigation labels.</p>
+          <h3>Additional resource files:</h3>
+          <ul>
+            <li>A library of common graphic assets, such as icons</li>
+            <li>JavaScript — to create slideshows, random load of home page hero images, or drop-down menus</li>
+          </ul>
+          <h3>Template Information</h3>
+          <ul>
+            <li>The HTML and CSS files are accompanied by a user guide
+            <li>Find Photoshop and other asset files along with this document on Inside (see Quick Links appendix)</li>
+            <li>See the CDN for working html samples and to view page source for JavaScript library links (see Quick Links appendix)</li>
+          </ul>
+          <h2>Template Samples</h2>
+          <h3>Shown below:</h3>
+          <p>a non-corporate wireframe (for decision sites and digital product sites) with a white palette, tab bank header, breadcrumb, full-page banner, left navigation, center content, right column banner, and full footer with social menu.</p>
+          <div class="bs-docs-example">
+            <img src="./images/page-structure-sample-1.png">
+          </div>
+          <h3>Shown below:</h3>
+          <p>a non-corporate wireframe (for decision sites and digital product sites) with a blue palette, tabbed header with menu option, full-page banner, 2-column content (left and center span), right column banner, and full footer with social menu.</p>
+          <div class="bs-docs-example">
+            <img src="./images/page-structure-sample-2.png">
+          </div>
+          <h3>Shown below:</h3>
+          <p>a non-corporate wireframe (for decision sites and digital product sites) with a black palette, text link header, breadcrumb, left column navigation, 2-column content with banner and text (center and right span), and branded full footer with social menu.</p>
+          <div class="bs-docs-example">
+            <img src="./images/page-structure-sample-3.png">
+          </div>
+        </section>
+    <!-- Local Navigation ---------------------------------------------- -->
+        <section id="local-navigation">
+          <div class="page-header">
+            <h1>Local Navigation</h1>
+          </div>
+          <p>The header should contain the primary navigation for a website. A header option that includes a single drop-down menu is available. Space above the tab bank area may display user information, such as signed in account information. The Descriptor text link should link to the home page for the website.</p>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Use a header with a single drop-down menu for a navigation list to be accessible from anywhere in the website</li>
+            <li>JavaScript for the drop-down menu is available in our code library (see Quick Links appendix)</li>
+            <li>Other header options are a single tab bank or text links directly on the background color</li>
+            <li>Navigation links on a light background are #0071A2 with an underscore for the hover state</li>
+          </ul>
+          <h3>Header drop-down menu, available in Tabbed Header with menu option</h3>
+          <div class="bs-docs-example">
+            <img src="./images/tabbed-header-sample.png">
+          </div>
+        </section>
+    <!-- Breadcrumb ---------------------------------------------- -->
+        <section id="breadcrumb">
+          <div class="page-header">
+            <h1>Breadcrumb</h1>
+          </div>
+          <p>A breadcrumb trail offers users a hierarchical way to navigate or trace back the path they have taken in coming to a web page. Use locationbased breadcrumbs, with text links separated by the “greater than” (>) symbol, and in reverse order of the page title. Company Name > Site Name > Section > Page Name/Description.</p>
+          <h3>Example:</h3>
+          <p>Cengage Learning > K-12 > Trades > Construction</p>
+          <h3>Specifications</h3>
+          <ul>
+            <li>Breadcrumbs fall below the header and above the page headline</li>
+            <li>Breadcrumbs are a user convenience feature and should be used for multi-level sites to provide additional, alternative navigation</li>
+          </ul>
+          <h4>Breadcrumb navigation sample</h4>
+          <div class="bs-docs-example">
+            <img src="./images/example-breadcrumb-nav.png"/>
+          </div>
+        </section>
+        <section id="search-navigation">
+          <div class="page-header">
+            <h1>Search navigation</h1>
+          </div>
+          <p>A search input field offers quick access to deep website content, such as in a knowledgebase.</p>
+          <h4>Search navigation sample</h4>
+          <div class="bs-docs-example">
+            <img src="./images/example-search-nav.png"/>
+          </div>
+        </section>
+        <section id="column-navigation">
+          <div class="page-header">
+            <h1>Column Navigation</h1>
+          </div>
+          <h3>Left column navigation</h3>
+          <p>If primary navigation in the header links to a page that has subsections or subpages, use the left column to house the page-level navigation.</p>
+          <h4>Left column navigation sample</h4>
+          <div class="bs-docs-example">
+            <img src="./images/left-column-nav.png"/>
+          </div>         
+          <h3>Right column navigation</h3>
+          <p>Use a navigation list in the right column to link to other Cengage Learning and third-party websites or to list downloads related to the page content.</p>
+          <h4>Right column navigation sample</h4>
+          <div class="bs-docs-example">
+            <img src="./images/right-column-nav.png"/>
+          </div>
+          <h4>Specifications</h4>
+          <ul>
+            <li>Left column navigation or right column content should have a 1 px #CCCCCC border, and may include #AF5700 (updated) or #333333 non-linked navigation headers</li>
+            <li>Navigation links are #0071A2 with an underscore for the hover state</li>
+            <li>Indenting navigation lists in right column improves the visual gutter between the center and right columns</li>
+          </ul>         
+        </section>          
+      </div><!-- End Span -->
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+<!-- Footer ----------------------------------- -->
+     <footer id="footer" class="footer"></footer>
+
+    <!-- JAVA SCRIPT ---------------------------------------------- -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      })
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/prettify.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html >
+<html lang="en" id="html">
+  <head>
+    <title>Three Column Layout</title>
+    <script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"></script>
+    <script src="//cdn.cengage.com/js/sites/cengage/loader.js"></script>
+    <link href="//s-cdn.cengage.com/libs/bootstrap/css/cengage-bootstrap.css" rel="stylesheet" />
+    <!--[if IE 8]><html lang="en-us" class="ie8"><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.cengage.com/js/modernizr/modernizr-2.6.1.js" type="text/javascript"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="//cdn.cengage.com/libs/bootstrap/img/favicon.png">
+  </head>
+  <body class="cengage-bootstrap">
+    <header id="header_include"></header>
+    <div class="container-fluid container">
+      <!--[BREAD CRUMBS]-->
+      <aside class="breadcrumb">
+        <ul>
+          <li><a href="#">Company Name </a><i class="icon-angle-right"></i></li>
+          <li><a href="#">Site Name </a><i class="icon-angle-right"></i></li>
+          <li><a href="#">Section </a><i class="icon-angle-right"></i></li>
+          <li class="active">Page Name/Description</li>
+        </ul>
+      </aside>
+      <div class="row-fluid">
+        <!--[LEFT COLUMN]-->
+        <aside class="span3">
+          <nav class="column-nav left" role="complementary">
+            <h1>Headline:</h1>
+            <h2>Subheadline</h2>
+            <ul>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+              <ul>
+                <li><a href="#">Subnavigation Link</a></li>
+                <li><a href="#">Subnavigation Link</a></li>
+              </ul>
+              <li><a href="#">Navigation Text Link</a></li>
+            </ul>
+            <h2>Subheadline</h2>
+            <ul>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+            </ul>
+            <h2>Subheadline</h2>
+            <ul>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+            </ul>
+          </nav>
+        </aside><!-- SPAN3 -->
+        <article class="span6">
+          <h1>Three Column Layout <small>(16504 results)</small></h1>
+          <p>This page is a prototype for page components. Base-line styles are reprsented here under a variety of conditions. This page is using the current CDN header and footer.</p>
+          <p>Biscuit faworki chocolate bar carrot cake toffee chupa chups biscuit faworki sweet roll. Chupa chups bonbon jelly beans sweet roll wypas fruitcake. Jujubes wypas gummies. Donut toffee gummies. Muffin toffee bonbon croissant gummies bonbon cheesecake.</p>
+          <p>Candy pie sesame snaps. Cake candy canes gummies liquorice topping gummi bears cookie chupa chups. Pie gummi bears sugar plum. Bonbon sugar plum pie lollipop macaroon wafer fruitcake cotton candy.</p>
+          <h1>Header 1 - 24px</h1>
+          <p>Text text text</p>
+          <h2>Header 2 - 18px</h2>
+          <p>Text text text</p>
+          <h3>Header 3 - 15px</h3>
+          <p>Text text text</p>
+          <h4>Header 4 - 14px</h4>
+          <p>Text text text</p>
+          <h5>Header 5 - 12px</h5>
+          <p>Text text text</p>
+          <h6>Header 6 - 12px</h6>
+          <p>Text text text</p>
+        </article><!--SPAN 6-->
+        <!-- [RIGHT COLUMN]--->
+        <aside class="span3">
+          <nav class="column-nav right" role="complementary">
+            <h1>Headline:</h1>
+            <h2>Subheadline</h2>
+            <ul role="menu">
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+              <ul>
+                <li><a href="#"><i class="icon-double-angle-right"></i> Subnavigation Link</a></li>
+                <li><a href="#"><i class="icon-double-angle-right"></i> Subnavigation Link</a></li>
+              </ul>
+              <li><a href="#">Navigation Text Link</a></li>
+            </ul>
+            <h2>Subheadline</h2>
+            <ul>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+            </ul>
+            <h2>Subheadline</h2>
+            <ul>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </div><!-- ROW -->
+      
+      <div class="row-fluid">    
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#messages">Messages</a></li>
+          <li><a href="#settings">Settings</a></li>
+        </ul>
+         
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">
+            <p>Home Content</p>
+          </div>
+          <div class="tab-pane" id="profile">
+            <p>Profile Content</p>
+          </div>
+          <div class="tab-pane" id="messages">
+            <p>Message Content</p>
+          </div>
+          <div class="tab-pane" id="settings">
+            <p>Settings Content</p>
+          </div>
+        </div>   
+      </div>      
+
+
+    </div><!-- END CONTAINER -->    
+    <footer id="footer_include"></footer>
+    <script>
+loader.init(function() {
+loader.header().footer();
+});
+    </script>
+  </body>
+</html>
+
+

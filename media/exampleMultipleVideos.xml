@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+	<tab title="group 1">
+	    <video>
+	    	<title>Agile Persons</title>
+	        <desc>Gummi bears wafer cookie jelly beans jelly-o carrot cake gingerbread cupcake marshmallow. Soufflé sweet tiramisu marshmallow jelly beans macaroon pie. Macaroon icing apple pie chupa chups.</desc>
+	        <time>5:47</time>
+	        <img>http://gdc.gale.com/assets/images/videos/13W-GL0118-GDC-Agile-Personas-640x360_1.jpg</img>
+	        <mp4>http://wowzahttp.cengage.com/cengagemarketing/13W-GL0118-GDC-Agile-Personas-640x360.mp4</mp4>
+	        <srt>http://gdc.gale.com/assets/files/transcripts/13W-GL0118-GDC-Agile-Personas.srt</srt>
+	        <txt>http://gdc.gale.com/assets/files/transcripts/13W-GL0118-GDC-Gale-Digital-Collections.clean.txt</txt>
+	    </video>
+	    <video>
+	        <title>Big Bunny Chases the other creatures in search of getting revenge</title>
+	        <desc>Bonbon ice cream sweet roll marshmallow. Cookie lemon drops liquorice topping cookie sweet roll faworki. Jujubes cupcake toffee icing.</desc>
+	        <time>4:00</time>
+	        <youtube>http://www.youtube.com/watch?v=YE7VzlLtp-4</youtube>
+	    </video>
+	    <video>
+	        <title>Building NCCO</title>
+	        <desc>Chocolate bar donut cookie topping liquorice marzipan candy canes. Macaroon sugar plum marzipan gingerbread. Faworki jelly-o pudding halvah croissant applicake gingerbread jelly chupa chups.</desc>
+	        <time>2:40</time>
+	        <youtube>http://www.youtube.com/watch?v=lWIj3IRz8DI</youtube>
+	    </video>
+	    <video>
+	        <title>Metadata-Usability</title>
+	        <desc>Caramels tart topping. Wypas cookie donut topping carrot cake biscuit tiramisu caramels. Sweet roll brownie dessert. Lollipop dessert donut sugar plum toffee.</desc>
+	        <time>5:47</time>
+	        <img>http://gdc.gale.com/assets/images/videos/13W-GL0118-GDC-Metadata-Usability-640x360_1.jpg</img>
+	        <mp4>http://wowzahttp.cengage.com/cengagemarketing/13W-GL0118-GDC-Metadata-Usability-640x360.mp4</mp4>
+	        <srt>http://gdc.gale.com/assets/files/transcripts/13W-GL0118-GDC-Metadata-Usability.srt</srt>
+	        <txt>http://gdc.gale.com/assets/files/transcripts/13W-GL0118-GDC-Metadata-Usability.clean.txt</txt>
+	    </video>
+	    <video>
+	        <title>Title Building NCCO</title>
+            <desc>Carrot cake jelly danish bonbon cookie biscuit biscuit tart biscuit. Cookie cake lemon drops oat cake cake chocolate bar sugar plum. Jelly-o tart tootsie roll wafer cake jelly-o jelly-o jelly lollipop.</desc>
+            <time>2:00</time>
+            <img>http://gdc.gale.com/assets/images/videos/13W-GL0118-GDC-Building-NCCO-640x360_1.jpg</img>
+            <mp4>http://wowzahttp.cengage.com/cengagemarketing/13W-GL0118-GDC-Building-NCCO-640x360.mp4</mp4>
+            <webm>http://wowzahttp.cengage.com/cengagemarketing/13W-GL0118-GDC-Building-NCCO-640x360.webm</webm>
+	    </video>
+	</tab>
+</tabs>

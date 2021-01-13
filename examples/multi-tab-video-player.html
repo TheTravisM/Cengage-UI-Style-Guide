@@ -1,0 +1,82 @@
+<!DOCTYPE html >
+<html lang="en" id="html">
+  <head>
+    <title>Multi Tab Video Player</title>
+    <script src="//cdn.cengage.com/js/jquery/jquery-1.7.min.js"></script>
+    <script src="//cdn.cengage.com/js/sites/cengage/loader.js"></script>
+    <link href="//s-cdn.cengage.com/libs/bootstrap/css/cengage-bootstrap.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="http://cdn.cengage.com/js/modernizr/modernizr-2.6.1.js" type="text/javascript"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+    <!--[if IE 8]><html lang="en-us" class="ie8"><![endif]-->
+    <link rel="shortcut icon" href="//cdn.cengage.com/libs/bootstrap/img/favicon.png">
+  </head>
+  <body class="cengage-bootstrap">
+    <header id="header_include"></header>
+    <div class="container-fluid container">
+      <!--[BREAD CRUMBS]-->
+      <aside class="breadcrumb">
+        <ul>
+          <li><a href="#">Company Name </a><i class="icon-angle-right"></i></li>
+          <li><a href="#">Site Name </a><i class="icon-angle-right"></i></li>
+          <li><a href="#">Section </a><i class="icon-angle-right"></i></li>
+          <li class="active">Page Name/Description</li>
+        </ul>
+      </aside>
+      <div class="row-fluid">
+        <!--[LEFT COLUMN]-->
+        <aside class="span3">
+          <nav class="column-nav left" role="complementary">
+            <h1>Headline:</h1>
+            <h2>Subheadline</h2>
+            <ul>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+              <ul>
+                <li><a href="#">Subnavigation Link</a></li>
+                <li><a href="#">Subnavigation Link</a></li>
+              </ul>
+              <li><a href="#">Navigation Text Link</a></li>
+            </ul>
+            <h2>Subheadline</h2>
+            <ul>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+            </ul>
+            <h2>Subheadline</h2>
+            <ul>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+              <li><a href="#">Navigation Text Link</a></li>
+            </ul>
+          </nav>
+        </aside><!--[SPAN3]-->
+        <article class="span9">
+          <link rel="stylesheet" type="text/css" href="//cdn.cengage.com/css/apps/search/videoStyle.css"/>
+          <script src="//cdn.cengage.com/js/jwplayer/latest/jwplayer.js"></script>
+          <script src="//cdn.cengage.com/js/contrib/jquery.a11y.ui/ui/jquery.ui.widget.js"></script>
+          <script src="//cdn.cengage.com/js/contrib/jquery.a11y.ui/ui/jquery.ui.tabs.js"></script>
+          <script src="//cdn.cengage.com/js/contrib/jquery.jwplayer-impl.js"></script>
+          <h1>Multi-Tab Player</h1>
+          <div class="video-container" id="videoTab" player="jwplayer2"></div>
+          <script>
+						$("#videoTab").player({
+							xml : "./../media/exampleTabVideos.xml",
+							key : "yi3O3eWtkupFILhRcDNc/TZS2WnJg6o3kRjUMIQlEDQ=",
+							stream : true
+						});
+          </script>
+        </article><!--[SPAN 6]-->
+      </div><!--[ROW]-->
+    </div><!--[END CONTAINER]-->
+    <footer id="footer_include"></footer>
+    <script>
+			loader.init(function() {
+				loader.header().footer();
+			});
+    </script>
+  </body>
+</html>
