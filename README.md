@@ -1,3 +1,5 @@
-# Web-Development-Guidelines
+# [Web-Development-Guidelines](https://thetravism.github.io/Cengage-UI-Style-Guide/)
+
 Responsive Design - HTML5 - CSS3 - Bootstrap
-<a href="http://kickassbrocksamson.github.io/Web-Development-Guidelines">Functional Link</a>
+
+<a href="https://thetravism.github.io/Cengage-UI-Style-Guide/">Functional Link</a>
