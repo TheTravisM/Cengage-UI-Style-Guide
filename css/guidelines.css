@@ -1,17 +1,17 @@
   /* -- Bootstrap -- */
-  @import url('//d-internal.cengage.com/documentation/guidelines/css/assets/bootstrap.css');
+  @import url('./assets/bootstrap.css');
 
   /* --- Font Awesome --- */
-  @import url('//cdn.cengage.com/libs/bootstrap/css/assets/font-awesome.min.css');
-    
+  @import url('./assets/font-awesome.min.css');
+
   /* --- Google Code Prettify --- */
-  @import url('//d-internal.cengage.com/documentation/guidelines/css/assets/google-code-prettify.css');
-  
+  @import url('./assets/google-code-prettify.css');
+
   /* --- DOCS --- */
-  @import url('//d-internal.cengage.com/documentation/guidelines/css/assets/docs.css');
-  
+  @import url('./assets/docs.css');
+
   /* --- Font - DOCS --- */
-  @import url('//d-internal.cengage.com/documentation/guidelines/css/assets/font-docs.css');
-  
+  @import url('./assets/font-docs.css');
+
   /* --- Cengage-Skin --- */
-  @import url('//cdn.cengage.com/libs/bootstrap/css/assets/cengage-bootstrap-skin.css');
+  @import url('./assets/cengage-bootstrap-skin.css');
